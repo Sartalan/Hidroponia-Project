@@ -1,0 +1,186 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "MOC3021" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at -7.62855 8.26427 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "MOC3021" (id 1) (at -7.63136 -10.1751 0.0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MOC3021:DIP762W45P254L889H508Q6" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "ON Semiconductor" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\nOptoisolator Triac Output 5300Vrms 1 Channel 6-DIP\n" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PACKAGE" "DIP-6" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "DIP-6 ON Semiconductor" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/MOC3021/Onsemi/view-part/?ref=eda" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "IPC 7351B" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/MOC3021/Onsemi/view-part/?ref=snap" (id 12) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "MOC3021" (id 13) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 14) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "FAIRCHILD SEMICONDUCTOR" (id 15) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "MOC3021_0_0"
+      (polyline
+        (pts (xy -5.08 3.81) (xy -3.81 1.27)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.81 1.27) (xy -2.54 3.81)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 3.81) (xy -3.81 3.81)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.81 3.81) (xy -5.08 3.81)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -5.08 1.27) (xy -3.81 1.27)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.81 1.27) (xy -2.54 1.27)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.81 3.81) (xy -3.81 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.81 5.08) (xy -7.62 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.81 1.27) (xy -3.81 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.81 0.0) (xy -7.62 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.2225 1.905) (xy 4.445 1.905)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 4.445 1.905) (xy 4.7625 1.905)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 4.7625 1.905) (xy 3.4925 -0.635)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 3.4925 -0.635) (xy 2.2225 1.905)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.3975 1.905) (xy 4.1275 -0.635)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 4.1275 -0.635) (xy 4.445 -0.635)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 4.445 -0.635) (xy 6.6675 -0.635)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 6.6675 -0.635) (xy 5.3975 1.905)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 4.7625 1.905) (xy 5.3975 1.905)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.3975 1.905) (xy 6.6675 1.905)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.2225 -0.635) (xy 3.4925 -0.635)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 3.4925 -0.635) (xy 4.1275 -0.635)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 4.445 5.08) (xy 4.445 1.905)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 4.445 -5.08) (xy 7.62 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 4.445 5.08) (xy 7.62 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 4.445 -0.635) (xy 4.445 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.635 3.4925) (xy 1.27 2.8575)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 2.8575) (xy -0.635 2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.635 2.54) (xy 0.635 1.5875)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.635 1.5875) (xy 0.3175 1.27)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.3175 1.27) (xy 1.27 0.9525)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 0.9525) (xy 0.9525 1.905)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.9525 1.905) (xy 0.635 1.5875)) (stroke (width 0.254))
+      )
+      (rectangle (start -7.62 -7.62) (end 7.62 7.62)
+        (stroke (width 0.254)) (fill (type background))
+      )
+      (pin passive line (at -10.16 5.08 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -10.16 0.0 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 10.16 5.08 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 10.16 -5.08 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)
