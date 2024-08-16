@@ -5324,7 +5324,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 190.5 88.646 90)
 			(effects
 				(font
@@ -5394,7 +5394,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 121.158 42.926 90)
 			(effects
 				(font
@@ -5446,8 +5446,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1deb8e9e-fb8a-4428-9508-f05fb55a3cdd")
-		(property "Reference" "AC1"
-			(at 73.152 170.1799 0)
+		(property "Reference" "Alterna1"
+			(at 72.39 170.1799 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5456,7 +5456,7 @@
 			)
 		)
 		(property "Value" "TB_1X2"
-			(at 73.152 172.7199 0)
+			(at 72.39 172.7199 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5499,7 +5499,7 @@
 		(instances
 			(project "Circuito - Kicad"
 				(path "/5c956fab-8f3e-46bb-9b36-ad0edafc8e4e"
-					(reference "AC1")
+					(reference "Alterna1")
 					(unit 1)
 				)
 			)
@@ -5531,7 +5531,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MOC3021:DIP762W45P254L889H508Q6"
 			(at 203.2 98.044 0)
 			(effects
 				(font
@@ -6063,7 +6063,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 229.87 78.486 90)
 			(effects
 				(font
@@ -6199,7 +6199,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 156.718 29.21 90)
 			(effects
 				(font
