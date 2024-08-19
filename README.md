@@ -14,11 +14,15 @@ En primeras antes de hablar del código debemos de hablar del circuito; consta 2
 Para poder determinar cuando disparar o no por el código, básicamente se la divide a la onda senoidal en varias partes.
 En primeras se calcula su periodo, utilizando para ello la cuenta:
 
-![Ecuación](./Ref/CalculoUnoUno.png)
+<div align="center"> 
+    ![Ecuación](./Ref/CalculoUnoUno.png)
+</div>
 
 + Luego se la divide en 360 partes para así tener un ciclo entero.
 
-![Ecuación](./Ref/CalculoDosDos.png)
+<div align="center"> 
+    ![Ecuación](./Ref/CalculoDosDos.png)
+</div>
 
 + Una vez tenidos estos datos poder asumir diversas cosas:
  1. Un semiciclo de nuestra onda es equivalente a: 360/2.
@@ -53,7 +57,7 @@ Ahora sí, empecemos con el código.
 Básicamente aplicamos todo lo aprendido: 
 Comencemos con la función Setup:
 
-      attachInterrupt(0,GradoZero,CHANGE);
+    attachInterrupt(0,GradoZero,CHANGE);
       
 Esta linea de código pertenece a la libreria de TimerOne, y se encarga de inicializar una entrada de datos en el pin 0 (que por default es el 2 y, que cada vez que cambie de HIGH a LOW o viceversa, ejecuta la función GradoZero(), la cual reestablece los valores de nuestros grados.
 
@@ -61,7 +65,7 @@ Esta linea de código pertenece a la libreria de TimerOne, y se encarga de inici
       
 Le indicamos al programa que inicialice un temporizador de 46μs.
 
-      Timer1.attachInterrupt(Disparo)
+    Timer1.attachInterrupt(Disparo)
           
 Cada vez que finaliza el temporizador de 46μs se ejecuta la función Disparo()
 
