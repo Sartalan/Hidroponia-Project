@@ -5751,7 +5751,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BT136:TO220AB"
 			(at 240.665 92.329 90)
 			(effects
 				(font
