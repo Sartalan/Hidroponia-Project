@@ -358,6 +358,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${KIPRJMOD}/Footprints_Importados/3D_Models/Bornera3.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "EESTN5:ARDUINO_UNO_R2_CONTOUR"
 		(layer "F.Cu")
@@ -1333,6 +1344,17 @@
 				(xyz -90 0 180)
 			)
 		)
+		(model "${KIPRJMOD}/Footprints_Importados/3D_Models/ARDUINO UNO R2.step"
+			(offset
+				(xyz 4.5 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 90 180 0)
+			)
+		)
 	)
 	(footprint "BT136:TO220AB"
 		(layer "F.Cu")
@@ -1758,6 +1780,17 @@
 					(xy 122.865459 59.285941) (xy 123.057964 59.498337) (xy 123.228723 59.728579) (xy 123.376092 59.97445)
 					(xy 123.498652 60.233582) (xy 123.595223 60.503478) (xy 123.664874 60.781541) (xy 123.706935 61.065092)
 				)
+			)
+		)
+		(model "${KIPRJMOD}/Footprints_Importados/3D_Models/BTA16-600B.STEP"
+			(offset
+				(xyz 0 -4.5 3.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -2291,6 +2324,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${KIPRJMOD}/Footprints_Importados/3D_Models/RES0.1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
@@ -2566,6 +2610,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${KIPRJMOD}/Footprints_Importados/3D_Models/RES0.1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
@@ -2830,7 +2885,7 @@
 			(pintype "passive")
 			(uuid "74fe2ce2-19d3-4c4b-b3ef-ad3b14eecc3b")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
+		(model "${KIPRJMOD}/Footprints_Importados/3D_Models/RES0.1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3148,6 +3203,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${KIPRJMOD}/Footprints_Importados/3D_Models/4N25.STEP"
+			(offset
+				(xyz 4 -2.5 3)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
@@ -3423,6 +3489,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${KIPRJMOD}/Footprints_Importados/3D_Models/RES0.1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "EESTN5:BORNERA2"
 		(layer "F.Cu")
@@ -3626,6 +3703,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${KIPRJMOD}/Footprints_Importados/3D_Models/Bornera2.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "EESTN5:BORNERA2"
 		(layer "F.Cu")
@@ -3819,6 +3907,17 @@
 			(uuid "9dbe4f32-15b8-46d5-997d-151d95d09a78")
 		)
 		(model "Bornera2.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Footprints_Importados/3D_Models/Bornera2.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4115,6 +4214,17 @@
 			(pintype "passive")
 			(solder_mask_margin 0.102)
 			(uuid "369be7cf-89fc-40ec-b887-e2f7b8e0f9e0")
+		)
+		(model "${KIPRJMOD}/Footprints_Importados/3D_Models/MOC3021.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
 		)
 	)
 	(gr_rect
