@@ -15,8 +15,8 @@ Ahora sí, empecemos con el código.
 Para poder determinar cuando disparar o no por el código, básicamente se la divide a la onda senoidal en varias partes.
 En primeras se calcula su periodo, utilizando para ello la cuenta:
 
-![Ecuación](./Ref/CalculoUno.png)
+![Ecuación](./Ref/CalculoUnoUno.png)
 
 + Luego se la divide en 360 partes para tener
 
-![Ecuación](./Ref/CalculoDos.png)
+![Ecuación](./Ref/CalculoDosDos.png)
