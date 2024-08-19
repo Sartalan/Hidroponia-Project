@@ -14,15 +14,15 @@ En primeras antes de hablar del código debemos de hablar del circuito; consta 2
 Para poder determinar cuando disparar o no por el código, básicamente se la divide a la onda senoidal en varias partes.
 En primeras se calcula su periodo, utilizando para ello la cuenta:
 
-<div align="center"> 
-    ![Ecuación](./Ref/CalculoUnoUno.png)
-</div>
+<p align="center">
+  <img src="./Ref/CalculoUnoUno.png" />
+</p>
 
 + Luego se la divide en 360 partes para así tener un ciclo entero.
 
-<div align="center"> 
-    ![Ecuación](./Ref/CalculoDosDos.png)
-</div>
+<p align="center">
+  <img src="./Ref/CalculoDosDos.png" />
+</p>
 
 + Una vez tenidos estos datos poder asumir diversas cosas:
  1. Un semiciclo de nuestra onda es equivalente a: 360/2.
