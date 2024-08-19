@@ -17,6 +17,11 @@ En primeras se calcula su periodo, utilizando para ello la cuenta:
 
 ![Ecuación](./Ref/CalculoUnoUno.png)
 
-+ Luego se la divide en 360 partes para tener
++ Luego se la divide en 360 partes para así tener un ciclo entero.
 
 ![Ecuación](./Ref/CalculoDosDos.png)
+
++ Una vez tenidos estos datos poder asumir diversas cosas:
+ 1. Un semiciclo de nuestra onda es equivalente a: 360/2 
+ 2. Cada 46μs recorremos 1° de nuestra onda
+ 3. 46μs x (360/2) Es equivalente al recorrido total de tiempo que conlleva un solo semiciclo
