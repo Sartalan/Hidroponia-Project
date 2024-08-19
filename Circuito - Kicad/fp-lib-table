@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "MOC3021")(type "KiCad")(uri "${KIPRJMOD}/Footprints_Importados/MOC3021")(options "")(descr ""))
   (lib (name "BT136")(type "KiCad")(uri "${KIPRJMOD}/Footprints_Importados/BT136")(options "")(descr ""))
+  (lib (name "Wolfsrudel_Logo")(type "KiCad")(uri "${KIPRJMOD}/Footprints_Importados/Wolfsrudel_Logo")(options "")(descr ""))
 )
