@@ -7,4 +7,5 @@
 ![Ecuación](./Ref/CalculoUno.png)
 
 + Bla bla (Estoy testeando las visualizaciones de las imagenes)
+
 ![Ecuación](./Ref/CalculoDos.png)
