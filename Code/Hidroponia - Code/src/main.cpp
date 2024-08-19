@@ -1,9 +1,5 @@
+#include <MyFunctions.h> //Todas las librerias del Proyecto más el restante del código.
 
-
-#include <Arduino.h>
-#include <TimerOne.h> // Incluir Librería TimerOne
-#include <OneWire.h>
-#include <DallasTemperature.h>
 #define Disparo_pin 7
 
 const int pinDatosDQ = 3;
@@ -12,16 +8,6 @@ DallasTemperature TemperatureSensor(&oneWireObjeto);
 
 int GradoElectrico = 0;
 int Value;
-int Test;
-
-void TemperatureTesting(){
-  Test = analogRead(A1);
-  Test = map(Test, 0, 1023, 15, 30);
-  Serial.print("------");
-  Serial.print("Temp: ");
-  Serial.print(Test);
-  Serial.println(" C");
-}
 
 void Zero()
 { // g = 0
@@ -51,17 +37,19 @@ void setup()
 
 void loop()
 {
-  Value = analogRead(0);
-  Value = map(Value, 0, 1023, 0, 179);
-  // Serial.println(Value);
 
   TemperatureTesting();
 
 
-  //TemperatureSensor.requestTemperatures();
-  //Serial.print("Temperatura: ");
-  //Serial.print(TemperatureSensor.getTempCByIndex(0));
-  //Serial.println(" C");
+  Value = analogRead(0);
+  Value = map(Value, 0, 1023, 0, 179);
+  // Serial.println(Value);
+
+
+  // TemperatureSensor.requestTemperatures();
+  // Serial.print("Temperatura: ");
+  // Serial.print(TemperatureSensor.getTempCByIndex(0));
+  // Serial.println(" C");
 }
 
 /* Sensor Testing
