@@ -74,3 +74,9 @@ En resumidas cuentas, el código se encarga de ejecutar un cronometro que cada 4
 
 Es decir, este simple código tiene la posibilidad de manipular por completo un ciclo de nuestra onda senoidal partiendola a ésta en 180° al detectar el cruce por cero antes de terminar el ciclo completo. Pudiendo con ello ejecutar scripts de código que tan solo tengan que variar entre los valores de 1 - 180 de la variable int de GradoElectrico y, así, determinando cuando disparar dentro del semiciclo.
 - Nota: Esta es una versión *muy* básica del accionamiento del disparo, pero sirve.
+
+## Componentes | Datasheet
+
+1. [Optoacoplador - MOC3021](https://pdf1.alldatasheet.es/datasheet-pdf/view/53870/FAIRCHILD/MOC3021.html)
+2. [Optoacoplador - 4N25](https://pdf1.alldatasheet.es/datasheet-pdf/view/158124/VISHAY/4N25.html)
+3. [Triac - BT139](https://pdf1.alldatasheet.es/datasheet-pdf/view/16787/PHILIPS/BT139-600.html)
