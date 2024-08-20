@@ -1,4 +1,4 @@
-24144712165861595
+24146436347491895
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -23,6 +23,13 @@ TO220AB
 BT136
 TO263
 <b>SMALL OUTLINE TRANSISTOR</b><p>TS-005
+
+0
+3
+3
+BT139-600E
+TO255P1040X460X1975-3
+
 
 0
 3
