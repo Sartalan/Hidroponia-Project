@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Indoor",
+    "slug": "Indoor-React-Native",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000",
+      "plugins": [
+        [
+          "expo-font",
+          {
+            "fonts": [
+              "./assets/fonts/pixel-font.ttf"
+            ]
+          }
+        ]
+      ]
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "splash": {
+        "resizeMode": "native"
+      },
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.sartalan.IndoorReactNative"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f86455e8-93dc-4d23-97ec-ee20c081f259"
+      }
+    }
+  }
+}
