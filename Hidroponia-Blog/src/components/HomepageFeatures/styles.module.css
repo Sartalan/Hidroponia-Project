@@ -1,0 +1,86 @@
+/* 
+? Features()
+? -----------
+*/
+:root {
+  --tech-transition-on: all ease 0.3s;
+  --tech-transition-off: all ease 0.5s;
+  --bg-color: #181921;
+}
+
+@font-face {
+  font-family: Butterscotch;
+  src: url(./../../../static/fonts/butterscotch/Butterscotch.ttf);
+}
+
+#techA {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.techIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: var(--tech-transition-off);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  filter: grayscale(80%);
+}
+
+.techIcon:hover {
+  transition: var(--tech-transition-on);
+  transform: scale(1.15);
+  filter: grayscale(0);
+}
+
+.techText {
+  transition: var(--tech-transition-off);
+  opacity: .5;
+  text-decoration: none;
+  user-select: none;
+  cursor: default;
+  font-size: .9rem;
+  text-decoration: none;
+}
+
+.techIcon:hover+.techText {
+  transform: scale(1.15);
+  transition: var(--tech-transition-on);
+  opacity: 1;
+}
+
+/* 
+? HomeFeatures()
+? ---------------
+*/
+
+.container {
+  width: 40%;
+  margin: auto;
+}
+
+.techSection {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+.techTitle {
+  text-align: center;
+  user-select: none;
+  font-family: Butterscotch;
+  font-size: 2.25rem;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+.hr {
+  opacity: .6;
+  margin: 2em;
+}

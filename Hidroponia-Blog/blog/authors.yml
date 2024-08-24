@@ -1,0 +1,30 @@
+Peque:
+  name: Gabriel Dominguez
+  title: PCB | 3D Model Designer
+  url: https://sebastienlorber.com
+  image_url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-8EaBDHoY5Iqn10gpCoxoSvAWKQHqL9pkCTjKO8cKv_sl-BoHXaJJK9UDRcblp_bhl4&usqp=CAU
+Jorge:
+  name: Jorge Fariña
+  title: PCB Designer
+  url: https://github.com/yangshun
+  image_url: https://i.pinimg.com/originals/5d/70/18/5d70184dfe1869354afe7bf762416603.jpg
+
+Alan: 
+  name: Alan Barrera
+  title: Software Developer
+  url: https://github.com/sartalan
+  image_url: https://github.com/sartalan.png
+
+Team: 
+  name: Wolfsrudel 
+  title: All the Team
+  url: https://github.com/Sartalan/Hidroponia-Project
+  image_url: https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg
+
+
+## ---
+## slug: pcb/one
+## title: PCB Release
+## authors: [Jorge, Peque]
+## tags: [herzarmband, pcb, hola]
+## ---
