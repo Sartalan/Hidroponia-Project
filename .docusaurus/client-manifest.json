@@ -164,7 +164,7 @@
       "js": [
         {
           "file": "assets/js/runtime~main.ed821021.js",
-          "hash": "4ae5ce748f534631",
+          "hash": "3706077d978a253d",
           "publicPath": "/Hidroponia-Project/assets/js/runtime~main.ed821021.js"
         }
       ]
@@ -226,9 +226,9 @@
     "869": {
       "css": [
         {
-          "file": "assets/css/styles.e77353d9.css",
-          "hash": "6404aec3786ebe5b",
-          "publicPath": "/Hidroponia-Project/assets/css/styles.e77353d9.css"
+          "file": "assets/css/styles.831097a1.css",
+          "hash": "bbbcd9816915fd6e",
+          "publicPath": "/Hidroponia-Project/assets/css/styles.831097a1.css"
         }
       ]
     },
