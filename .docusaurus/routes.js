@@ -8,41 +8,6 @@ export default [
     exact: true
   },
   {
-    path: '/Hidroponia-Project/__docusaurus/debug',
-    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug', 'd17'),
-    exact: true
-  },
-  {
-    path: '/Hidroponia-Project/__docusaurus/debug/config',
-    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug/config', 'c39'),
-    exact: true
-  },
-  {
-    path: '/Hidroponia-Project/__docusaurus/debug/content',
-    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug/content', '509'),
-    exact: true
-  },
-  {
-    path: '/Hidroponia-Project/__docusaurus/debug/globalData',
-    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug/globalData', 'd6f'),
-    exact: true
-  },
-  {
-    path: '/Hidroponia-Project/__docusaurus/debug/metadata',
-    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug/metadata', 'e5b'),
-    exact: true
-  },
-  {
-    path: '/Hidroponia-Project/__docusaurus/debug/registry',
-    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug/registry', '8d1'),
-    exact: true
-  },
-  {
-    path: '/Hidroponia-Project/__docusaurus/debug/routes',
-    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug/routes', 'f79'),
-    exact: true
-  },
-  {
     path: '/Hidroponia-Project/markdown-page',
     component: ComponentCreator('/Hidroponia-Project/markdown-page', 'cbe'),
     exact: true
