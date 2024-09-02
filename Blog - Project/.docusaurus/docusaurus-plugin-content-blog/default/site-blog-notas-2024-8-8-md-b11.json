@@ -1,0 +1,54 @@
+{
+  "permalink": "/Hidroponia-Project/blog/pcb/one",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-8.md",
+  "source": "@site/blog/Notas/2024-8-8.md",
+  "title": "Circuito",
+  "description": "Logramos simular y realizar el circuito correctamente en Proteus, para ello hicimos muchas cosas:",
+  "date": "2024-08-08T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "kicad",
+      "permalink": "/Hidroponia-Project/blog/tags/kicad"
+    },
+    {
+      "label": "proteus",
+      "permalink": "/Hidroponia-Project/blog/tags/proteus"
+    },
+    {
+      "label": "code",
+      "permalink": "/Hidroponia-Project/blog/tags/code"
+    }
+  ],
+  "readingTime": 0.935,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Wolfsrudel",
+      "title": "All the Team",
+      "url": "https://github.com/Sartalan/Hidroponia-Project",
+      "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+      "key": "Team"
+    }
+  ],
+  "frontMatter": {
+    "slug": "pcb/one",
+    "title": "Circuito",
+    "authors": [
+      "Team"
+    ],
+    "tags": [
+      "kicad",
+      "proteus",
+      "code"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Nota",
+    "permalink": "/Hidroponia-Project/blog/nota/two"
+  },
+  "nextItem": {
+    "title": "Comienzo del Proyecto",
+    "permalink": "/Hidroponia-Project/blog/nota/one"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "permalink": "/Hidroponia-Project/blog/nota/one",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-1.md",
+  "source": "@site/blog/Notas/2024-8-1.md",
+  "title": "Comienzo del Proyecto",
+  "description": "Hidroponia - Project",
+  "date": "2024-08-01T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "hola",
+      "permalink": "/Hidroponia-Project/blog/tags/hola"
+    }
+  ],
+  "readingTime": 1.34,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Wolfsrudel",
+      "title": "All the Team",
+      "url": "https://github.com/Sartalan/Hidroponia-Project",
+      "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+      "key": "Team"
+    }
+  ],
+  "frontMatter": {
+    "slug": "nota/one",
+    "title": "Comienzo del Proyecto",
+    "authors": [
+      "Team"
+    ],
+    "tags": [
+      "hola"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Circuito",
+    "permalink": "/Hidroponia-Project/blog/pcb/one"
+  }
+}

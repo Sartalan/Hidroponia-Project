@@ -2,8 +2,13 @@
   "title": "Recent posts",
   "items": [
     {
-      "title": "",
-      "permalink": "/Hidroponia-Project/blog/2024/8/4/",
+      "title": "Nota",
+      "permalink": "/Hidroponia-Project/blog/nota/two",
+      "unlisted": false
+    },
+    {
+      "title": "Circuito",
+      "permalink": "/Hidroponia-Project/blog/pcb/one",
       "unlisted": false
     },
     {

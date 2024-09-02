@@ -1,33 +1,118 @@
 {
   "blogPosts": [
     {
-      "id": "/2024/8/4/",
+      "id": "nota/two",
       "metadata": {
-        "permalink": "/Hidroponia-Project/blog/2024/8/4/",
-        "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2024-8-4.md",
-        "source": "@site/blog/2024-8-4.md",
-        "title": "",
-        "description": "",
-        "date": "2024-08-04T00:00:00.000Z",
-        "tags": [],
-        "readingTime": 0,
+        "permalink": "/Hidroponia-Project/blog/nota/two",
+        "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-11.md",
+        "source": "@site/blog/Notas/2024-8-11.md",
+        "title": "Nota",
+        "description": "Muy seguramente vayamos añadiendo una sección de \"Notas\" para añadir actualizaciones y/o ideas nuevas respecto a qué pensamos integrar y que no; algo hablado con nuestro profesor fue integrar una aplicación que estuvimos desarrollando para el que iba a ser nuestro primer proyecto del año, pero se canceló.",
+        "date": "2024-08-11T00:00:00.000Z",
+        "tags": [
+          {
+            "label": "app",
+            "permalink": "/Hidroponia-Project/blog/tags/app"
+          },
+          {
+            "label": "indoor",
+            "permalink": "/Hidroponia-Project/blog/tags/indoor"
+          }
+        ],
+        "readingTime": 2.055,
         "hasTruncateMarker": false,
-        "authors": [],
-        "frontMatter": {},
+        "authors": [
+          {
+            "name": "Wolfsrudel",
+            "title": "All the Team",
+            "url": "https://github.com/Sartalan/Hidroponia-Project",
+            "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+            "key": "Team"
+          }
+        ],
+        "frontMatter": {
+          "slug": "nota/two",
+          "title": "Nota",
+          "authors": [
+            "Team"
+          ],
+          "tags": [
+            "app",
+            "indoor"
+          ]
+        },
         "unlisted": false,
+        "nextItem": {
+          "title": "Circuito",
+          "permalink": "/Hidroponia-Project/blog/pcb/one"
+        }
+      },
+      "content": "Muy seguramente vayamos añadiendo una sección de \"Notas\" para añadir actualizaciones y/o ideas nuevas respecto a qué pensamos integrar y que no; algo hablado con nuestro profesor fue integrar una aplicación que estuvimos desarrollando para el que iba a ser nuestro primer proyecto del año, pero se canceló.\nEste se trataba de un Indoor, el cuál iba a tener una funcionalidad muy parecida a lo que estamos haciendo con la Hidroponia al tener que, también, tener el control absoluto del ambiente para cuidar de una planta. \n\nÉsta, al claramente haberse cancelado el proyecto, se le canceló su desarrollo; pero eso no supuso su extinción, se la quiso agregar a nuestro próximo proyecto: Herzarmband. \nHerzarmband iba a ser un reloj/brazalete -nunca se decidió- que tomaría la frecuencia cardíaca y, por aprovechar el código previamente creado para la aplicación. Aunque esto claramente era **muy** impráctico y: sin sentido. \n\n### ¿Qué más aparte de mostrar la frecuencia cardíaca iba a hacer?\n\nEra un completo sin sentido, salvo que, se pensará añadir algún tipo de algoritmo que predijera y detectará de una forma u otra problemas cardiovasculares -como los hacen muchos en el mercado-  pero eso ya dejaría de ser un proyecto de Electrónica y se convertiría en uno de Software; no es la idea de la materia.\n\nPero afortunadamente es genuinamente práctica para integrarla en éste proyecto, sirviendo perfectamente como una interfáz gráfica para visualizar en tiempo real por wifi el estado de tus plantas e hidroponia en general. \n\nA raíz de esto añadiremos la app al proyecto; la idea es crear una comunicación HTTP entre la Raspberry Pi y la Aplicación de celular. Para ello nuestra idea es crear un servidor con **Javascript y Express** (Libreria Backend de Nodejs) que tenga interacción con el recibo de datos que reciba la Raspberry del circuito -ya sea por wifi o algún diferente protocolo de comunicación- y, setear dichos datos con una API la cuál tendrá un endpoint donde la aplicación de celular, la cual también está escrita con Javascript -concretamente con el Framework de **React Native** se conectará.\nMuy posiblemente utilizando archivos **JSON** para almacenar la información.\n\nPara la fecha actual, la app luce de la siguiente forma:\n\n//Gif App\n\nEl diagrama de bloques que diseñamos para explicar su comunicación HTTP para proponerselo a nuestro profesor es:\n\n![Diagrama De Comunicación entre Servidor-Cliente | HTTP](../Ref/App-Communication.jpeg)\n\nSí usted quiere ver más en profundidad su desarrollo, su repositorio y ramal de Github donde se programo se encuentra [aquí](https://github.com/Sartalan/Indoor-Project/tree/App)."
+    },
+    {
+      "id": "pcb/one",
+      "metadata": {
+        "permalink": "/Hidroponia-Project/blog/pcb/one",
+        "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-8.md",
+        "source": "@site/blog/Notas/2024-8-8.md",
+        "title": "Circuito",
+        "description": "Logramos simular y realizar el circuito correctamente en Proteus, para ello hicimos muchas cosas:",
+        "date": "2024-08-08T00:00:00.000Z",
+        "tags": [
+          {
+            "label": "kicad",
+            "permalink": "/Hidroponia-Project/blog/tags/kicad"
+          },
+          {
+            "label": "proteus",
+            "permalink": "/Hidroponia-Project/blog/tags/proteus"
+          },
+          {
+            "label": "code",
+            "permalink": "/Hidroponia-Project/blog/tags/code"
+          }
+        ],
+        "readingTime": 0.935,
+        "hasTruncateMarker": false,
+        "authors": [
+          {
+            "name": "Wolfsrudel",
+            "title": "All the Team",
+            "url": "https://github.com/Sartalan/Hidroponia-Project",
+            "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+            "key": "Team"
+          }
+        ],
+        "frontMatter": {
+          "slug": "pcb/one",
+          "title": "Circuito",
+          "authors": [
+            "Team"
+          ],
+          "tags": [
+            "kicad",
+            "proteus",
+            "code"
+          ]
+        },
+        "unlisted": false,
+        "prevItem": {
+          "title": "Nota",
+          "permalink": "/Hidroponia-Project/blog/nota/two"
+        },
         "nextItem": {
           "title": "Comienzo del Proyecto",
           "permalink": "/Hidroponia-Project/blog/nota/one"
         }
       },
-      "content": ""
+      "content": "Logramos simular y realizar el circuito correctamente en Proteus, para ello hicimos muchas cosas:\n\n1. Instalamos la *libreria* de Arduino en Proteus para así poder simular correctamente los códigos en este programa, y luego realizamos el circuito correspondiente.\n\n## ¿Qué hicimos?\n\nQuisimos también aprovechar la realización del proyecto para aprobar otra materia; Electrónica Aplicada. La cual nos daba a elegir si simular un circuito o no, así que lo realizamos aplicandolo como solución a un problema en nuestro proyecto; regular la corriente alterna.\n\nSe trata de la realización de un disparo en la señal de alterna a través de la utilización de optoacopladores y triac's.\n\nÉsta es una forma de manipular la onda senoidal de la corriente alterna mediante el uso de la corriente continúa. En nuestro caso se buscó utilizar optoacopladores como medida óptica de separación entre las dos corrientes y, crear un código qué, mediante interrupciones, **supiera** cuando la AC oscila mediante el lado contrario; pero ello suponía otro problema: se debía de saber exactamente y con gran precisión **cuando la onda cruzaba por cero en primer lugar**. Viniendo, recién ahora, lo **interesante** ⊂(◉‿◉)つ."
     },
     {
       "id": "nota/one",
       "metadata": {
         "permalink": "/Hidroponia-Project/blog/nota/one",
-        "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2024-8-1.md",
-        "source": "@site/blog/2024-8-1.md",
+        "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-1.md",
+        "source": "@site/blog/Notas/2024-8-1.md",
         "title": "Comienzo del Proyecto",
         "description": "Hidroponia - Project",
         "date": "2024-08-01T00:00:00.000Z",
@@ -60,8 +145,8 @@
         },
         "unlisted": false,
         "prevItem": {
-          "title": "",
-          "permalink": "/Hidroponia-Project/blog/2024/8/4/"
+          "title": "Circuito",
+          "permalink": "/Hidroponia-Project/blog/pcb/one"
         }
       },
       "content": "## Hidroponia - Project\n\nComenzó nuestro **segundo** proyecto del año como una empresa ficticia llamada *Wolfsrudel*.\nSe tratá de una Hidroponia que será -ídoneamente- un sistema de control completo donde se monitoreará cada una de las mágnitudes esenciales que debe de necesitar una planta para desarrollarse adecuadamente. \n\nNuestra meta es la siguiente:\n+ Montar una estructura que servirá para alojar las plantas y les permita una vía de acceso a agua que está siendo bombeada por una bomba, mientras a su vez se debe desarrollar un circuito que debe regular las mágnitudes fisicas e ídoneas que requiere cada tipo de planta. \n\n## ¿Cómo haremos ésto?\n\nA ciencia cierta todavía no lo sabemos e iremos averigúandolo con el pasar del tiempo; pero nuestra propuesta es controlar una serie de sensores con un microcontrolador (mientras tanto, para las pruebas: el Arduino) y, para no gastar plata innecesariamente lo simularemos en **Proteus**.\n\n## ¿Cómo será la estructura? \n\nA raíz de ver diversos videos de Youtube, nuestra idea es montar una estructura con caños más finos por un lado para subir el agua por una mini bomba y, que ésta caiga, recorriendo así todos los caños donde se alojarán las plantas, los cuales serán más grandes. \nPara ello aprovecharemos una estructura de metal prearmada que realizaron alumnos de Electrónica en el pasado para éste mismo proyecto.\n\nLa estructura será similar a:\n\n//Boceto\n\n---\n\nComo volvemos a repetir: no tomen éste blog como una información completamente veraz respecto a nuestro proyecto; este puede cambiar al, justamente, no tener ni idea de lo que estamos haciendo continúamente.\n*Habla la voz de la experiencia (´･_･`)*"

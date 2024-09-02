@@ -1,0 +1,45 @@
+{
+  "permalink": "/Hidroponia-Project/blog/nota/two",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-4.md",
+  "source": "@site/blog/Notas/2024-8-4.md",
+  "title": "Nota",
+  "description": "Muy seguramente vayamos añadiendo una sección de \"Notas\" para añadir actualizaciones y/o ideas nuevas respecto a qué pensamos integrar y que no; algo hablado con nuestro profesor fue integrar una aplicación que estuvimos desarrollando para el que iba a ser nuestro primer proyecto del año, pero se canceló.",
+  "date": "2024-08-04T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "app",
+      "permalink": "/Hidroponia-Project/blog/tags/app"
+    },
+    {
+      "label": "indoor",
+      "permalink": "/Hidroponia-Project/blog/tags/indoor"
+    }
+  ],
+  "readingTime": 2.055,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Wolfsrudel",
+      "title": "All the Team",
+      "url": "https://github.com/Sartalan/Hidroponia-Project",
+      "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+      "key": "Team"
+    }
+  ],
+  "frontMatter": {
+    "slug": "nota/two",
+    "title": "Nota",
+    "authors": [
+      "Team"
+    ],
+    "tags": [
+      "app",
+      "indoor"
+    ]
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "Comienzo del Proyecto",
+    "permalink": "/Hidroponia-Project/blog/nota/one"
+  }
+}

@@ -44,12 +44,7 @@ export default [
   },
   {
     path: '/Hidroponia-Project/blog',
-    component: ComponentCreator('/Hidroponia-Project/blog', '53c'),
-    exact: true
-  },
-  {
-    path: '/Hidroponia-Project/blog/2024/8/4/',
-    component: ComponentCreator('/Hidroponia-Project/blog/2024/8/4/', 'a4e'),
+    component: ComponentCreator('/Hidroponia-Project/blog', 'b61'),
     exact: true
   },
   {
@@ -59,7 +54,17 @@ export default [
   },
   {
     path: '/Hidroponia-Project/blog/nota/one',
-    component: ComponentCreator('/Hidroponia-Project/blog/nota/one', '983'),
+    component: ComponentCreator('/Hidroponia-Project/blog/nota/one', 'a1b'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/nota/two',
+    component: ComponentCreator('/Hidroponia-Project/blog/nota/two', 'e1f'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/pcb/one',
+    component: ComponentCreator('/Hidroponia-Project/blog/pcb/one', '6a8'),
     exact: true
   },
   {
@@ -68,8 +73,33 @@ export default [
     exact: true
   },
   {
+    path: '/Hidroponia-Project/blog/tags/app',
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/app', '69b'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/tags/code',
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/code', '0f5'),
+    exact: true
+  },
+  {
     path: '/Hidroponia-Project/blog/tags/hola',
-    component: ComponentCreator('/Hidroponia-Project/blog/tags/hola', '83a'),
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/hola', '137'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/tags/indoor',
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/indoor', 'ff6'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/tags/kicad',
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/kicad', '86f'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/tags/proteus',
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/proteus', 'ae7'),
     exact: true
   },
   {
