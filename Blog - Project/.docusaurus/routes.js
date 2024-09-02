@@ -43,6 +43,36 @@ export default [
     exact: true
   },
   {
+    path: '/Hidroponia-Project/blog',
+    component: ComponentCreator('/Hidroponia-Project/blog', '53c'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/2024/8/4/',
+    component: ComponentCreator('/Hidroponia-Project/blog/2024/8/4/', 'a4e'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/archive',
+    component: ComponentCreator('/Hidroponia-Project/blog/archive', 'eb2'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/nota/one',
+    component: ComponentCreator('/Hidroponia-Project/blog/nota/one', '983'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/tags',
+    component: ComponentCreator('/Hidroponia-Project/blog/tags', '0d2'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/tags/hola',
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/hola', '83a'),
+    exact: true
+  },
+  {
     path: '/Hidroponia-Project/markdown-page',
     component: ComponentCreator('/Hidroponia-Project/markdown-page', '90e'),
     exact: true

@@ -1,0 +1,70 @@
+{
+  "blogPosts": [
+    {
+      "id": "/2024/8/4/",
+      "metadata": {
+        "permalink": "/Hidroponia-Project/blog/2024/8/4/",
+        "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2024-8-4.md",
+        "source": "@site/blog/2024-8-4.md",
+        "title": "",
+        "description": "",
+        "date": "2024-08-04T00:00:00.000Z",
+        "tags": [],
+        "readingTime": 0,
+        "hasTruncateMarker": false,
+        "authors": [],
+        "frontMatter": {},
+        "unlisted": false,
+        "nextItem": {
+          "title": "Comienzo del Proyecto",
+          "permalink": "/Hidroponia-Project/blog/nota/one"
+        }
+      },
+      "content": ""
+    },
+    {
+      "id": "nota/one",
+      "metadata": {
+        "permalink": "/Hidroponia-Project/blog/nota/one",
+        "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2024-8-1.md",
+        "source": "@site/blog/2024-8-1.md",
+        "title": "Comienzo del Proyecto",
+        "description": "Hidroponia - Project",
+        "date": "2024-08-01T00:00:00.000Z",
+        "tags": [
+          {
+            "label": "hola",
+            "permalink": "/Hidroponia-Project/blog/tags/hola"
+          }
+        ],
+        "readingTime": 1.34,
+        "hasTruncateMarker": false,
+        "authors": [
+          {
+            "name": "Wolfsrudel",
+            "title": "All the Team",
+            "url": "https://github.com/Sartalan/Hidroponia-Project",
+            "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+            "key": "Team"
+          }
+        ],
+        "frontMatter": {
+          "slug": "nota/one",
+          "title": "Comienzo del Proyecto",
+          "authors": [
+            "Team"
+          ],
+          "tags": [
+            "hola"
+          ]
+        },
+        "unlisted": false,
+        "prevItem": {
+          "title": "",
+          "permalink": "/Hidroponia-Project/blog/2024/8/4/"
+        }
+      },
+      "content": "## Hidroponia - Project\n\nComenzó nuestro **segundo** proyecto del año como una empresa ficticia llamada *Wolfsrudel*.\nSe tratá de una Hidroponia que será -ídoneamente- un sistema de control completo donde se monitoreará cada una de las mágnitudes esenciales que debe de necesitar una planta para desarrollarse adecuadamente. \n\nNuestra meta es la siguiente:\n+ Montar una estructura que servirá para alojar las plantas y les permita una vía de acceso a agua que está siendo bombeada por una bomba, mientras a su vez se debe desarrollar un circuito que debe regular las mágnitudes fisicas e ídoneas que requiere cada tipo de planta. \n\n## ¿Cómo haremos ésto?\n\nA ciencia cierta todavía no lo sabemos e iremos averigúandolo con el pasar del tiempo; pero nuestra propuesta es controlar una serie de sensores con un microcontrolador (mientras tanto, para las pruebas: el Arduino) y, para no gastar plata innecesariamente lo simularemos en **Proteus**.\n\n## ¿Cómo será la estructura? \n\nA raíz de ver diversos videos de Youtube, nuestra idea es montar una estructura con caños más finos por un lado para subir el agua por una mini bomba y, que ésta caiga, recorriendo así todos los caños donde se alojarán las plantas, los cuales serán más grandes. \nPara ello aprovecharemos una estructura de metal prearmada que realizaron alumnos de Electrónica en el pasado para éste mismo proyecto.\n\nLa estructura será similar a:\n\n//Boceto\n\n---\n\nComo volvemos a repetir: no tomen éste blog como una información completamente veraz respecto a nuestro proyecto; este puede cambiar al, justamente, no tener ni idea de lo que estamos haciendo continúamente.\n*Habla la voz de la experiencia (´･_･`)*"
+    }
+  ]
+}

@@ -1,4 +1,15 @@
 {
   "title": "Recent posts",
-  "items": []
+  "items": [
+    {
+      "title": "",
+      "permalink": "/Hidroponia-Project/blog/2024/8/4/",
+      "unlisted": false
+    },
+    {
+      "title": "Comienzo del Proyecto",
+      "permalink": "/Hidroponia-Project/blog/nota/one",
+      "unlisted": false
+    }
+  ]
 }
