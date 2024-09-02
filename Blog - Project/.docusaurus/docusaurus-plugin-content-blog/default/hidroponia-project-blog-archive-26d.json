@@ -43,7 +43,7 @@
         },
         "unlisted": false,
         "nextItem": {
-          "title": "Circuito",
+          "title": "Release",
           "permalink": "/Hidroponia-Project/blog/pcb/one"
         }
       },
@@ -55,7 +55,7 @@
         "permalink": "/Hidroponia-Project/blog/pcb/one",
         "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-8.md",
         "source": "@site/blog/Notas/2024-8-8.md",
-        "title": "Circuito",
+        "title": "Release",
         "description": "Logramos simular y realizar el circuito correctamente en Proteus, para ello hicimos muchas cosas:",
         "date": "2024-08-08T00:00:00.000Z",
         "tags": [
@@ -72,7 +72,7 @@
             "permalink": "/Hidroponia-Project/blog/tags/code"
           }
         ],
-        "readingTime": 0.935,
+        "readingTime": 3.275,
         "hasTruncateMarker": false,
         "authors": [
           {
@@ -85,7 +85,7 @@
         ],
         "frontMatter": {
           "slug": "pcb/one",
-          "title": "Circuito",
+          "title": "Release",
           "authors": [
             "Team"
           ],
@@ -105,7 +105,7 @@
           "permalink": "/Hidroponia-Project/blog/nota/one"
         }
       },
-      "content": "Logramos simular y realizar el circuito correctamente en Proteus, para ello hicimos muchas cosas:\n\n1. Instalamos la *libreria* de Arduino en Proteus para así poder simular correctamente los códigos en este programa, y luego realizamos el circuito correspondiente.\n\n## ¿Qué hicimos?\n\nQuisimos también aprovechar la realización del proyecto para aprobar otra materia; Electrónica Aplicada. La cual nos daba a elegir si simular un circuito o no, así que lo realizamos aplicandolo como solución a un problema en nuestro proyecto; regular la corriente alterna.\n\nSe trata de la realización de un disparo en la señal de alterna a través de la utilización de optoacopladores y triac's.\n\nÉsta es una forma de manipular la onda senoidal de la corriente alterna mediante el uso de la corriente continúa. En nuestro caso se buscó utilizar optoacopladores como medida óptica de separación entre las dos corrientes y, crear un código qué, mediante interrupciones, **supiera** cuando la AC oscila mediante el lado contrario; pero ello suponía otro problema: se debía de saber exactamente y con gran precisión **cuando la onda cruzaba por cero en primer lugar**. Viniendo, recién ahora, lo **interesante** ⊂(◉‿◉)つ."
+      "content": "Logramos simular y realizar el circuito correctamente en Proteus, para ello hicimos muchas cosas:\n\n1. Instalamos la *libreria* de Arduino en Proteus para así poder simular correctamente los códigos en este programa, y luego realizamos el circuito correspondiente.\n\n## ¿Qué hicimos?\n\nQuisimos también aprovechar la realización del proyecto para aprobar otra materia; Electrónica Aplicada. La cual nos daba a elegir si simular un circuito o no, así que lo realizamos aplicandolo como solución a un problema en nuestro proyecto; regular la corriente alterna.\n\nSe trata de la realización de un disparo en la señal de alterna a través de la utilización de optoacopladores y triac's.\n\nÉsta es una forma de manipular la onda senoidal de la corriente alterna mediante el uso de la corriente continúa. En nuestro caso se buscó utilizar optoacopladores como medida óptica de separación entre las dos corrientes y, crear un código qué, mediante interrupciones, **supiera** cuando la AC oscila mediante el lado contrario; pero ello suponía otro problema: se debía de saber exactamente y con gran precisión **cuando la onda cruzaba por cero en primer lugar**. Viniendo, recién ahora, lo **interesante** ⊂(◉‿◉)つ.\n\n---\n\n## Explicación \n\nEn primeras antes de hablar del código debemos de hablar del circuito; consta de dos partes: una de monitoreo y otra de control, en la primera se busca tener una lectura constante de la onda senoidal para determinar sí esta cruza por cero, y en la segunda se busca \"disparar\" hacía la onda senoidal para cortarla, y poder así **regular su intensidad**\n\n¿Cómo la parte de control logra esto?\n\nPara poder determinar cuando disparar o no por el código, básicamente se la divide a la onda senoidal en varias partes.\n1. Primero calculando su periodo, utilizando para ello la cuenta:\n\n   ![Calculo Uno](../Ref/CalculoUno.png)\n\n2. Luego, se la divide en 360 partes para así tener un ciclo entero.\n\n   ![Calculo Dos](../Ref/CalculoDos.png)\n\n+ Una vez tenidos estos datos podemos asumir diversas cosas:\n\n1. Un semiciclo de nuestra onda es equivalente a: 360/2.\n2. Cada 46μs recorremos 1° de nuestra onda.\n3. 46μs x (360/2) Es equivalente al recorrido **total** de tiempo que conlleva un solo semiciclo.\n\nAhora sí, comencemos con el código. \n\n```cpp\n #include <TimerOne.h>\n    int GradoElectrico = 0;\n    \n    void GradoZero(){\n      GradoElectrico = 0;\n    }\n\n    void Disparo() {\n      GradoElectrico++;\n\n      // Resto de instrucciones...\n      // (Instrucciones de cuando disparar)\n      \n    }\n    \n    void setup(){\n      attachInterrupt(0, GradoZero, CHANGE);\n      Timer1.initialize(46);\n      Timer1.attachInterrupt(Disparo);\n    }\n\n    void loop(){ \n        // Resto de instrucciones... \n    }\n    \n    ```\n\n### Básicamente aplicamos todo lo aprendido: \n\nComencemos con la función Setup:\n\n```cpp\n    attachInterrupt(0,GradoZero,CHANGE);\n```\n\nEsta linea de código pertenece a la libreria de TimerOne, y se encarga de inicializar una entrada de datos en el pin 0 (que por default es el 2 y, que cada vez que cambie de HIGH a LOW o viceversa, ejecuta la función GradoZero(), la cual reestablece los valores de la variable GradoElectrico.\n\n```cpp\n    Timer1.initialize(46);\n```\n\nLe indicamos al programa que inicialice un temporizador de 46μs.\n\n```cpp\n    Timer1.attachInterrupt(Disparo)\n```\n\n\nCada vez que finaliza el temporizador de 46μs se ejecuta la función Disparo()\n\nEn resumidas cuentas, el código se encarga de ejecutar un cronometro que cada 46μs ejecuta una función, la cuál aumentará una variable int; pero, recién llegado a un valor LOW en la onda, es decir 180° o, 46μs x 180° de tiempo; el cronometro volverá a reiniciarse y la variable de grados también lo hará junto con ella.\n\n\nEs decir, este simple código tiene la posibilidad de manipular por completo un ciclo de nuestra onda senoidal partiendola a ésta en 180° al detectar el cruce por cero antes de terminar el ciclo completo. Pudiendo con ello ejecutar scripts de código que tan solo tengan que variar entre los valores de 1 - 180 de la variable int de GradoElectrico y, así, determinando cuando disparar dentro del semiciclo.\n- Nota: Esta es una versión *muy* básica del accionamiento del disparo, pero sirve.\n\n### Componentes | Datasheet -por ahora-\n\n1. [Optoacoplador - MOC3021](https://pdf1.alldatasheet.es/datasheet-pdf/view/53870/FAIRCHILD/MOC3021.html)\n2. [Optoacoplador - 4N25](https://pdf1.alldatasheet.es/datasheet-pdf/view/158124/VISHAY/4N25.html)\n3. [Triac - BT139](https://pdf1.alldatasheet.es/datasheet-pdf/view/16787/PHILIPS/BT139-600.html)"
     },
     {
       "id": "nota/one",
@@ -145,7 +145,7 @@
         },
         "unlisted": false,
         "prevItem": {
-          "title": "Circuito",
+          "title": "Release",
           "permalink": "/Hidroponia-Project/blog/pcb/one"
         }
       },

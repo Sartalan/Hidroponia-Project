@@ -2,7 +2,7 @@
   "permalink": "/Hidroponia-Project/blog/pcb/one",
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-8.md",
   "source": "@site/blog/Notas/2024-8-8.md",
-  "title": "Circuito",
+  "title": "Release",
   "description": "Logramos simular y realizar el circuito correctamente en Proteus, para ello hicimos muchas cosas:",
   "date": "2024-08-08T00:00:00.000Z",
   "tags": [
@@ -19,7 +19,7 @@
       "permalink": "/Hidroponia-Project/blog/tags/code"
     }
   ],
-  "readingTime": 0.935,
+  "readingTime": 3.275,
   "hasTruncateMarker": false,
   "authors": [
     {
@@ -32,7 +32,7 @@
   ],
   "frontMatter": {
     "slug": "pcb/one",
-    "title": "Circuito",
+    "title": "Release",
     "authors": [
       "Team"
     ],
