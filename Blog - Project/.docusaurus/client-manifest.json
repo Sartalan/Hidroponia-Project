@@ -1,0 +1,765 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "2237": [
+      2237
+    ],
+    "2954": [
+      1869,
+      3249,
+      3911,
+      4813,
+      7643,
+      2954
+    ],
+    "3678": [
+      1869,
+      2634,
+      3678
+    ],
+    "3911": [
+      1869,
+      2954,
+      3249,
+      4813,
+      6061,
+      7643,
+      8401,
+      3911
+    ],
+    "17174436": [
+      8468
+    ],
+    "17896441": [
+      1869,
+      3911,
+      8401
+    ],
+    "main": [
+      1869,
+      5354,
+      8792
+    ],
+    "runtime~main": [
+      1869,
+      8792,
+      5354
+    ],
+    "01a85c17": [
+      1869,
+      8209
+    ],
+    "0a81ccb5": [
+      4038
+    ],
+    "0e384e19": [
+      3976
+    ],
+    "0e83a5eb": [
+      9974
+    ],
+    "13f4a5a6": [
+      9634
+    ],
+    "17a9d887": [
+      7794
+    ],
+    "1c6c472e": [
+      5910
+    ],
+    "1f391b9e": [
+      1869,
+      3911,
+      6061
+    ],
+    "268c8ca0": [
+      1136
+    ],
+    "30460d1c": [
+      7524
+    ],
+    "31fd450b": [
+      9786
+    ],
+    "393be207": [
+      4134
+    ],
+    "585766c2": [
+      6695
+    ],
+    "5e95c892": [
+      9647
+    ],
+    "5f5c3d43": [
+      8208
+    ],
+    "6099ac2a": [
+      3684
+    ],
+    "6875c492": [
+      1869,
+      2954,
+      3911,
+      4813
+    ],
+    "69e8e3f5": [
+      4888
+    ],
+    "6feb941f": [
+      4640
+    ],
+    "73544a9c": [
+      5335
+    ],
+    "7cd37846": [
+      481
+    ],
+    "7fefa7bb": [
+      1
+    ],
+    "814f3328": [
+      7472
+    ],
+    "8dc5eadd": [
+      2981
+    ],
+    "935f2afb": [
+      8581
+    ],
+    "95344bed": [
+      173
+    ],
+    "9dc4da4d": [
+      8688
+    ],
+    "9e4087bc": [
+      2711
+    ],
+    "a5372cba": [
+      8177
+    ],
+    "a6aa9e1f": [
+      1869,
+      2954,
+      3911,
+      7643
+    ],
+    "a77da264": [
+      2681
+    ],
+    "a796e023": [
+      2652
+    ],
+    "a7bd4aaa": [
+      7098
+    ],
+    "a94703ab": [
+      1869,
+      9048
+    ],
+    "acecf23e": [
+      1903
+    ],
+    "adadf41c": [
+      881
+    ],
+    "b110f73f": [
+      4117
+    ],
+    "b230d5ae": [
+      6469
+    ],
+    "b645fdfd": [
+      6282
+    ],
+    "b8896f6b": [
+      6456
+    ],
+    "c1020a80": [
+      1816
+    ],
+    "c4f5d8e4": [
+      1869,
+      3678,
+      2634
+    ],
+    "ca7a949b": [
+      7549
+    ],
+    "cb845617": [
+      7893
+    ],
+    "ccc49370": [
+      1869,
+      2954,
+      3911,
+      3249
+    ],
+    "ce1606d6": [
+      8406
+    ],
+    "e32b174f": [
+      4085
+    ],
+    "f06c6420": [
+      6148
+    ],
+    "f85c19e5": [
+      293
+    ],
+    "f99ac290": [
+      2210
+    ],
+    "styles": [
+      2634,
+      2954,
+      3249,
+      3678,
+      3911,
+      4813,
+      5354,
+      6061,
+      7643,
+      8209,
+      8401,
+      8792,
+      9048,
+      1869
+    ]
+  },
+  "assets": {
+    "1": {
+      "js": [
+        {
+          "file": "assets/js/7fefa7bb.4e99b76c.js",
+          "hash": "c10ed949eaa0f029",
+          "publicPath": "/Hidroponia-Project/assets/js/7fefa7bb.4e99b76c.js"
+        }
+      ]
+    },
+    "173": {
+      "js": [
+        {
+          "file": "assets/js/95344bed.e490153b.js",
+          "hash": "2f0e0168be94ea57",
+          "publicPath": "/Hidroponia-Project/assets/js/95344bed.e490153b.js"
+        }
+      ]
+    },
+    "293": {
+      "js": [
+        {
+          "file": "assets/js/f85c19e5.e7589742.js",
+          "hash": "e03620bf21056445",
+          "publicPath": "/Hidroponia-Project/assets/js/f85c19e5.e7589742.js"
+        }
+      ]
+    },
+    "481": {
+      "js": [
+        {
+          "file": "assets/js/7cd37846.740b1a40.js",
+          "hash": "58dd31d8ce755d11",
+          "publicPath": "/Hidroponia-Project/assets/js/7cd37846.740b1a40.js"
+        }
+      ]
+    },
+    "881": {
+      "js": [
+        {
+          "file": "assets/js/adadf41c.7f4c85d4.js",
+          "hash": "d2f38f04494432f1",
+          "publicPath": "/Hidroponia-Project/assets/js/adadf41c.7f4c85d4.js"
+        }
+      ]
+    },
+    "1136": {
+      "js": [
+        {
+          "file": "assets/js/268c8ca0.f9132bba.js",
+          "hash": "dec0d2b637d570d5",
+          "publicPath": "/Hidroponia-Project/assets/js/268c8ca0.f9132bba.js"
+        }
+      ]
+    },
+    "1816": {
+      "js": [
+        {
+          "file": "assets/js/c1020a80.75a231f5.js",
+          "hash": "8f53a91049d391ae",
+          "publicPath": "/Hidroponia-Project/assets/js/c1020a80.75a231f5.js"
+        }
+      ]
+    },
+    "1869": {
+      "css": [
+        {
+          "file": "assets/css/styles.eee4bc28.css",
+          "hash": "8d41a049b4d68b51",
+          "publicPath": "/Hidroponia-Project/assets/css/styles.eee4bc28.css"
+        }
+      ]
+    },
+    "1903": {
+      "js": [
+        {
+          "file": "assets/js/acecf23e.9876f250.js",
+          "hash": "879644ca53a34ab4",
+          "publicPath": "/Hidroponia-Project/assets/js/acecf23e.9876f250.js"
+        }
+      ]
+    },
+    "2210": {
+      "js": [
+        {
+          "file": "assets/js/f99ac290.2879bc05.js",
+          "hash": "91fa79083f818313",
+          "publicPath": "/Hidroponia-Project/assets/js/f99ac290.2879bc05.js"
+        }
+      ]
+    },
+    "2237": {
+      "js": [
+        {
+          "file": "assets/js/2237.df6d52af.js",
+          "hash": "f62badf3805af397",
+          "publicPath": "/Hidroponia-Project/assets/js/2237.df6d52af.js"
+        }
+      ]
+    },
+    "2634": {
+      "js": [
+        {
+          "file": "assets/js/c4f5d8e4.b2b3b1aa.js",
+          "hash": "57829f0c7d3be467",
+          "publicPath": "/Hidroponia-Project/assets/js/c4f5d8e4.b2b3b1aa.js"
+        }
+      ]
+    },
+    "2652": {
+      "js": [
+        {
+          "file": "assets/js/a796e023.47ff56cc.js",
+          "hash": "691c75880f1aafde",
+          "publicPath": "/Hidroponia-Project/assets/js/a796e023.47ff56cc.js"
+        }
+      ]
+    },
+    "2681": {
+      "js": [
+        {
+          "file": "assets/js/a77da264.48618164.js",
+          "hash": "161bf978e40fa51d",
+          "publicPath": "/Hidroponia-Project/assets/js/a77da264.48618164.js"
+        }
+      ]
+    },
+    "2711": {
+      "js": [
+        {
+          "file": "assets/js/9e4087bc.d563f2f3.js",
+          "hash": "40da88c68a96e8f8",
+          "publicPath": "/Hidroponia-Project/assets/js/9e4087bc.d563f2f3.js"
+        }
+      ]
+    },
+    "2954": {
+      "js": [
+        {
+          "file": "assets/js/2954.7dc749ff.js",
+          "hash": "57ac884be8a30030",
+          "publicPath": "/Hidroponia-Project/assets/js/2954.7dc749ff.js"
+        }
+      ]
+    },
+    "2981": {
+      "js": [
+        {
+          "file": "assets/js/8dc5eadd.372fa31f.js",
+          "hash": "9ca6d548cd2c274e",
+          "publicPath": "/Hidroponia-Project/assets/js/8dc5eadd.372fa31f.js"
+        }
+      ]
+    },
+    "3249": {
+      "js": [
+        {
+          "file": "assets/js/ccc49370.9584aa9b.js",
+          "hash": "4d13e443646d503d",
+          "publicPath": "/Hidroponia-Project/assets/js/ccc49370.9584aa9b.js"
+        }
+      ]
+    },
+    "3678": {
+      "js": [
+        {
+          "file": "assets/js/3678.dc30d727.js",
+          "hash": "82c934e918cde80d",
+          "publicPath": "/Hidroponia-Project/assets/js/3678.dc30d727.js"
+        }
+      ]
+    },
+    "3684": {
+      "js": [
+        {
+          "file": "assets/js/6099ac2a.a8bf14d7.js",
+          "hash": "558d859be6064d8a",
+          "publicPath": "/Hidroponia-Project/assets/js/6099ac2a.a8bf14d7.js"
+        }
+      ]
+    },
+    "3911": {
+      "js": [
+        {
+          "file": "assets/js/3911.3a50d176.js",
+          "hash": "6fa6ea848841d917",
+          "publicPath": "/Hidroponia-Project/assets/js/3911.3a50d176.js"
+        }
+      ]
+    },
+    "3976": {
+      "js": [
+        {
+          "file": "assets/js/0e384e19.83bb8174.js",
+          "hash": "05a074fc0b3b994c",
+          "publicPath": "/Hidroponia-Project/assets/js/0e384e19.83bb8174.js"
+        }
+      ]
+    },
+    "4038": {
+      "js": [
+        {
+          "file": "assets/js/0a81ccb5.3577c00a.js",
+          "hash": "005d83f4e6ebbc4b",
+          "publicPath": "/Hidroponia-Project/assets/js/0a81ccb5.3577c00a.js"
+        }
+      ]
+    },
+    "4085": {
+      "js": [
+        {
+          "file": "assets/js/e32b174f.e622dcb1.js",
+          "hash": "d13c71185217b711",
+          "publicPath": "/Hidroponia-Project/assets/js/e32b174f.e622dcb1.js"
+        }
+      ]
+    },
+    "4117": {
+      "js": [
+        {
+          "file": "assets/js/b110f73f.9a6b903f.js",
+          "hash": "20b7b198ceb544d7",
+          "publicPath": "/Hidroponia-Project/assets/js/b110f73f.9a6b903f.js"
+        }
+      ]
+    },
+    "4134": {
+      "js": [
+        {
+          "file": "assets/js/393be207.209713f5.js",
+          "hash": "80cc173a80b4002c",
+          "publicPath": "/Hidroponia-Project/assets/js/393be207.209713f5.js"
+        }
+      ]
+    },
+    "4640": {
+      "js": [
+        {
+          "file": "assets/js/6feb941f.76aaeb0f.js",
+          "hash": "9fc7e73634c17bfe",
+          "publicPath": "/Hidroponia-Project/assets/js/6feb941f.76aaeb0f.js"
+        }
+      ]
+    },
+    "4813": {
+      "js": [
+        {
+          "file": "assets/js/6875c492.c4f6c30a.js",
+          "hash": "b90b9b1cd4f5ab43",
+          "publicPath": "/Hidroponia-Project/assets/js/6875c492.c4f6c30a.js"
+        }
+      ]
+    },
+    "4888": {
+      "js": [
+        {
+          "file": "assets/js/69e8e3f5.47205a37.js",
+          "hash": "de7c061e2dff7397",
+          "publicPath": "/Hidroponia-Project/assets/js/69e8e3f5.47205a37.js"
+        }
+      ]
+    },
+    "5335": {
+      "js": [
+        {
+          "file": "assets/js/73544a9c.c180a995.js",
+          "hash": "7b3a5a52ed9d18d8",
+          "publicPath": "/Hidroponia-Project/assets/js/73544a9c.c180a995.js"
+        }
+      ]
+    },
+    "5354": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.d09c2846.js",
+          "hash": "7ba6d810d78da969",
+          "publicPath": "/Hidroponia-Project/assets/js/runtime~main.d09c2846.js"
+        }
+      ]
+    },
+    "5910": {
+      "js": [
+        {
+          "file": "assets/js/1c6c472e.4e86426e.js",
+          "hash": "985a42d6ff2b18a5",
+          "publicPath": "/Hidroponia-Project/assets/js/1c6c472e.4e86426e.js"
+        }
+      ]
+    },
+    "6061": {
+      "js": [
+        {
+          "file": "assets/js/1f391b9e.cde5b8cc.js",
+          "hash": "722f4fc836fa7014",
+          "publicPath": "/Hidroponia-Project/assets/js/1f391b9e.cde5b8cc.js"
+        }
+      ]
+    },
+    "6148": {
+      "js": [
+        {
+          "file": "assets/js/f06c6420.2318e852.js",
+          "hash": "09cf5f624cec38fe",
+          "publicPath": "/Hidroponia-Project/assets/js/f06c6420.2318e852.js"
+        }
+      ]
+    },
+    "6282": {
+      "js": [
+        {
+          "file": "assets/js/b645fdfd.d9eb6aa2.js",
+          "hash": "853f25fe82df8cf4",
+          "publicPath": "/Hidroponia-Project/assets/js/b645fdfd.d9eb6aa2.js"
+        }
+      ]
+    },
+    "6456": {
+      "js": [
+        {
+          "file": "assets/js/b8896f6b.540ea937.js",
+          "hash": "a0201ee1efe4a868",
+          "publicPath": "/Hidroponia-Project/assets/js/b8896f6b.540ea937.js"
+        }
+      ]
+    },
+    "6469": {
+      "js": [
+        {
+          "file": "assets/js/b230d5ae.8c3584c5.js",
+          "hash": "faf59cc3e86edd0a",
+          "publicPath": "/Hidroponia-Project/assets/js/b230d5ae.8c3584c5.js"
+        }
+      ]
+    },
+    "6695": {
+      "js": [
+        {
+          "file": "assets/js/585766c2.61380cef.js",
+          "hash": "52e92df240e7a700",
+          "publicPath": "/Hidroponia-Project/assets/js/585766c2.61380cef.js"
+        }
+      ]
+    },
+    "7098": {
+      "js": [
+        {
+          "file": "assets/js/a7bd4aaa.094be0b2.js",
+          "hash": "aa082e51a668a2b0",
+          "publicPath": "/Hidroponia-Project/assets/js/a7bd4aaa.094be0b2.js"
+        }
+      ]
+    },
+    "7472": {
+      "js": [
+        {
+          "file": "assets/js/814f3328.46143b82.js",
+          "hash": "ad442c40f491bea7",
+          "publicPath": "/Hidroponia-Project/assets/js/814f3328.46143b82.js"
+        }
+      ]
+    },
+    "7524": {
+      "js": [
+        {
+          "file": "assets/js/30460d1c.6c480d0b.js",
+          "hash": "2b043b1a2bcf2132",
+          "publicPath": "/Hidroponia-Project/assets/js/30460d1c.6c480d0b.js"
+        }
+      ]
+    },
+    "7549": {
+      "js": [
+        {
+          "file": "assets/js/ca7a949b.f1be8226.js",
+          "hash": "43f34214f98f345b",
+          "publicPath": "/Hidroponia-Project/assets/js/ca7a949b.f1be8226.js"
+        }
+      ]
+    },
+    "7643": {
+      "js": [
+        {
+          "file": "assets/js/a6aa9e1f.78cad9c2.js",
+          "hash": "6d083d4daba6c1f8",
+          "publicPath": "/Hidroponia-Project/assets/js/a6aa9e1f.78cad9c2.js"
+        }
+      ]
+    },
+    "7794": {
+      "js": [
+        {
+          "file": "assets/js/17a9d887.c3fa7635.js",
+          "hash": "d0743eb8580f2526",
+          "publicPath": "/Hidroponia-Project/assets/js/17a9d887.c3fa7635.js"
+        }
+      ]
+    },
+    "7893": {
+      "js": [
+        {
+          "file": "assets/js/cb845617.f1e6b025.js",
+          "hash": "7e9815f7203280a9",
+          "publicPath": "/Hidroponia-Project/assets/js/cb845617.f1e6b025.js"
+        }
+      ]
+    },
+    "8177": {
+      "js": [
+        {
+          "file": "assets/js/a5372cba.95ab760c.js",
+          "hash": "f24877d9332e8645",
+          "publicPath": "/Hidroponia-Project/assets/js/a5372cba.95ab760c.js"
+        }
+      ]
+    },
+    "8208": {
+      "js": [
+        {
+          "file": "assets/js/5f5c3d43.a6858ade.js",
+          "hash": "d302b1b8dfdd010a",
+          "publicPath": "/Hidroponia-Project/assets/js/5f5c3d43.a6858ade.js"
+        }
+      ]
+    },
+    "8209": {
+      "js": [
+        {
+          "file": "assets/js/01a85c17.f534dabb.js",
+          "hash": "b1837f9eaac13dfd",
+          "publicPath": "/Hidroponia-Project/assets/js/01a85c17.f534dabb.js"
+        }
+      ]
+    },
+    "8401": {
+      "js": [
+        {
+          "file": "assets/js/17896441.d4765298.js",
+          "hash": "49cc419146413499",
+          "publicPath": "/Hidroponia-Project/assets/js/17896441.d4765298.js"
+        }
+      ]
+    },
+    "8406": {
+      "js": [
+        {
+          "file": "assets/js/ce1606d6.018173d1.js",
+          "hash": "bd5fa199c514d555",
+          "publicPath": "/Hidroponia-Project/assets/js/ce1606d6.018173d1.js"
+        }
+      ]
+    },
+    "8468": {
+      "js": [
+        {
+          "file": "assets/js/17174436.88bd7dd9.js",
+          "hash": "0b458f47a38d96f5",
+          "publicPath": "/Hidroponia-Project/assets/js/17174436.88bd7dd9.js"
+        }
+      ]
+    },
+    "8581": {
+      "js": [
+        {
+          "file": "assets/js/935f2afb.919e8017.js",
+          "hash": "f2b07b37454caa67",
+          "publicPath": "/Hidroponia-Project/assets/js/935f2afb.919e8017.js"
+        }
+      ]
+    },
+    "8688": {
+      "js": [
+        {
+          "file": "assets/js/9dc4da4d.73597036.js",
+          "hash": "4d620654d870715f",
+          "publicPath": "/Hidroponia-Project/assets/js/9dc4da4d.73597036.js"
+        }
+      ]
+    },
+    "8792": {
+      "js": [
+        {
+          "file": "assets/js/main.2437fee5.js",
+          "hash": "52f0e5960f013879",
+          "publicPath": "/Hidroponia-Project/assets/js/main.2437fee5.js"
+        }
+      ]
+    },
+    "9048": {
+      "js": [
+        {
+          "file": "assets/js/a94703ab.44e0f7bc.js",
+          "hash": "6d3bc097b97cf1aa",
+          "publicPath": "/Hidroponia-Project/assets/js/a94703ab.44e0f7bc.js"
+        }
+      ]
+    },
+    "9634": {
+      "js": [
+        {
+          "file": "assets/js/13f4a5a6.e87d7585.js",
+          "hash": "f8acd88d31125d41",
+          "publicPath": "/Hidroponia-Project/assets/js/13f4a5a6.e87d7585.js"
+        }
+      ]
+    },
+    "9647": {
+      "js": [
+        {
+          "file": "assets/js/5e95c892.2aa368be.js",
+          "hash": "f2e5d197c10cd973",
+          "publicPath": "/Hidroponia-Project/assets/js/5e95c892.2aa368be.js"
+        }
+      ]
+    },
+    "9786": {
+      "js": [
+        {
+          "file": "assets/js/31fd450b.f510b694.js",
+          "hash": "b1ba0a44ebf8a9dc",
+          "publicPath": "/Hidroponia-Project/assets/js/31fd450b.f510b694.js"
+        }
+      ]
+    },
+    "9974": {
+      "js": [
+        {
+          "file": "assets/js/0e83a5eb.b362f51a.js",
+          "hash": "455518a295511c49",
+          "publicPath": "/Hidroponia-Project/assets/js/0e83a5eb.b362f51a.js"
+        }
+      ]
+    }
+  }
+}
