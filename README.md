@@ -1,82 +1,33 @@
-# Hidroponia-Project
+# Hidroponia - Project 
+## Proyecto
+"Hidroponia - Project" Es un proyecto creado por la empresa ficticia "Wolfsrudel" (Integrantes en el pie de página), y consiste básicamente de una Hidroponia completamente monitoreada, con todo lo que ello conlleva; Sensores, Protocolos de comunicación, Servidores, Linux y... *mucho código*.
 
-Proyecto creado por Electrónica. 
+Nuestro proyecto consistirá de un circuito que controlará un número indeterminado de sensores *-aún-* y se encargará de enviarselos a una Raspberry Pi.
+Dicha Raspberry alojará un servidor web (nginx) debido a que utilizamos un software Open Source llamado *MyCodo* el cuál es una aplicación web ligada a su propia base de datos (influxDB) quién alojará los datos para mostrarlos en pantalla para manipularlos/monitorearlos; y también servirá como una API y Endpoint para poder enviarle los datos de monitoreo a una aplicación de celular creada con React Native. Dicha aplicación mandará una *request* al servidor y éste le devolverá una *response* con los datos que la app solicitará en formato *JSON*. Todo utilizando el protocolo de comunicación wifi **HTTP**. 
 
-Se trata de una hidroponia que medirá diferentes mágnitudes del agua para tener  control sobre ella.
-Se busca - *idoneamente* - el control absoluto de ésta.
+Básicamente, nuestro objetivo es *automatizar y monitorear* toda magnitud física imprescindible de una Hidroponia.  
 
-## Código. Explicación.
+### Sobre el Repositorio 
 
-En primeras antes de hablar del código debemos de hablar del circuito; consta de dos partes: una de monitoreo y otra de control, en la primera se busca tener una lectura constante de la onda senoidal para determinar sí esta cruza por cero, y en la segunda se busca "disparar" hacía la onda senoidal para cortarla, y poder así **regular su intensidad**
+El repositorio consta de 3 ramales principales:
+1. **main**
+   + Es donde se añadirá todo lo correspondiente al Hardware; Circuitos, Simulaciones, Modelos 3D e inclusive el propio código de los microcontroladores.
+2. **App**
+   + Es donde se desarrollará la aplicación de celular paso por paso.  
+3. **Blog-Deploy**
+   + Es donde se alojará toda la documentación en producción de nuestro proyecto en *órden crónologico*. Puede ser importante sí se quiere imitar nuestro proyecto; Hay diversas anotaciones que no estarán en el informe final al no necesitar un seguimiento en éste.
+  
+El detalle del funcionamiento de cada partes se encuentra **en su mismo ramal**.
+Sí busca entender su funcionamiento a mayor profundidad **lea su propio README**
 
-¿Cómo la parte de control logra esto?
+### Sobre **Wolfsrudel**
 
-Para poder determinar cuando disparar o no por el código, básicamente se la divide a la onda senoidal en varias partes.
-Primero calculando su periodo, utilizando para ello la cuenta:
+Wolfsrudel es una empresa *ficticia* creada por nosotros a pedido de la materia. Realmente somos un grupo de tres estudiantes de 7° año que buscan aprobar una materia. Así que se asumirá el rol con la seriedad la cual se espera de nosotros, motivo por el cual, en parte: creamos toda una documentación del desarrollo de nuestro proyecto, la cual en ciertas ocasiones pierde seriedad; la experiencia de hacer un proyecto de tal magnitud *requiere diversión* y nosotros defendemos esas ideas.
 
-<p align="center">
-  <img src="./Ref/CalculoUnoUno.png" />
-</p>
+### Somos 
 
-+ Luego, se la divide en 360 partes para así tener un ciclo entero.
+1. Barrera Alan 
+2. Fariña Jorge
+3. Dominguez Gabriel
 
-<p align="center">
-  <img src="./Ref/CalculoDosDos.png" />
-</p>
-
-+ Una vez tenidos estos datos podemos asumir diversas cosas:
- 1. Un semiciclo de nuestra onda es equivalente a: 360/2.
- 2. Cada 46μs recorremos 1° de nuestra onda.
- 3. 46μs x (360/2) Es equivalente al recorrido **total** de tiempo que conlleva un solo semiciclo.
-
-Ahora sí, comencemos con el código. 
-
-    #include <TimerOne.h>
-    int GradoElectrico = 0;
-    
-    void GradoZero(){
-      GradoElectrico = 0;
-    }
-
-    void Disparo() {
-      GradoElectrico++;
-
-      // Resto de instrucciones...
-      // (Instrucciones de cuando disparar)
-      
-    }
-    
-    void setup(){
-      attachInterrupt(0, GradoZero, CHANGE);
-      Timer1.initialize(46);
-      Timer1.attachInterrupt(Disparo);
-    }
-
-    void loop(){ // Resto de instrucciones...}
-
-Básicamente aplicamos todo lo aprendido: 
-Comencemos con la función Setup:
-
-    attachInterrupt(0,GradoZero,CHANGE);
-      
-Esta linea de código pertenece a la libreria de TimerOne, y se encarga de inicializar una entrada de datos en el pin 0 (que por default es el 2 y, que cada vez que cambie de HIGH a LOW o viceversa, ejecuta la función GradoZero(), la cual reestablece los valores de la variable GradoElectrico.
-
-      Timer1.initialize(46);
-      
-Le indicamos al programa que inicialice un temporizador de 46μs.
-
-    Timer1.attachInterrupt(Disparo)
-          
-Cada vez que finaliza el temporizador de 46μs se ejecuta la función Disparo()
-
-En resumidas cuentas, el código se encarga de ejecutar un cronometro que cada 46μs ejecuta una función, la cuál aumentará una variable int; pero, recién llegado a un valor LOW en la onda, es decir 180° o, 46μs x 180° de tiempo; el cronometro volverá a reiniciarse y la variable de grados también lo hará junto con ella.
-
-
-Es decir, este simple código tiene la posibilidad de manipular por completo un ciclo de nuestra onda senoidal partiendola a ésta en 180° al detectar el cruce por cero antes de terminar el ciclo completo. Pudiendo con ello ejecutar scripts de código que tan solo tengan que variar entre los valores de 1 - 180 de la variable int de GradoElectrico y, así, determinando cuando disparar dentro del semiciclo.
-- Nota: Esta es una versión *muy* básica del accionamiento del disparo, pero sirve.
-
-## Componentes | Datasheet
-
-1. [Optoacoplador - MOC3021](https://pdf1.alldatasheet.es/datasheet-pdf/view/53870/FAIRCHILD/MOC3021.html)
-2. [Optoacoplador - 4N25](https://pdf1.alldatasheet.es/datasheet-pdf/view/158124/VISHAY/4N25.html)
-3. [Triac - BT139](https://pdf1.alldatasheet.es/datasheet-pdf/view/16787/PHILIPS/BT139-600.html)
+Todos alumnos de 7°3° Electrónica | Año: 2024
