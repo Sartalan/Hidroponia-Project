@@ -1,9 +1,9 @@
 {
-  "permalink": "/Hidroponia-Project/blog/nota/two",
+  "permalink": "/Hidroponia-Project/blog/note/one",
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-11.md",
   "source": "@site/blog/Notas/2024-8-11.md",
-  "title": "Nota",
-  "description": "Muy seguramente vayamos añadiendo una sección de \"Notas\" para añadir actualizaciones y/o ideas nuevas respecto a qué pensamos integrar y que no; algo hablado con nuestro profesor fue integrar una aplicación que estuvimos desarrollando para el que iba a ser nuestro primer proyecto del año, pero se canceló.",
+  "title": "Comentarios | App",
+  "description": "Notas",
   "date": "2024-08-11T00:00:00.000Z",
   "tags": [
     {
@@ -15,7 +15,7 @@
       "permalink": "/Hidroponia-Project/blog/tags/indoor"
     }
   ],
-  "readingTime": 2.055,
+  "readingTime": 2.065,
   "hasTruncateMarker": false,
   "authors": [
     {
@@ -27,8 +27,8 @@
     }
   ],
   "frontMatter": {
-    "slug": "nota/two",
-    "title": "Nota",
+    "slug": "note/one",
+    "title": "Comentarios | App",
     "authors": [
       "Team"
     ],
@@ -38,8 +38,12 @@
     ]
   },
   "unlisted": false,
+  "prevItem": {
+    "title": "Actualización [ 3 ] | MyCodo",
+    "permalink": "/Hidroponia-Project/blog/release/three"
+  },
   "nextItem": {
-    "title": "Release",
-    "permalink": "/Hidroponia-Project/blog/pcb/one"
+    "title": "Actualización [ 1 ] | Circuito - Simulación",
+    "permalink": "/Hidroponia-Project/blog/release/two"
   }
 }

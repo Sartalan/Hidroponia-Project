@@ -1,0 +1,40 @@
+{
+  "permalink": "/Hidroponia-Project/blog/release/seven",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-9-4.md",
+  "source": "@site/blog/Notas/2024-9-4.md",
+  "title": "Actualización [ 7 ] | Avances",
+  "description": "Avances",
+  "date": "2024-09-04T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "épico",
+      "permalink": "/Hidroponia-Project/blog/tags/epico"
+    }
+  ],
+  "readingTime": 1.115,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Alan Barrera",
+      "title": "Software Developer",
+      "url": "https://github.com/sartalan",
+      "imageURL": "https://github.com/sartalan.png",
+      "key": "Alan"
+    }
+  ],
+  "frontMatter": {
+    "slug": "release/seven",
+    "title": "Actualización [ 7 ] | Avances",
+    "authors": [
+      "Alan"
+    ],
+    "tags": [
+      "épico"
+    ]
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "Actualización [ 6 ] | Comunicación de Dispositivos",
+    "permalink": "/Hidroponia-Project/blog/release/six"
+  }
+}

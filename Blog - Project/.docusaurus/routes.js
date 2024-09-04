@@ -44,7 +44,7 @@ export default [
   },
   {
     path: '/Hidroponia-Project/blog',
-    component: ComponentCreator('/Hidroponia-Project/blog', 'b61'),
+    component: ComponentCreator('/Hidroponia-Project/blog', '302'),
     exact: true
   },
   {
@@ -53,18 +53,43 @@ export default [
     exact: true
   },
   {
-    path: '/Hidroponia-Project/blog/nota/one',
-    component: ComponentCreator('/Hidroponia-Project/blog/nota/one', 'a1b'),
+    path: '/Hidroponia-Project/blog/note/one',
+    component: ComponentCreator('/Hidroponia-Project/blog/note/one', 'ce2'),
     exact: true
   },
   {
-    path: '/Hidroponia-Project/blog/nota/two',
-    component: ComponentCreator('/Hidroponia-Project/blog/nota/two', 'e1f'),
+    path: '/Hidroponia-Project/blog/release/five',
+    component: ComponentCreator('/Hidroponia-Project/blog/release/five', '08f'),
     exact: true
   },
   {
-    path: '/Hidroponia-Project/blog/pcb/one',
-    component: ComponentCreator('/Hidroponia-Project/blog/pcb/one', '6a8'),
+    path: '/Hidroponia-Project/blog/release/four',
+    component: ComponentCreator('/Hidroponia-Project/blog/release/four', 'faa'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/release/one',
+    component: ComponentCreator('/Hidroponia-Project/blog/release/one', '4b9'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/release/seven',
+    component: ComponentCreator('/Hidroponia-Project/blog/release/seven', '748'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/release/six',
+    component: ComponentCreator('/Hidroponia-Project/blog/release/six', '6ec'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/release/three',
+    component: ComponentCreator('/Hidroponia-Project/blog/release/three', '156'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/release/two',
+    component: ComponentCreator('/Hidroponia-Project/blog/release/two', '2c8'),
     exact: true
   },
   {
@@ -83,8 +108,13 @@ export default [
     exact: true
   },
   {
+    path: '/Hidroponia-Project/blog/tags/epico',
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/epico', '630'),
+    exact: true
+  },
+  {
     path: '/Hidroponia-Project/blog/tags/hola',
-    component: ComponentCreator('/Hidroponia-Project/blog/tags/hola', '137'),
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/hola', 'a77'),
     exact: true
   },
   {

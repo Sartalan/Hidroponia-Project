@@ -1,0 +1,44 @@
+{
+  "permalink": "/Hidroponia-Project/blog/release/three",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-15.md",
+  "source": "@site/blog/Notas/2024-8-15.md",
+  "title": "Actualización [ 3 ] | MyCodo",
+  "description": "MyCodo",
+  "date": "2024-08-15T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "hola",
+      "permalink": "/Hidroponia-Project/blog/tags/hola"
+    }
+  ],
+  "readingTime": 1.13,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Wolfsrudel",
+      "title": "All the Team",
+      "url": "https://github.com/Sartalan/Hidroponia-Project",
+      "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+      "key": "Team"
+    }
+  ],
+  "frontMatter": {
+    "slug": "release/three",
+    "title": "Actualización [ 3 ] | MyCodo",
+    "authors": [
+      "Team"
+    ],
+    "tags": [
+      "hola"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Actualización [ 4 ] | Estructura",
+    "permalink": "/Hidroponia-Project/blog/release/four"
+  },
+  "nextItem": {
+    "title": "Comentarios | App",
+    "permalink": "/Hidroponia-Project/blog/note/one"
+  }
+}

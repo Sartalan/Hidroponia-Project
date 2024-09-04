@@ -57,25 +57,65 @@
       "blogSidebarTitle": "Recent posts",
       "blogPosts": [
         {
-          "id": "nota/two",
+          "id": "release/seven",
           "metadata": {
-            "permalink": "/Hidroponia-Project/blog/nota/two",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-11.md",
-            "source": "@site/blog/Notas/2024-8-11.md",
-            "title": "Nota",
-            "description": "Muy seguramente vayamos añadiendo una sección de \"Notas\" para añadir actualizaciones y/o ideas nuevas respecto a qué pensamos integrar y que no; algo hablado con nuestro profesor fue integrar una aplicación que estuvimos desarrollando para el que iba a ser nuestro primer proyecto del año, pero se canceló.",
-            "date": "2024-08-11T00:00:00.000Z",
+            "permalink": "/Hidroponia-Project/blog/release/seven",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-9-4.md",
+            "source": "@site/blog/Notas/2024-9-4.md",
+            "title": "Actualización [ 7 ] | Avances",
+            "description": "Avances",
+            "date": "2024-09-04T00:00:00.000Z",
             "tags": [
               {
-                "label": "app",
-                "permalink": "/Hidroponia-Project/blog/tags/app"
-              },
-              {
-                "label": "indoor",
-                "permalink": "/Hidroponia-Project/blog/tags/indoor"
+                "label": "épico",
+                "permalink": "/Hidroponia-Project/blog/tags/epico"
               }
             ],
-            "readingTime": 2.055,
+            "readingTime": 1.115,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Alan Barrera",
+                "title": "Software Developer",
+                "url": "https://github.com/sartalan",
+                "imageURL": "https://github.com/sartalan.png",
+                "key": "Alan"
+              }
+            ],
+            "frontMatter": {
+              "slug": "release/seven",
+              "title": "Actualización [ 7 ] | Avances",
+              "authors": [
+                "Alan"
+              ],
+              "tags": [
+                "épico"
+              ]
+            },
+            "unlisted": false,
+            "nextItem": {
+              "title": "Actualización [ 6 ] | Comunicación de Dispositivos",
+              "permalink": "/Hidroponia-Project/blog/release/six"
+            }
+          },
+          "content": "## Avances\n\n#### Entre ayer y hoy comenzamos el desarrollo del segundo PCB\n\nEste consta de más sensores incorporados y la inclusión de un nuevo disparo de triac, llevando por ende un segundo circuito de disparo (con todo lo que ello conlleva; Snubber's, Optoacopladores, Triac's, etc.) Al finalizar el PCB -y sí funciona- daremos una mayor explicación de su funcionamiento\n\n#### Los sensores que vamos a usar son los siguientes:\n\n+ [DS18B20 | **Temperatura**](https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf)\n+ [DHT11   | **Humedad**](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf&ved=2ahUKEwi20Yb096mIAxVmkZUCHUF5G2QQFnoECBwQAQ&usg=AOvVaw2tdFgaeZgeQmJr3SkJiugP)\n+ [M1592 | **Lluvia**](https://cdn.sparkfun.com/datasheets/Sensors/Temp/DS18B20.pdf) \n+ [LDR | **Fotorresistencia**](https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs)\n+ [YF-S201 | **Caudálimetro**](http://www.mantech.co.za/datasheets/products/yf-s201_sea.pdf)\n\nTambién un detalle a añadir es que decidimos utilizar el **Arduino Nano.**\n\n## Hoy\n\nBásicamente hicimos todo el esquemático y lo próximo a realizar es el PCB cuando se nos dé el aprobado del mismo.\nTesteamos nuevamente la comunicación serial con el Arduino Nano y funcionó correctamente, al igual que cada conexionado independiente de cada sensor con su respectiva forma de conexión, así que todo debería salir de la forma prevista. Seguramente algo salga mal, como siempre. Es parte de ser un técnico electrónico.\n![Fotos trabajando jdawjd](../Ref/Foto_Laburando_Dos.jpeg)\n![Foto mía jdawjd](../Ref/Foto_Laburando_Uno.jpeg)\n\nDato a tener en cuenta sí querés que la Raspberry Pi se comunique por USB a un microcontrolador. Tenés que permitirle a tu usuario a acceder al grupo \"dialout\". Es importante por una cuestión de permisos que solo el super usuario puede brindar."
+        },
+        {
+          "id": "release/six",
+          "metadata": {
+            "permalink": "/Hidroponia-Project/blog/release/six",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-9-1.md",
+            "source": "@site/blog/Notas/2024-9-1.md",
+            "title": "Actualización [ 6 ] | Comunicación de Dispositivos",
+            "description": "Comunicación",
+            "date": "2024-09-01T00:00:00.000Z",
+            "tags": [
+              {
+                "label": "épico",
+                "permalink": "/Hidroponia-Project/blog/tags/epico"
+              }
+            ],
+            "readingTime": 1.705,
             "hasTruncateMarker": false,
             "authors": [
               {
@@ -87,8 +127,204 @@
               }
             ],
             "frontMatter": {
-              "slug": "nota/two",
-              "title": "Nota",
+              "slug": "release/six",
+              "title": "Actualización [ 6 ] | Comunicación de Dispositivos",
+              "authors": [
+                "Team"
+              ],
+              "tags": [
+                "épico"
+              ]
+            },
+            "unlisted": false,
+            "prevItem": {
+              "title": "Actualización [ 7 ] | Avances",
+              "permalink": "/Hidroponia-Project/blog/release/seven"
+            },
+            "nextItem": {
+              "title": "Actualización [ 5 ] | Explosión XDD",
+              "permalink": "/Hidroponia-Project/blog/release/five"
+            }
+          },
+          "content": "## Comunicación \n#### **Raspberry Pi - Microcontrolador**\n\nDecidimos finalmente comunicar la Raspberry Pi y el Microcontrolador entre sí vía **USB** , este cambio -aunque drástico- es mucho más conveniente para nuestro proyecto, y de igual forma no cambiará demasiado al tener que vernos obligados a utilizar wifi para comunicar la Raspberry Pi con la App.\n\n#### Quedando el gráfico tal que así:\n\n![Gráfico piola](../Ref/Diagrama%20en%20Bloques%20I%20Raspberry%20Pi%20Server%20Communication%20TWO.png)\n\n#### **Nota:** En aquel momento se pensaba utilizar el ESP WROOM, luego cambiamos al Arduino Nano al no necesitar del Wifi y, tener mayor acceso a la información de como programarlo.\n\n### Importante\n\nCuestión: Aquí viene lo importante:\n+ Logramos enviar correctamente los datos del microcontrolador a la Raspberry Pi por USB. \n\n### ¿Cómo se logró esto?\n\nBásicamente controlando el recibo de datos con Python y dependencias de éste, en este caso de **Pyserial**.\n\n```python\nimport serial\nimport time\n\nser = serial.Serial('/dev/ttyACM0', 115200, timeout=1.0)\ntime.sleep(3)\nser.reset_input_buffer()\nprint(\"Serial OK\")\n\ntry:\n    while True:\n        time.sleep(0.01)\n        if ser.in_waiting > 0:\n            line = ser.readline().decode('utf-8').rstrip()\n            print(line)\n\nexcept KeyboardInterrupt:\n    print(\"Close Serial Communication\")\n    ser.close()\n```\n\nEn resumidas cuentas el código hace lo siguiente:\n+ Se inicializan los modulos para manejar tiempos y datos seriales (Importante instalar pyserial) y luego se procede a generar un bucle el cual esperaría datos por un puerto USB. Siendo éste en concreto el puerto **\"/dev/tty/ACM0\"**. Es el directorio donde se alojan los puertos en Raspbian (Linux).\n+ Luego hace más cosas como decodificar la información en UTF-8 (para mostrar el texto correctamente) pero no son de importancia.\n+ Ante una interrupción de teclado se detiene el script.\n\n#### Luego el código en el microcontrolador es el siguiente:\n\n```cpp\n#include <Arduino.h>\n\nvoid setup(){\nSerial.begin(115200);\nwhile(!Serial) {}\n}\n\nvoid loop(){\n  Serial.println(\"Mensaje a Raspberry Pi\");\n  Serial.write(\"Lol\");\n  delay(1000);  \n}\n```\n\nComo ven el código es muy sencillo; los mismos print que se pueden mostrar en consola para debuguear código ya bastan para enviar datos. Lo importante aquí es el **script de Python**\n\n### Setup épico\n\n![Setup Épico](../Ref/Setup_Épico.jpeg)\n\n#### Por sí a alguien le interesa mi rice en Linux *(alto rarito)*, éste se encuentra [aquí](https://github.com/Sartalan/my-linux-dotfiles)"
+        },
+        {
+          "id": "release/five",
+          "metadata": {
+            "permalink": "/Hidroponia-Project/blog/release/five",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-29.md",
+            "source": "@site/blog/Notas/2024-8-29.md",
+            "title": "Actualización [ 5 ] | Explosión XDD",
+            "description": "Montamos el circuito y... EXPLOTÓ XD",
+            "date": "2024-08-29T00:00:00.000Z",
+            "tags": [
+              {
+                "label": "épico",
+                "permalink": "/Hidroponia-Project/blog/tags/epico"
+              }
+            ],
+            "readingTime": 0.42,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Wolfsrudel",
+                "title": "All the Team",
+                "url": "https://github.com/Sartalan/Hidroponia-Project",
+                "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+                "key": "Team"
+              }
+            ],
+            "frontMatter": {
+              "slug": "release/five",
+              "title": "Actualización [ 5 ] | Explosión XDD",
+              "authors": [
+                "Team"
+              ],
+              "tags": [
+                "épico"
+              ]
+            },
+            "unlisted": false,
+            "prevItem": {
+              "title": "Actualización [ 6 ] | Comunicación de Dispositivos",
+              "permalink": "/Hidroponia-Project/blog/release/six"
+            },
+            "nextItem": {
+              "title": "Actualización [ 4 ] | Estructura",
+              "permalink": "/Hidroponia-Project/blog/release/four"
+            }
+          },
+          "content": "Montamos el circuito y... **EXPLOTÓ XD**\n\nAunque la simulación en Proteus fuese éxitosa; no el montaje. De igual forma solo nos faltaba una resistencia y ningún componente (salvo una misera resistencia) salió dañada en el proceso. \nEl problema fue solucionado en la misma placa que explotó al día siguiente, así que no resulto en un problema grave. Fue épico, nada más que añadir.\n\nAdjuntamos pruebas:\n\n![EXPLOSIÓN EPICA WUOWOWO](../Ref/PCB_EXPLOSIÓN.jpeg)\n\n#### Efectivamente, por sí lo pensabas: La mancha negra de la mesa es obra nuestra :p"
+        },
+        {
+          "id": "release/four",
+          "metadata": {
+            "permalink": "/Hidroponia-Project/blog/release/four",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-25.md",
+            "source": "@site/blog/Notas/2024-8-25.md",
+            "title": "Actualización [ 4 ] | Estructura",
+            "description": "Hidroponia",
+            "date": "2024-08-25T00:00:00.000Z",
+            "tags": [
+              {
+                "label": "épico",
+                "permalink": "/Hidroponia-Project/blog/tags/epico"
+              }
+            ],
+            "readingTime": 0.11,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Wolfsrudel",
+                "title": "All the Team",
+                "url": "https://github.com/Sartalan/Hidroponia-Project",
+                "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+                "key": "Team"
+              }
+            ],
+            "frontMatter": {
+              "slug": "release/four",
+              "title": "Actualización [ 4 ] | Estructura",
+              "authors": [
+                "Team"
+              ],
+              "tags": [
+                "épico"
+              ]
+            },
+            "unlisted": false,
+            "prevItem": {
+              "title": "Actualización [ 5 ] | Explosión XDD",
+              "permalink": "/Hidroponia-Project/blog/release/five"
+            },
+            "nextItem": {
+              "title": "Actualización [ 3 ] | MyCodo",
+              "permalink": "/Hidroponia-Project/blog/release/three"
+            }
+          },
+          "content": "## Hidroponia\n\n#### **Finalmente, lo terminamos; logramos terminar la estructura de la Hidroponia**\n\n(texto de como la armamos)\n\n//foto de la hidroponia"
+        },
+        {
+          "id": "release/three",
+          "metadata": {
+            "permalink": "/Hidroponia-Project/blog/release/three",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-15.md",
+            "source": "@site/blog/Notas/2024-8-15.md",
+            "title": "Actualización [ 3 ] | MyCodo",
+            "description": "MyCodo",
+            "date": "2024-08-15T00:00:00.000Z",
+            "tags": [
+              {
+                "label": "hola",
+                "permalink": "/Hidroponia-Project/blog/tags/hola"
+              }
+            ],
+            "readingTime": 1.13,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Wolfsrudel",
+                "title": "All the Team",
+                "url": "https://github.com/Sartalan/Hidroponia-Project",
+                "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+                "key": "Team"
+              }
+            ],
+            "frontMatter": {
+              "slug": "release/three",
+              "title": "Actualización [ 3 ] | MyCodo",
+              "authors": [
+                "Team"
+              ],
+              "tags": [
+                "hola"
+              ]
+            },
+            "unlisted": false,
+            "prevItem": {
+              "title": "Actualización [ 4 ] | Estructura",
+              "permalink": "/Hidroponia-Project/blog/release/four"
+            },
+            "nextItem": {
+              "title": "Comentarios | App",
+              "permalink": "/Hidroponia-Project/blog/note/one"
+            }
+          },
+          "content": "## MyCodo\n\nDecidimos utilizar MyCodo para monitorear el envío de datos del ESP32 hacía la Raspberry Pi y este será por wifi; pensamos que podríamos crear un servidor dentro de la Raspberry Pi -puede que con Express- y que éste sea la vía de comunicación entre la App y el ESP32 y, en el transcurso del trayecto, simúltaneamente monitorear dichos datos. Pero antes de proceder a hablar sobre la comunicación entre los dispositivos -del cual se tiene un diagrama que se mostrará dentro de poco- hablaremos sobre MyCodo.\n\n### ¿Qué es MyCodo?\n\nMyCodo es un Software Open Source (es decir, de código abierto) creado especificamente para generar un servidor web (nginx) que aloje MyCodo, la cual es una aplicación web creada con Python (flask) con acceso completo a los GPIO de la Raspberry. Nuestra idea es la siguiente:\n\n1. Enviarle los datos del ESP32 a la Raspberry vía Wifi usando HTTP en forma de archivos JSON.\n2. Tomar la lectura de MyCodo y almacenarla en su base de datos integrada (influxDB).\n3. Crear una API con endpoints que permitan las solicitudes GET de parte de la App para así solicitar el archivo JSON con las últimas lecturas almacenadas.\n\n### Comunicación\n\nA la comunicación entre las partes se las piensa así:\n\n![Diagrama | Comunicación](../Ref/Diagrama%20en%20Bloques%20I%20Raspberry%20Pi%20Server%20Communication.png)\n\n#### *AVISO DEL FUTURO: LA COSA **NO FUE ASÍ**; ESTE GRÁFICO ES INCORRECTO*"
+        },
+        {
+          "id": "note/one",
+          "metadata": {
+            "permalink": "/Hidroponia-Project/blog/note/one",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-11.md",
+            "source": "@site/blog/Notas/2024-8-11.md",
+            "title": "Comentarios | App",
+            "description": "Notas",
+            "date": "2024-08-11T00:00:00.000Z",
+            "tags": [
+              {
+                "label": "app",
+                "permalink": "/Hidroponia-Project/blog/tags/app"
+              },
+              {
+                "label": "indoor",
+                "permalink": "/Hidroponia-Project/blog/tags/indoor"
+              }
+            ],
+            "readingTime": 2.065,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Wolfsrudel",
+                "title": "All the Team",
+                "url": "https://github.com/Sartalan/Hidroponia-Project",
+                "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+                "key": "Team"
+              }
+            ],
+            "frontMatter": {
+              "slug": "note/one",
+              "title": "Comentarios | App",
               "authors": [
                 "Team"
               ],
@@ -98,20 +334,24 @@
               ]
             },
             "unlisted": false,
+            "prevItem": {
+              "title": "Actualización [ 3 ] | MyCodo",
+              "permalink": "/Hidroponia-Project/blog/release/three"
+            },
             "nextItem": {
-              "title": "Release",
-              "permalink": "/Hidroponia-Project/blog/pcb/one"
+              "title": "Actualización [ 1 ] | Circuito - Simulación",
+              "permalink": "/Hidroponia-Project/blog/release/two"
             }
           },
-          "content": "Muy seguramente vayamos añadiendo una sección de \"Notas\" para añadir actualizaciones y/o ideas nuevas respecto a qué pensamos integrar y que no; algo hablado con nuestro profesor fue integrar una aplicación que estuvimos desarrollando para el que iba a ser nuestro primer proyecto del año, pero se canceló.\nEste se trataba de un Indoor, el cuál iba a tener una funcionalidad muy parecida a lo que estamos haciendo con la Hidroponia al tener que, también, tener el control absoluto del ambiente para cuidar de una planta. \n\nÉsta, al claramente haberse cancelado el proyecto, se le canceló su desarrollo; pero eso no supuso su extinción, se la quiso agregar a nuestro próximo proyecto: Herzarmband. \nHerzarmband iba a ser un reloj/brazalete -nunca se decidió- que tomaría la frecuencia cardíaca y, por aprovechar el código previamente creado para la aplicación. Aunque esto claramente era **muy** impráctico y: sin sentido. \n\n### ¿Qué más aparte de mostrar la frecuencia cardíaca iba a hacer?\n\nEra un completo sin sentido, salvo que, se pensará añadir algún tipo de algoritmo que predijera y detectará de una forma u otra problemas cardiovasculares -como los hacen muchos en el mercado-  pero eso ya dejaría de ser un proyecto de Electrónica y se convertiría en uno de Software; no es la idea de la materia.\n\nPero afortunadamente es genuinamente práctica para integrarla en éste proyecto, sirviendo perfectamente como una interfáz gráfica para visualizar en tiempo real por wifi el estado de tus plantas e hidroponia en general. \n\nA raíz de esto añadiremos la app al proyecto; la idea es crear una comunicación HTTP entre la Raspberry Pi y la Aplicación de celular. Para ello nuestra idea es crear un servidor con **Javascript y Express** (Libreria Backend de Nodejs) que tenga interacción con el recibo de datos que reciba la Raspberry del circuito -ya sea por wifi o algún diferente protocolo de comunicación- y, setear dichos datos con una API la cuál tendrá un endpoint donde la aplicación de celular, la cual también está escrita con Javascript -concretamente con el Framework de **React Native** se conectará.\nMuy posiblemente utilizando archivos **JSON** para almacenar la información.\n\nPara la fecha actual, la app luce de la siguiente forma:\n\n![App Indoor](../Ref/App-Indoor.gif)\n\nEl diagrama de bloques que diseñamos para explicar su comunicación HTTP para proponerselo a nuestro profesor es:\n\n![Diagrama De Comunicación entre Servidor-Cliente | HTTP](../Ref/App-Communication.jpeg)\n\nSí usted quiere ver más en profundidad su desarrollo, su repositorio y ramal de Github donde se programo se encuentra [aquí](https://github.com/Sartalan/Indoor-Project/tree/App)."
+          "content": "## Notas\n\nMuy seguramente vayamos añadiendo una sección de \"Notas\" para añadir actualizaciones y/o ideas nuevas respecto a qué pensamos integrar y que no; algo hablado con nuestro profesor fue integrar una aplicación que estuvimos desarrollando para el que iba a ser nuestro primer proyecto del año, pero se canceló.\nEste se trataba de un Indoor, el cuál iba a tener una funcionalidad muy parecida a lo que estamos haciendo con la Hidroponia al tener que, también, tener el control absoluto del ambiente para cuidar de una planta. \n\nÉsta, al claramente haberse cancelado el proyecto, se le canceló su desarrollo; pero eso no supuso su extinción, se la quiso agregar a nuestro próximo proyecto: Herzarmband. \nHerzarmband iba a ser un reloj/brazalete -nunca se decidió- que tomaría la frecuencia cardíaca y, por aprovechar el código previamente creado para la aplicación. Aunque esto claramente era **muy** impráctico y: sin sentido. \n\n### ¿Qué más aparte de mostrar la frecuencia cardíaca iba a hacer?\n\nEra un completo sin sentido, salvo que, se pensará añadir algún tipo de algoritmo que predijera y detectará de una forma u otra problemas cardiovasculares -como los hacen muchos en el mercado-  pero eso ya dejaría de ser un proyecto de Electrónica y se convertiría en uno de Software; no es la idea de la materia.\n\nPero afortunadamente es genuinamente práctica para integrarla en éste proyecto, sirviendo perfectamente como una interfáz gráfica para visualizar en tiempo real por wifi el estado de tus plantas e hidroponia en general. \n\nA raíz de esto añadiremos la app al proyecto; la idea es crear una comunicación HTTP entre la Raspberry Pi y la Aplicación de celular. Para ello nuestra idea es crear un servidor con **Javascript y Express** (Libreria Backend de Nodejs) que tenga interacción con el recibo de datos que reciba la Raspberry del circuito -ya sea por wifi o algún diferente protocolo de comunicación- y, setear dichos datos con una API la cuál tendrá un endpoint donde la aplicación de celular, la cual también está escrita con Javascript -concretamente con el Framework de **React Native** se conectará.\nMuy posiblemente utilizando archivos **JSON** para almacenar la información.\n\nPara la fecha actual, la app luce de la siguiente forma:\n\n![App Indoor](../Ref/App-Indoor.gif)\n\nEl diagrama de bloques que diseñamos para explicar su comunicación HTTP para proponerselo a nuestro profesor es:\n\n![Diagrama De Comunicación entre Servidor-Cliente | HTTP](../Ref/App-Communication.jpeg)\n\nSí usted quiere ver más en profundidad su desarrollo, su repositorio y ramal de Github donde se programo se encuentra [aquí](https://github.com/Sartalan/Indoor-Project/tree/App)."
         },
         {
-          "id": "pcb/one",
+          "id": "release/two",
           "metadata": {
-            "permalink": "/Hidroponia-Project/blog/pcb/one",
+            "permalink": "/Hidroponia-Project/blog/release/two",
             "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-8.md",
             "source": "@site/blog/Notas/2024-8-8.md",
-            "title": "Release",
+            "title": "Actualización [ 1 ] | Circuito - Simulación",
             "description": "Logramos simular y realizar el circuito correctamente en Proteus, para ello hicimos muchas cosas:",
             "date": "2024-08-08T00:00:00.000Z",
             "tags": [
@@ -140,8 +380,8 @@
               }
             ],
             "frontMatter": {
-              "slug": "pcb/one",
-              "title": "Release",
+              "slug": "release/two",
+              "title": "Actualización [ 1 ] | Circuito - Simulación",
               "authors": [
                 "Team"
               ],
@@ -153,20 +393,20 @@
             },
             "unlisted": false,
             "prevItem": {
-              "title": "Nota",
-              "permalink": "/Hidroponia-Project/blog/nota/two"
+              "title": "Comentarios | App",
+              "permalink": "/Hidroponia-Project/blog/note/one"
             },
             "nextItem": {
               "title": "Comienzo del Proyecto",
-              "permalink": "/Hidroponia-Project/blog/nota/one"
+              "permalink": "/Hidroponia-Project/blog/release/one"
             }
           },
           "content": "Logramos simular y realizar el circuito correctamente en Proteus, para ello hicimos muchas cosas:\n\n1. Instalamos la *libreria* de Arduino en Proteus para así poder simular correctamente los códigos en este programa, y luego realizamos el circuito correspondiente.\n\n## ¿Qué hicimos?\n\nQuisimos también aprovechar la realización del proyecto para aprobar otra materia; Electrónica Aplicada. La cual nos daba a elegir si simular un circuito o no, así que lo realizamos aplicandolo como solución a un problema en nuestro proyecto; regular la corriente alterna.\n\nSe trata de la realización de un disparo en la señal de alterna a través de la utilización de optoacopladores y triac's.\n\nÉsta es una forma de manipular la onda senoidal de la corriente alterna mediante el uso de la corriente continúa. En nuestro caso se buscó utilizar optoacopladores como medida óptica de separación entre las dos corrientes y, crear un código qué, mediante interrupciones, **supiera** cuando la AC oscila mediante el lado contrario; pero ello suponía otro problema: se debía de saber exactamente y con gran precisión **cuando la onda cruzaba por cero en primer lugar**. Viniendo, recién ahora, lo **interesante** ⊂(◉‿◉)つ.\n\n---\n\n## Explicación \n\nEn primeras antes de hablar del código debemos de hablar del circuito; consta de dos partes: una de monitoreo y otra de control, en la primera se busca tener una lectura constante de la onda senoidal para determinar sí esta cruza por cero, y en la segunda se busca \"disparar\" hacía la onda senoidal para cortarla, y poder así **regular su intensidad**\n\n¿Cómo la parte de control logra esto?\n\nPara poder determinar cuando disparar o no por el código, básicamente se la divide a la onda senoidal en varias partes.\n1. Primero calculando su periodo, utilizando para ello la cuenta:\n\n   ![Calculo Uno](../Ref/CalculoUno.png)\n\n2. Luego, se la divide en 360 partes para así tener un ciclo entero.\n\n   ![Calculo Dos](../Ref/CalculoDos.png)\n\n+ Una vez tenidos estos datos podemos asumir diversas cosas:\n\n1. Un semiciclo de nuestra onda es equivalente a: 360/2.\n2. Cada 46μs recorremos 1° de nuestra onda.\n3. 46μs x (360/2) Es equivalente al recorrido **total** de tiempo que conlleva un solo semiciclo.\n\nAhora sí, comencemos con el código. \n\n```cpp\n #include <TimerOne.h>\n    int GradoElectrico = 0;\n    \n    void GradoZero(){\n      GradoElectrico = 0;\n    }\n\n    void Disparo() {\n      GradoElectrico++;\n\n      // Resto de instrucciones...\n      // (Instrucciones de cuando disparar)\n      \n    }\n    \n    void setup(){\n      attachInterrupt(0, GradoZero, CHANGE);\n      Timer1.initialize(46);\n      Timer1.attachInterrupt(Disparo);\n    }\n\n    void loop(){ \n        // Resto de instrucciones... \n    }\n    \n    ```\n\n### Básicamente aplicamos todo lo aprendido: \n\nComencemos con la función Setup:\n\n```cpp\n    attachInterrupt(0,GradoZero,CHANGE);\n```\n\nEsta linea de código pertenece a la libreria de TimerOne, y se encarga de inicializar una entrada de datos en el pin 0 (que por default es el 2 y, que cada vez que cambie de HIGH a LOW o viceversa, ejecuta la función GradoZero(), la cual reestablece los valores de la variable GradoElectrico.\n\n```cpp\n    Timer1.initialize(46);\n```\n\nLe indicamos al programa que inicialice un temporizador de 46μs.\n\n```cpp\n    Timer1.attachInterrupt(Disparo)\n```\n\n\nCada vez que finaliza el temporizador de 46μs se ejecuta la función Disparo()\n\nEn resumidas cuentas, el código se encarga de ejecutar un cronometro que cada 46μs ejecuta una función, la cuál aumentará una variable int; pero, recién llegado a un valor LOW en la onda, es decir 180° o, 46μs x 180° de tiempo; el cronometro volverá a reiniciarse y la variable de grados también lo hará junto con ella.\n\n\nEs decir, este simple código tiene la posibilidad de manipular por completo un ciclo de nuestra onda senoidal partiendola a ésta en 180° al detectar el cruce por cero antes de terminar el ciclo completo. Pudiendo con ello ejecutar scripts de código que tan solo tengan que variar entre los valores de 1 - 180 de la variable int de GradoElectrico y, así, determinando cuando disparar dentro del semiciclo.\n- Nota: Esta es una versión *muy* básica del accionamiento del disparo, pero sirve.\n\n\nPero básicamente, con este principio podés hacer lo siguiente:\n\n![Simulación Proteus del Circuito](../Ref/Video-Simulacion.gif)\n\nEn este caso se tomó el mapeo del valor de un potenciometro el cuál fue sincronizado con un solo semiciclo de la onda senoidal, pudiendo, básicamente elegir cuando disparar.\n\n#### Circuito | Proteus\n\n![Circuito simulable en Proteus](../Ref/Prototipo-Simulacion.jpeg)\n\n#### Esquemático | Kicad\n\n![Esquemático del circuito en Kicad](../Ref/Prototipo-Esquemático.jpeg)\n\n#### PCB | Kicad \n\n![PCB de Prototipo del circuito en Kicad](../Ref/Prototipo-PCB.jpeg)\n\n\n### Componentes | Datasheet -por ahora-\n\n1. [Optoacoplador - MOC3021](https://pdf1.alldatasheet.es/datasheet-pdf/view/53870/FAIRCHILD/MOC3021.html)\n2. [Optoacoplador - 4N25](https://pdf1.alldatasheet.es/datasheet-pdf/view/158124/VISHAY/4N25.html)\n3. [Triac - BT139](https://pdf1.alldatasheet.es/datasheet-pdf/view/16787/PHILIPS/BT139-600.html)"
         },
         {
-          "id": "nota/one",
+          "id": "release/one",
           "metadata": {
-            "permalink": "/Hidroponia-Project/blog/nota/one",
+            "permalink": "/Hidroponia-Project/blog/release/one",
             "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-1.md",
             "source": "@site/blog/Notas/2024-8-1.md",
             "title": "Comienzo del Proyecto",
@@ -190,7 +430,7 @@
               }
             ],
             "frontMatter": {
-              "slug": "nota/one",
+              "slug": "release/one",
               "title": "Comienzo del Proyecto",
               "authors": [
                 "Team"
@@ -201,8 +441,8 @@
             },
             "unlisted": false,
             "prevItem": {
-              "title": "Release",
-              "permalink": "/Hidroponia-Project/blog/pcb/one"
+              "title": "Actualización [ 1 ] | Circuito - Simulación",
+              "permalink": "/Hidroponia-Project/blog/release/two"
             }
           },
           "content": "## Hidroponia - Project\n\nComenzó nuestro **segundo** proyecto del año como una empresa ficticia llamada *Wolfsrudel*.\nSe tratá de una Hidroponia que será -ídoneamente- un sistema de control completo donde se monitoreará cada una de las mágnitudes esenciales que debe de necesitar una planta para desarrollarse adecuadamente. \n\nNuestra meta es la siguiente:\n+ Montar una estructura que servirá para alojar las plantas y les permita una vía de acceso a agua que está siendo bombeada por una bomba, mientras a su vez se debe desarrollar un circuito que debe regular las mágnitudes fisicas e ídoneas que requiere cada tipo de planta. \n\n## ¿Cómo haremos ésto?\n\nA ciencia cierta todavía no lo sabemos e iremos averigúandolo con el pasar del tiempo; pero nuestra propuesta es controlar una serie de sensores con un microcontrolador (mientras tanto, para las pruebas: el Arduino) y, para no gastar plata innecesariamente lo simularemos en **Proteus**.\n\n## ¿Cómo será la estructura? \n\nA raíz de ver diversos videos de Youtube, nuestra idea es montar una estructura con caños más finos por un lado para subir el agua por una mini bomba y, que ésta caiga, recorriendo así todos los caños donde se alojarán las plantas, los cuales serán más grandes. \nPara ello aprovecharemos una estructura de metal prearmada que realizaron alumnos de Electrónica en el pasado para éste mismo proyecto.\n\nLa estructura será similar a:\n\n//Boceto\n\n---\n\nComo volvemos a repetir: no tomen éste blog como una información completamente veraz respecto a nuestro proyecto; este puede cambiar al, justamente, no tener ni idea de lo que estamos haciendo continúamente.\n*Habla la voz de la experiencia (´･_･`)*"
@@ -211,32 +451,93 @@
       "blogListPaginated": [
         {
           "items": [
-            "nota/two",
-            "pcb/one",
-            "nota/one"
+            "release/seven",
+            "release/six",
+            "release/five",
+            "release/four",
+            "release/three",
+            "note/one",
+            "release/two",
+            "release/one"
           ],
           "metadata": {
             "permalink": "/Hidroponia-Project/blog",
             "page": 1,
             "postsPerPage": 10,
             "totalPages": 1,
-            "totalCount": 3,
+            "totalCount": 8,
             "blogDescription": "Blog",
             "blogTitle": "Blog"
           }
         }
       ],
       "blogTags": {
+        "/Hidroponia-Project/blog/tags/epico": {
+          "label": "épico",
+          "items": [
+            "release/seven",
+            "release/six",
+            "release/five",
+            "release/four"
+          ],
+          "permalink": "/Hidroponia-Project/blog/tags/epico",
+          "pages": [
+            {
+              "items": [
+                "release/seven",
+                "release/six",
+                "release/five",
+                "release/four"
+              ],
+              "metadata": {
+                "permalink": "/Hidroponia-Project/blog/tags/epico",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 4,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ],
+          "unlisted": false
+        },
+        "/Hidroponia-Project/blog/tags/hola": {
+          "label": "hola",
+          "items": [
+            "release/three",
+            "release/one"
+          ],
+          "permalink": "/Hidroponia-Project/blog/tags/hola",
+          "pages": [
+            {
+              "items": [
+                "release/three",
+                "release/one"
+              ],
+              "metadata": {
+                "permalink": "/Hidroponia-Project/blog/tags/hola",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 2,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ],
+          "unlisted": false
+        },
         "/Hidroponia-Project/blog/tags/app": {
           "label": "app",
           "items": [
-            "nota/two"
+            "note/one"
           ],
           "permalink": "/Hidroponia-Project/blog/tags/app",
           "pages": [
             {
               "items": [
-                "nota/two"
+                "note/one"
               ],
               "metadata": {
                 "permalink": "/Hidroponia-Project/blog/tags/app",
@@ -254,13 +555,13 @@
         "/Hidroponia-Project/blog/tags/indoor": {
           "label": "indoor",
           "items": [
-            "nota/two"
+            "note/one"
           ],
           "permalink": "/Hidroponia-Project/blog/tags/indoor",
           "pages": [
             {
               "items": [
-                "nota/two"
+                "note/one"
               ],
               "metadata": {
                 "permalink": "/Hidroponia-Project/blog/tags/indoor",
@@ -278,13 +579,13 @@
         "/Hidroponia-Project/blog/tags/kicad": {
           "label": "kicad",
           "items": [
-            "pcb/one"
+            "release/two"
           ],
           "permalink": "/Hidroponia-Project/blog/tags/kicad",
           "pages": [
             {
               "items": [
-                "pcb/one"
+                "release/two"
               ],
               "metadata": {
                 "permalink": "/Hidroponia-Project/blog/tags/kicad",
@@ -302,13 +603,13 @@
         "/Hidroponia-Project/blog/tags/proteus": {
           "label": "proteus",
           "items": [
-            "pcb/one"
+            "release/two"
           ],
           "permalink": "/Hidroponia-Project/blog/tags/proteus",
           "pages": [
             {
               "items": [
-                "pcb/one"
+                "release/two"
               ],
               "metadata": {
                 "permalink": "/Hidroponia-Project/blog/tags/proteus",
@@ -326,40 +627,16 @@
         "/Hidroponia-Project/blog/tags/code": {
           "label": "code",
           "items": [
-            "pcb/one"
+            "release/two"
           ],
           "permalink": "/Hidroponia-Project/blog/tags/code",
           "pages": [
             {
               "items": [
-                "pcb/one"
+                "release/two"
               ],
               "metadata": {
                 "permalink": "/Hidroponia-Project/blog/tags/code",
-                "page": 1,
-                "postsPerPage": 10,
-                "totalPages": 1,
-                "totalCount": 1,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ],
-          "unlisted": false
-        },
-        "/Hidroponia-Project/blog/tags/hola": {
-          "label": "hola",
-          "items": [
-            "nota/one"
-          ],
-          "permalink": "/Hidroponia-Project/blog/tags/hola",
-          "pages": [
-            {
-              "items": [
-                "nota/one"
-              ],
-              "metadata": {
-                "permalink": "/Hidroponia-Project/blog/tags/hola",
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,

@@ -1,0 +1,44 @@
+{
+  "permalink": "/Hidroponia-Project/blog/release/six",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-9-1.md",
+  "source": "@site/blog/Notas/2024-9-1.md",
+  "title": "Actualización [ 6 ] | Comunicación de Dispositivos",
+  "description": "Comunicación",
+  "date": "2024-09-01T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "épico",
+      "permalink": "/Hidroponia-Project/blog/tags/epico"
+    }
+  ],
+  "readingTime": 1.705,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Wolfsrudel",
+      "title": "All the Team",
+      "url": "https://github.com/Sartalan/Hidroponia-Project",
+      "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+      "key": "Team"
+    }
+  ],
+  "frontMatter": {
+    "slug": "release/six",
+    "title": "Actualización [ 6 ] | Comunicación de Dispositivos",
+    "authors": [
+      "Team"
+    ],
+    "tags": [
+      "épico"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Actualización [ 7 ] | Avances",
+    "permalink": "/Hidroponia-Project/blog/release/seven"
+  },
+  "nextItem": {
+    "title": "Actualización [ 5 ] | Explosión XDD",
+    "permalink": "/Hidroponia-Project/blog/release/five"
+  }
+}

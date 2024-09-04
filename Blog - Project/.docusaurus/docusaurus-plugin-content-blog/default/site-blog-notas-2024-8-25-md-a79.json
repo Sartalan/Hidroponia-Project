@@ -1,0 +1,44 @@
+{
+  "permalink": "/Hidroponia-Project/blog/release/four",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-8-25.md",
+  "source": "@site/blog/Notas/2024-8-25.md",
+  "title": "Actualización [ 4 ] | Estructura",
+  "description": "Hidroponia",
+  "date": "2024-08-25T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "épico",
+      "permalink": "/Hidroponia-Project/blog/tags/epico"
+    }
+  ],
+  "readingTime": 0.11,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Wolfsrudel",
+      "title": "All the Team",
+      "url": "https://github.com/Sartalan/Hidroponia-Project",
+      "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+      "key": "Team"
+    }
+  ],
+  "frontMatter": {
+    "slug": "release/four",
+    "title": "Actualización [ 4 ] | Estructura",
+    "authors": [
+      "Team"
+    ],
+    "tags": [
+      "épico"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Actualización [ 5 ] | Explosión XDD",
+    "permalink": "/Hidroponia-Project/blog/release/five"
+  },
+  "nextItem": {
+    "title": "Actualización [ 3 ] | MyCodo",
+    "permalink": "/Hidroponia-Project/blog/release/three"
+  }
+}

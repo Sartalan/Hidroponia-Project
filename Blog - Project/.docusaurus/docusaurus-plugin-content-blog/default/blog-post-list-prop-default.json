@@ -2,18 +2,28 @@
   "title": "Recent posts",
   "items": [
     {
-      "title": "Nota",
-      "permalink": "/Hidroponia-Project/blog/nota/two",
+      "title": "Actualización [ 7 ] | Avances",
+      "permalink": "/Hidroponia-Project/blog/release/seven",
       "unlisted": false
     },
     {
-      "title": "Release",
-      "permalink": "/Hidroponia-Project/blog/pcb/one",
+      "title": "Actualización [ 6 ] | Comunicación de Dispositivos",
+      "permalink": "/Hidroponia-Project/blog/release/six",
       "unlisted": false
     },
     {
-      "title": "Comienzo del Proyecto",
-      "permalink": "/Hidroponia-Project/blog/nota/one",
+      "title": "Actualización [ 5 ] | Explosión XDD",
+      "permalink": "/Hidroponia-Project/blog/release/five",
+      "unlisted": false
+    },
+    {
+      "title": "Actualización [ 4 ] | Estructura",
+      "permalink": "/Hidroponia-Project/blog/release/four",
+      "unlisted": false
+    },
+    {
+      "title": "Actualización [ 3 ] | MyCodo",
+      "permalink": "/Hidroponia-Project/blog/release/three",
       "unlisted": false
     }
   ]
