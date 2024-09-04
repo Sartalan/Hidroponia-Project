@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkherzarmband_blog=self.webpackChunkherzarmband_blog||[]).push([[881],{2117:a=>{a.exports=JSON.parse('{"label":"proteus","permalink":"/Hidroponia-Project/blog/tags/proteus","allTagsPath":"/Hidroponia-Project/blog/tags","count":1,"unlisted":false}')}}]);
