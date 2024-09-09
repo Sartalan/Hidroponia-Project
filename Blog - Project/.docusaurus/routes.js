@@ -8,8 +8,43 @@ export default [
     exact: true
   },
   {
+    path: '/Hidroponia-Project/__docusaurus/debug',
+    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug', 'bde'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/__docusaurus/debug/config',
+    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug/config', '8b9'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/__docusaurus/debug/content',
+    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug/content', 'f8f'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/__docusaurus/debug/globalData',
+    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug/globalData', '9c7'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/__docusaurus/debug/metadata',
+    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug/metadata', '865'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/__docusaurus/debug/registry',
+    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug/registry', '6b1'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/__docusaurus/debug/routes',
+    component: ComponentCreator('/Hidroponia-Project/__docusaurus/debug/routes', '63c'),
+    exact: true
+  },
+  {
     path: '/Hidroponia-Project/blog',
-    component: ComponentCreator('/Hidroponia-Project/blog', '302'),
+    component: ComponentCreator('/Hidroponia-Project/blog', '7db'),
     exact: true
   },
   {
@@ -20,6 +55,11 @@ export default [
   {
     path: '/Hidroponia-Project/blog/note/one',
     component: ComponentCreator('/Hidroponia-Project/blog/note/one', 'ce2'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/release/eight',
+    component: ComponentCreator('/Hidroponia-Project/blog/release/eight', '618'),
     exact: true
   },
   {
@@ -90,6 +130,11 @@ export default [
   {
     path: '/Hidroponia-Project/blog/tags/kicad',
     component: ComponentCreator('/Hidroponia-Project/blog/tags/kicad', '86f'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/tags/my-codo',
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/my-codo', '4ef'),
     exact: true
   },
   {

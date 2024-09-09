@@ -1,6 +1,50 @@
 {
   "blogPosts": [
     {
+      "id": "release/eight",
+      "metadata": {
+        "permalink": "/Hidroponia-Project/blog/release/eight",
+        "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-9-9.md",
+        "source": "@site/blog/Notas/2024-9-9.md",
+        "title": "Actualización [ 8 ] | Comunicación a MyCodo",
+        "description": "(｡◕‿◕｡)",
+        "date": "2024-09-09T00:00:00.000Z",
+        "tags": [
+          {
+            "label": "MyCodo",
+            "permalink": "/Hidroponia-Project/blog/tags/my-codo"
+          }
+        ],
+        "readingTime": 1.675,
+        "hasTruncateMarker": false,
+        "authors": [
+          {
+            "name": "Wolfsrudel",
+            "title": "All the Team",
+            "url": "https://github.com/Sartalan/Hidroponia-Project",
+            "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+            "key": "Team"
+          }
+        ],
+        "frontMatter": {
+          "slug": "release/eight",
+          "title": "Actualización [ 8 ] | Comunicación a MyCodo",
+          "authors": [
+            "Team"
+          ],
+          "tags": [
+            "MyCodo"
+          ]
+        },
+        "unlisted": false,
+        "nextItem": {
+          "title": "Actualización [ 7 ] | Avances",
+          "permalink": "/Hidroponia-Project/blog/release/seven"
+        }
+      },
+      "content": "### (｡◕‿◕｡)\n\nLogramos comunicar correctamente la toma de datos de Python con MyCodo, esto fue realmente más fácil de lo que pensamos al no tener que interaccionar con algún otro lenguaje de programación en el proceso. \nEl resto será cuestión de tiempo para que se logré.\n\n### Ideas\n\nSí logramos unificar todo el proyecto con MyCodo rápidamente, pensamos que podríamos crear un *programa* de escritorio para poder muestrear los datos. Todo esto con la intención de tener más control sobre nuestro código.\nRealmente con MyCodo *no sabemos lo que estamos haciendo*, lo cual es una ayuda realmente práctica porque uno no debe de saber como funciona internamente el programa; pero no nos satisface.\nSabemos utilizar una técnologia llamada Tauri. La cual es todo un ecosistema de herramientas que te permiten utilizar Webview (Microsoft) para crear un programa de escritorio con técnologia web y, manejar todo su Backend utilizando el lenguaje de bajo nivel **Rust**.\nPensamos que haría que el proyecto se sintiera menos incompleto y que sería grandioso que tuviese un programa propio también.\n\nAparte, ya tenemos un código; [Spectrum-IOT_WebPage](https://sartalan.github.io/Spectrum-IOT_WebPage/)\n\nSpectrum-IOT_WebPage es una aplicación web que fue creada para monitorear la lectura de datos que ésta recibiera de una casa completamente automátizada para que unos robots se movilizarán de forma autonóma en ella; como es de imaginar, el *proyecto fue cancelado*. Es justamente por ello que nos gustaría reutilizar el código y adaptarlo al diseño de la App (por una cuestión de consistencia). \nAunque también seria increible que pudiese ser hecho para que, a diferencia de la app, se pueda modificar alguna parte del código del microcontrolador y regular mágnitudes. Sería altamente práctico como una interfaz visual táctil que pudiese estar instalada en la Raspberry y, simplemente con un par de touch's y la misma navegación intuitiva de la aplicación web, pudiese ser controlado. \n\nAunque muy seguramente no lleguemos con el tiempo para ello; pero puede que sea un buen código Open Source del que se pueda sacar mucho provecho sí alguien así lo quiere."
+    },
+    {
       "id": "release/seven",
       "metadata": {
         "permalink": "/Hidroponia-Project/blog/release/seven",
@@ -37,6 +81,10 @@
           ]
         },
         "unlisted": false,
+        "prevItem": {
+          "title": "Actualización [ 8 ] | Comunicación a MyCodo",
+          "permalink": "/Hidroponia-Project/blog/release/eight"
+        },
         "nextItem": {
           "title": "Actualización [ 6 ] | Comunicación de Dispositivos",
           "permalink": "/Hidroponia-Project/blog/release/six"

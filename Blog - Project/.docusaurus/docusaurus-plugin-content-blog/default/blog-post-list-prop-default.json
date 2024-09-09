@@ -2,6 +2,11 @@
   "title": "Recent posts",
   "items": [
     {
+      "title": "Actualización [ 8 ] | Comunicación a MyCodo",
+      "permalink": "/Hidroponia-Project/blog/release/eight",
+      "unlisted": false
+    },
+    {
       "title": "Actualización [ 7 ] | Avances",
       "permalink": "/Hidroponia-Project/blog/release/seven",
       "unlisted": false
@@ -19,11 +24,6 @@
     {
       "title": "Actualización [ 4 ] | Estructura",
       "permalink": "/Hidroponia-Project/blog/release/four",
-      "unlisted": false
-    },
-    {
-      "title": "Actualización [ 3 ] | MyCodo",
-      "permalink": "/Hidroponia-Project/blog/release/three",
       "unlisted": false
     }
   ]
