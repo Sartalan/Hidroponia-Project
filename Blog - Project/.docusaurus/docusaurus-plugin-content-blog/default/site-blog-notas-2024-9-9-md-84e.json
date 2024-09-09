@@ -2,7 +2,7 @@
   "permalink": "/Hidroponia-Project/blog/release/eight",
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-9-9.md",
   "source": "@site/blog/Notas/2024-9-9.md",
-  "title": "Actualización [ 8 ] | Comunicación a MyCodo",
+  "title": "Actualización [ 8 ] | Comunicación a MyCodo | Filtro",
   "description": "(｡◕‿◕｡)",
   "date": "2024-09-09T00:00:00.000Z",
   "tags": [
@@ -11,7 +11,7 @@
       "permalink": "/Hidroponia-Project/blog/tags/my-codo"
     }
   ],
-  "readingTime": 1.675,
+  "readingTime": 1.74,
   "hasTruncateMarker": false,
   "authors": [
     {
@@ -24,7 +24,7 @@
   ],
   "frontMatter": {
     "slug": "release/eight",
-    "title": "Actualización [ 8 ] | Comunicación a MyCodo",
+    "title": "Actualización [ 8 ] | Comunicación a MyCodo | Filtro",
     "authors": [
       "Team"
     ],

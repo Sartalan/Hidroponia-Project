@@ -62,7 +62,7 @@
             "permalink": "/Hidroponia-Project/blog/release/eight",
             "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-9-9.md",
             "source": "@site/blog/Notas/2024-9-9.md",
-            "title": "Actualización [ 8 ] | Comunicación a MyCodo",
+            "title": "Actualización [ 8 ] | Comunicación a MyCodo | Filtro",
             "description": "(｡◕‿◕｡)",
             "date": "2024-09-09T00:00:00.000Z",
             "tags": [
@@ -71,7 +71,7 @@
                 "permalink": "/Hidroponia-Project/blog/tags/my-codo"
               }
             ],
-            "readingTime": 1.675,
+            "readingTime": 1.74,
             "hasTruncateMarker": false,
             "authors": [
               {
@@ -84,7 +84,7 @@
             ],
             "frontMatter": {
               "slug": "release/eight",
-              "title": "Actualización [ 8 ] | Comunicación a MyCodo",
+              "title": "Actualización [ 8 ] | Comunicación a MyCodo | Filtro",
               "authors": [
                 "Team"
               ],
@@ -98,7 +98,7 @@
               "permalink": "/Hidroponia-Project/blog/release/seven"
             }
           },
-          "content": "### (｡◕‿◕｡)\n\nLogramos comunicar correctamente la toma de datos de Python con MyCodo, esto fue realmente más fácil de lo que pensamos al no tener que interaccionar con algún otro lenguaje de programación en el proceso. \nEl resto será cuestión de tiempo para que se logré.\n\n### Ideas\n\nSí logramos unificar todo el proyecto con MyCodo rápidamente, pensamos que podríamos crear un *programa* de escritorio para poder muestrear los datos. Todo esto con la intención de tener más control sobre nuestro código.\nRealmente con MyCodo *no sabemos lo que estamos haciendo*, lo cual es una ayuda realmente práctica porque uno no debe de saber como funciona internamente el programa; pero no nos satisface.\nSabemos utilizar una técnologia llamada Tauri. La cual es todo un ecosistema de herramientas que te permiten utilizar Webview (Microsoft) para crear un programa de escritorio con técnologia web y, manejar todo su Backend utilizando el lenguaje de bajo nivel **Rust**.\nPensamos que haría que el proyecto se sintiera menos incompleto y que sería grandioso que tuviese un programa propio también.\n\nAparte, ya tenemos un código; [Spectrum-IOT_WebPage](https://sartalan.github.io/Spectrum-IOT_WebPage/)\n\nSpectrum-IOT_WebPage es una aplicación web que fue creada para monitorear la lectura de datos que ésta recibiera de una casa completamente automátizada para que unos robots se movilizarán de forma autonóma en ella; como es de imaginar, el *proyecto fue cancelado*. Es justamente por ello que nos gustaría reutilizar el código y adaptarlo al diseño de la App (por una cuestión de consistencia). \nAunque también seria increible que pudiese ser hecho para que, a diferencia de la app, se pueda modificar alguna parte del código del microcontrolador y regular mágnitudes. Sería altamente práctico como una interfaz visual táctil que pudiese estar instalada en la Raspberry y, simplemente con un par de touch's y la misma navegación intuitiva de la aplicación web, pudiese ser controlado. \n\nAunque muy seguramente no lleguemos con el tiempo para ello; pero puede que sea un buen código Open Source del que se pueda sacar mucho provecho sí alguien así lo quiere."
+          "content": "### (｡◕‿◕｡)\n\nLogramos comunicar correctamente la toma de datos de Python con MyCodo, esto fue realmente más fácil de lo que pensamos al no tener que interaccionar con algún otro lenguaje de programación en el proceso. \nEl resto será cuestión de tiempo para que se logré.\n\n### Filtro\n\nHoy fue impreso el filtro/recipiente necesario para alojar los plantines.\n\n![Filtro](../Ref/Filtro.jpeg)\n\n### Ideas\n\nSí logramos unificar todo el proyecto con MyCodo rápidamente, pensamos que podríamos crear un *programa* de escritorio para poder muestrear los datos. Todo esto con la intención de tener más control sobre nuestro código.\nRealmente con MyCodo *no sabemos lo que estamos haciendo*, lo cual es una ayuda realmente práctica porque uno no debe de saber como funciona internamente el programa; pero no nos satisface.\nSabemos utilizar una técnologia llamada Tauri. La cual es todo un ecosistema de herramientas que te permiten utilizar Webview (Microsoft) para crear un programa de escritorio con técnologia web y, manejar todo su Backend utilizando el lenguaje de bajo nivel **Rust**.\nPensamos que haría que el proyecto se sintiera menos incompleto y que sería grandioso que tuviese un programa propio también.\n\nAparte, ya tenemos un código; [Spectrum-IOT_WebPage](https://sartalan.github.io/Spectrum-IOT_WebPage/)\n\nSpectrum-IOT_WebPage es una aplicación web que fue creada para monitorear la lectura de datos que ésta recibiera de una casa completamente automátizada para que unos robots se movilizarán de forma autonóma en ella; como es de imaginar, el *proyecto fue cancelado*. Es justamente por ello que nos gustaría reutilizar el código y adaptarlo al diseño de la App (por una cuestión de consistencia). \nAunque también seria increible que pudiese ser hecho para que, a diferencia de la app, se pueda modificar alguna parte del código del microcontrolador y regular mágnitudes. Sería altamente práctico como una interfaz visual táctil que pudiese estar instalada en la Raspberry y, simplemente con un par de touch's y la misma navegación intuitiva de la aplicación web, pudiese ser controlado. \n\nAunque muy seguramente no lleguemos con el tiempo para ello; pero puede que sea un buen código Open Source del que se pueda sacar mucho provecho sí alguien así lo quiere."
         },
         {
           "id": "release/seven",
@@ -138,7 +138,7 @@
             },
             "unlisted": false,
             "prevItem": {
-              "title": "Actualización [ 8 ] | Comunicación a MyCodo",
+              "title": "Actualización [ 8 ] | Comunicación a MyCodo | Filtro",
               "permalink": "/Hidroponia-Project/blog/release/eight"
             },
             "nextItem": {
@@ -259,7 +259,7 @@
                 "permalink": "/Hidroponia-Project/blog/tags/epico"
               }
             ],
-            "readingTime": 0.11,
+            "readingTime": 1.36,
             "hasTruncateMarker": false,
             "authors": [
               {
@@ -290,7 +290,7 @@
               "permalink": "/Hidroponia-Project/blog/release/three"
             }
           },
-          "content": "## Hidroponia\n\n#### **Finalmente, lo terminamos; logramos terminar la estructura de la Hidroponia**\n\n(texto de como la armamos)\n\n//foto de la hidroponia"
+          "content": "## Hidroponia\n\n#### **Finalmente, lo terminamos; logramos terminar la estructura de la Hidroponia**\n\nHoy terminamos de instalar de forma funcional la Hidroponia. \nLa Hidroponia es, por explicarla de manera sencilla -en la foto se entiende, de igual modo- un \"circuito\" donde una bomba de agua se encarga de bombear el agua hacía arriba y, al llegar al tope, va bajando por fuerza de la gravedad por unos caños con una leve inclinación. \n\nPor sí nadie sabe lo que es una hidroponia, la función de este \"mecanismo\" básicamente permite que, por un lado el agua no se estanque, y por el otro que las plantas esten hidratadas. Al una Hidroponia carecer de tierra justamente se le agregan minerales y/o nutrientes para compensar su carencia. Una Hidroponia -puede ser- una forma muy económica de cultivar plantas en espacios reducidos *si se hace bien*. Nuestra intención en nuestro proyecto es monitorear la mayor cantidad de mágnitudes físicas de ésta.\n\n#### Estructura\n\nLa estructura de la Hidroponia no es más que una serie de caños **termofusionados** que le permiten el flujo de agua. En la parte superior de cada caño -aunque no se vea en la foto- contiene unos huecos a escala para contener unos \"recipientes/filtros\" que las raíces del platín a plantar.\n\nAunque se vea muy fácil el montaje de la estructura, realmente no lo fue; más de una vez tuvimos algún problema que ocasionó alguna pérdida de agua y tuvimos que replantear alguna parte de su diseño, así que sí alguien piensa armar una: tengalo en cuenta. \n\n![](../Ref/Hidroponia_one.jpeg)\n\nFinalizando con el tema. Le agradecemos mucho a nuestro profesor por habernos ayudado en el armado."
         },
         {
           "id": "release/three",
