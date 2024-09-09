@@ -2,11 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/Hidroponia-Project/blog</id>
     <title>Hidroponia Blog</title>
-    <updated>2024-09-04T00:00:00.000Z</updated>
+    <updated>2024-09-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com/Hidroponia-Project/blog"/>
     <subtitle>Hidroponia Blog</subtitle>
     <icon>https://github.com/Hidroponia-Project/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Actualización [ 8 ] | Comunicación a MyCodo | Filtro]]></title>
+        <id>https://github.com/Hidroponia-Project/blog/release/eight</id>
+        <link href="https://github.com/Hidroponia-Project/blog/release/eight"/>
+        <updated>2024-09-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[(｡◕‿◕｡)]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="‿">(｡◕‿◕｡)<a href="https://github.com/Hidroponia-Project/blog/release/eight#%E2%80%BF" class="hash-link" aria-label="Enlace directo al (｡◕‿◕｡)" title="Enlace directo al (｡◕‿◕｡)">​</a></h3>
+<p>Logramos comunicar correctamente la toma de datos de Python con MyCodo, esto fue realmente más fácil de lo que pensamos al no tener que interaccionar con algún otro lenguaje de programación en el proceso.
+El resto será cuestión de tiempo para que se logré.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="filtro">Filtro<a href="https://github.com/Hidroponia-Project/blog/release/eight#filtro" class="hash-link" aria-label="Enlace directo al Filtro" title="Enlace directo al Filtro">​</a></h3>
+<p>Hoy fue impreso el filtro/recipiente necesario para alojar los plantines.</p>
+<p><img decoding="async" loading="lazy" alt="Filtro" src="https://github.com/Hidroponia-Project/assets/images/Filtro-4abb3058a332dffc5fd0a47d5aa8d5b8.jpeg" width="1200" height="1600" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ideas">Ideas<a href="https://github.com/Hidroponia-Project/blog/release/eight#ideas" class="hash-link" aria-label="Enlace directo al Ideas" title="Enlace directo al Ideas">​</a></h3>
+<p>Sí logramos unificar todo el proyecto con MyCodo rápidamente, pensamos que podríamos crear un <em>programa</em> de escritorio para poder muestrear los datos. Todo esto con la intención de tener más control sobre nuestro código.
+Realmente con MyCodo <em>no sabemos lo que estamos haciendo</em>, lo cual es una ayuda realmente práctica porque uno no debe de saber como funciona internamente el programa; pero no nos satisface.
+Sabemos utilizar una técnologia llamada Tauri. La cual es todo un ecosistema de herramientas que te permiten utilizar Webview (Microsoft) para crear un programa de escritorio con técnologia web y, manejar todo su Backend utilizando el lenguaje de bajo nivel <strong>Rust</strong>.
+Pensamos que haría que el proyecto se sintiera menos incompleto y que sería grandioso que tuviese un programa propio también.</p>
+<p>Aparte, ya tenemos un código; <a href="https://sartalan.github.io/Spectrum-IOT_WebPage/" target="_blank" rel="noopener noreferrer">Spectrum-IOT_WebPage</a></p>
+<p>Spectrum-IOT_WebPage es una aplicación web que fue creada para monitorear la lectura de datos que ésta recibiera de una casa completamente automátizada para que unos robots se movilizarán de forma autonóma en ella; como es de imaginar, el <em>proyecto fue cancelado</em>. Es justamente por ello que nos gustaría reutilizar el código y adaptarlo al diseño de la App (por una cuestión de consistencia).
+Aunque también seria increible que pudiese ser hecho para que, a diferencia de la app, se pueda modificar alguna parte del código del microcontrolador y regular mágnitudes. Sería altamente práctico como una interfaz visual táctil que pudiese estar instalada en la Raspberry y, simplemente con un par de touch's y la misma navegación intuitiva de la aplicación web, pudiese ser controlado.</p>
+<p>Aunque muy seguramente no lleguemos con el tiempo para ello; pero puede que sea un buen código Open Source del que se pueda sacar mucho provecho sí alguien así lo quiere.</p>]]></content>
+        <author>
+            <name>Wolfsrudel</name>
+            <uri>https://github.com/Sartalan/Hidroponia-Project</uri>
+        </author>
+        <category label="MyCodo" term="MyCodo"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Actualización [ 7 ] | Avances]]></title>
         <id>https://github.com/Hidroponia-Project/blog/release/seven</id>
@@ -101,8 +128,14 @@ El problema fue solucionado en la misma placa que explotó al día siguiente, as
         <summary type="html"><![CDATA[Hidroponia]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hidroponia">Hidroponia<a href="https://github.com/Hidroponia-Project/blog/release/four#hidroponia" class="hash-link" aria-label="Enlace directo al Hidroponia" title="Enlace directo al Hidroponia">​</a></h2>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="finalmente-lo-terminamos-logramos-terminar-la-estructura-de-la-hidroponia"><strong>Finalmente, lo terminamos; logramos terminar la estructura de la Hidroponia</strong><a href="https://github.com/Hidroponia-Project/blog/release/four#finalmente-lo-terminamos-logramos-terminar-la-estructura-de-la-hidroponia" class="hash-link" aria-label="Enlace directo al finalmente-lo-terminamos-logramos-terminar-la-estructura-de-la-hidroponia" title="Enlace directo al finalmente-lo-terminamos-logramos-terminar-la-estructura-de-la-hidroponia">​</a></h4>
-<p>(texto de como la armamos)</p>
-<p>//foto de la hidroponia</p>]]></content>
+<p>Hoy terminamos de instalar de forma funcional la Hidroponia.
+La Hidroponia es, por explicarla de manera sencilla -en la foto se entiende, de igual modo- un "circuito" donde una bomba de agua se encarga de bombear el agua hacía arriba y, al llegar al tope, va bajando por fuerza de la gravedad por unos caños con una leve inclinación.</p>
+<p>Por sí nadie sabe lo que es una hidroponia, la función de este "mecanismo" básicamente permite que, por un lado el agua no se estanque, y por el otro que las plantas esten hidratadas. Al una Hidroponia carecer de tierra justamente se le agregan minerales y/o nutrientes para compensar su carencia. Una Hidroponia -puede ser- una forma muy económica de cultivar plantas en espacios reducidos <em>si se hace bien</em>. Nuestra intención en nuestro proyecto es monitorear la mayor cantidad de mágnitudes físicas de ésta.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="estructura">Estructura<a href="https://github.com/Hidroponia-Project/blog/release/four#estructura" class="hash-link" aria-label="Enlace directo al Estructura" title="Enlace directo al Estructura">​</a></h4>
+<p>La estructura de la Hidroponia no es más que una serie de caños <strong>termofusionados</strong> que le permiten el flujo de agua. En la parte superior de cada caño -aunque no se vea en la foto- contiene unos huecos a escala para contener unos "recipientes/filtros" que las raíces del platín a plantar.</p>
+<p>Aunque se vea muy fácil el montaje de la estructura, realmente no lo fue; más de una vez tuvimos algún problema que ocasionó alguna pérdida de agua y tuvimos que replantear alguna parte de su diseño, así que sí alguien piensa armar una: tengalo en cuenta.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/Hidroponia-Project/assets/images/Hidroponia_one-4209e1f5baf13acf763b864bcfad4f5f.jpeg" width="1200" height="1600" class="img_ev3q"></p>
+<p>Finalizando con el tema. Le agradecemos mucho a nuestro profesor por habernos ayudado en el armado.</p>]]></content>
         <author>
             <name>Wolfsrudel</name>
             <uri>https://github.com/Sartalan/Hidroponia-Project</uri>
