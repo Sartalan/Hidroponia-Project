@@ -1,0 +1,3 @@
+Aviso: Corrección del ancho restringida. El valor de la corrección del ancho debe encontrarse en el rango de [0,000001 mm; 0,199999 mm] para las reglas de diseño actuales.
+Trazado a '/home/sarti/documents/projects/Hidroponia-Project/Circuito - Kicad/dimmer-B_Cu.pdf'.
+Info: Listo.
