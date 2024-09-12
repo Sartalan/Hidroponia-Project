@@ -1,0 +1,78 @@
+/*TODO: Home Component */
+/*TODO: -------------- */
+
+  /*? <HOME PAGE/> */
+  /*? ------------ */
+  
+  .contentHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 1.5em;
+  }
+  
+  .contentHome > .box { /** Three Boxes */
+    margin: .5em;
+    height: 8em;
+    flex-basis: 15em;
+    flex-grow:0;
+    flex-shrink: 1;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1em;
+    /*? For Text Inside =>*/
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    position: relative;
+  }
+
+  .contentHome > .box::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: .25em;
+    right: .25em;
+    background-color: transparent;
+    width: 1em;
+    height: 1em;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: background-color 0.25s ease,
+                transform 0.25s ease
+
+    ;
+    transform: scale(0.75);
+  }
+
+  .contentHome > .box:hover::after {
+    background-color: rgba(218, 13, 13, 0.9);
+    transform: scale(1);
+
+  }
+
+  .box > .text {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    opacity: .75;
+    font-family: "LetraFacha";
+    letter-spacing: 2px;
+    user-select: none;
+    margin:0 0 0.25em 7.5%;
+    list-style-type: circle;
+  }
+
+  /** Style Test*/
+
+  .contentHome > .box  {
+    transition: transform 0.15s ease;
+  }
+
+  .contentHome > .box:hover {
+    transform: scale(1.15) translateY(-15px);
+  }
+
+
+  
+  
