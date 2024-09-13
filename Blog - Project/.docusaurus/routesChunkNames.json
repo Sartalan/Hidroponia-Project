@@ -49,13 +49,16 @@
       "plugin": "plugin---hidroponia-project-docusaurus-debugae-3-673"
     }
   },
-  "/Hidroponia-Project/blog-7db": {
+  "/Hidroponia-Project/blog-23c": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
     },
     "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
     "items": [
+      {
+        "content": "content---hidroponia-project-blog-6-d-9-747"
+      },
       {
         "content": "content---hidroponia-project-blogc-43-fec"
       },
@@ -136,6 +139,17 @@
     },
     "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
     "content": "content---hidroponia-project-blog-release-foura-79-bba"
+  },
+  "/Hidroponia-Project/blog/release/nine-1cd": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+      },
+      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+    },
+    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "content": "content---hidroponia-project-blog-release-nined-38-d48"
   },
   "/Hidroponia-Project/blog/release/one-4b9": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
@@ -296,13 +310,16 @@
     "tag": "tag---hidroponia-project-blog-tags-kicad-7-fe-b60",
     "listMetadata": "listMetadata---hidroponia-project-blog-tags-kicad-585-240"
   },
-  "/Hidroponia-Project/blog/tags/my-codo-4ef": {
+  "/Hidroponia-Project/blog/tags/my-codo-dcd": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
     },
     "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
     "items": [
+      {
+        "content": "content---hidroponia-project-blog-6-d-9-747"
+      },
       {
         "content": "content---hidroponia-project-blogc-43-fec"
       }

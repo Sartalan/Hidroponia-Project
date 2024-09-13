@@ -44,7 +44,7 @@ export default [
   },
   {
     path: '/Hidroponia-Project/blog',
-    component: ComponentCreator('/Hidroponia-Project/blog', '7db'),
+    component: ComponentCreator('/Hidroponia-Project/blog', '23c'),
     exact: true
   },
   {
@@ -70,6 +70,11 @@ export default [
   {
     path: '/Hidroponia-Project/blog/release/four',
     component: ComponentCreator('/Hidroponia-Project/blog/release/four', 'faa'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/release/nine',
+    component: ComponentCreator('/Hidroponia-Project/blog/release/nine', '1cd'),
     exact: true
   },
   {
@@ -134,7 +139,7 @@ export default [
   },
   {
     path: '/Hidroponia-Project/blog/tags/my-codo',
-    component: ComponentCreator('/Hidroponia-Project/blog/tags/my-codo', '4ef'),
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/my-codo', 'dcd'),
     exact: true
   },
   {

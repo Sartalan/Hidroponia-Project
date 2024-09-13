@@ -1,0 +1,40 @@
+{
+  "permalink": "/Hidroponia-Project/blog/release/nine",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-9-12.md",
+  "source": "@site/blog/Notas/2024-9-12.md",
+  "title": "Actualización [ 9 ] | PCB && Block Diagram",
+  "description": "Buenas!",
+  "date": "2024-09-12T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "MyCodo",
+      "permalink": "/Hidroponia-Project/blog/tags/my-codo"
+    }
+  ],
+  "readingTime": 1.03,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Wolfsrudel",
+      "title": "All the Team",
+      "url": "https://github.com/Sartalan/Hidroponia-Project",
+      "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+      "key": "Team"
+    }
+  ],
+  "frontMatter": {
+    "slug": "release/nine",
+    "title": "Actualización [ 9 ] | PCB && Block Diagram",
+    "authors": [
+      "Team"
+    ],
+    "tags": [
+      "MyCodo"
+    ]
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "Actualización [ 8 ] | Comunicación a MyCodo | Filtro",
+    "permalink": "/Hidroponia-Project/blog/release/eight"
+  }
+}

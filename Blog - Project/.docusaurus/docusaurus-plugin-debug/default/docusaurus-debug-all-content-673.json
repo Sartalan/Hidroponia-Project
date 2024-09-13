@@ -57,6 +57,50 @@
       "blogSidebarTitle": "Recent posts",
       "blogPosts": [
         {
+          "id": "release/nine",
+          "metadata": {
+            "permalink": "/Hidroponia-Project/blog/release/nine",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-9-12.md",
+            "source": "@site/blog/Notas/2024-9-12.md",
+            "title": "Actualización [ 9 ] | PCB && Block Diagram",
+            "description": "Buenas!",
+            "date": "2024-09-12T00:00:00.000Z",
+            "tags": [
+              {
+                "label": "MyCodo",
+                "permalink": "/Hidroponia-Project/blog/tags/my-codo"
+              }
+            ],
+            "readingTime": 1.03,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Wolfsrudel",
+                "title": "All the Team",
+                "url": "https://github.com/Sartalan/Hidroponia-Project",
+                "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+                "key": "Team"
+              }
+            ],
+            "frontMatter": {
+              "slug": "release/nine",
+              "title": "Actualización [ 9 ] | PCB && Block Diagram",
+              "authors": [
+                "Team"
+              ],
+              "tags": [
+                "MyCodo"
+              ]
+            },
+            "unlisted": false,
+            "nextItem": {
+              "title": "Actualización [ 8 ] | Comunicación a MyCodo | Filtro",
+              "permalink": "/Hidroponia-Project/blog/release/eight"
+            }
+          },
+          "content": "## Buenas!\n\nHoy hemos terminado de montar el PCB y realizar el código que toma la lectura de todos los sensores y lo envía a través de serial hacia la Raspberry. Comenzando ahora, nuestro nuevo reto: la correcta interceptación de datos de parte de la Raspberry utilizando Python. \nUna forma de resolver este problema de forma sencilla es la que hicimos antes, y es tener el script de Python con la interceptación de datos seriales desde MyCodo, lo cual, aunque solucione nuestro problema, es *muy* poco práctico.\n\n#### Nuestra idea es la siguiente:\n+ Queremos que un *único* script de Python se encargue de manejar todos los datos enviados desde el microcontrolador y se encargue de clasificarlos para luego escribirlos en un archivo de cualquier tipo. Luego habrá scripts independientes en los widgets de MyCodo que crearán un sencillo bucle de lectura de datos de un archivo del cuál extraeran el dato a mostrar en pantalla.\n\nTodo esto llevará a que la comunicación entre las partes quede tal que así:\n\n![Diagrama de Comunicación entre códigos](../Ref/Diagrama%20En%20Bloques.png)\n\n### PCB \n\nTambién, para concluir con el tema, les adjuntamos el PCB tanto montado como en KiCad al habernos quedado pendiente la última vez:\n\n![PCB | KiCad](../Ref/PCB.jpeg)\n---\n![PCB | Montado](../Ref/PCB_FOTO.jpeg)"
+        },
+        {
           "id": "release/eight",
           "metadata": {
             "permalink": "/Hidroponia-Project/blog/release/eight",
@@ -93,6 +137,10 @@
               ]
             },
             "unlisted": false,
+            "prevItem": {
+              "title": "Actualización [ 9 ] | PCB && Block Diagram",
+              "permalink": "/Hidroponia-Project/blog/release/nine"
+            },
             "nextItem": {
               "title": "Actualización [ 7 ] | Avances",
               "permalink": "/Hidroponia-Project/blog/release/seven"
@@ -499,6 +547,7 @@
       "blogListPaginated": [
         {
           "items": [
+            "release/nine",
             "release/eight",
             "release/seven",
             "release/six",
@@ -514,7 +563,7 @@
             "page": 1,
             "postsPerPage": 10,
             "totalPages": 1,
-            "totalCount": 9,
+            "totalCount": 10,
             "blogDescription": "Blog",
             "blogTitle": "Blog"
           }
@@ -524,12 +573,14 @@
         "/Hidroponia-Project/blog/tags/my-codo": {
           "label": "MyCodo",
           "items": [
+            "release/nine",
             "release/eight"
           ],
           "permalink": "/Hidroponia-Project/blog/tags/my-codo",
           "pages": [
             {
               "items": [
+                "release/nine",
                 "release/eight"
               ],
               "metadata": {
@@ -537,7 +588,7 @@
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,
-                "totalCount": 1,
+                "totalCount": 2,
                 "blogDescription": "Blog",
                 "blogTitle": "Blog"
               }
