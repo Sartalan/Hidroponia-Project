@@ -2,11 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/Hidroponia-Project/blog</id>
     <title>Hidroponia Blog</title>
-    <updated>2024-09-09T00:00:00.000Z</updated>
+    <updated>2024-09-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com/Hidroponia-Project/blog"/>
     <subtitle>Hidroponia Blog</subtitle>
     <icon>https://github.com/Hidroponia-Project/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Actualización [ 9 ] | PCB && Block Diagram]]></title>
+        <id>https://github.com/Hidroponia-Project/blog/release/nine</id>
+        <link href="https://github.com/Hidroponia-Project/blog/release/nine"/>
+        <updated>2024-09-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Buenas!]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="buenas">Buenas!<a href="https://github.com/Hidroponia-Project/blog/release/nine#buenas" class="hash-link" aria-label="Enlace directo al Buenas!" title="Enlace directo al Buenas!">​</a></h2>
+<p>Hoy hemos terminado de montar el PCB y realizar el código que toma la lectura de todos los sensores y lo envía a través de serial hacia la Raspberry. Comenzando ahora, nuestro nuevo reto: la correcta interceptación de datos de parte de la Raspberry utilizando Python.
+Una forma de resolver este problema de forma sencilla es la que hicimos antes, y es tener el script de Python con la interceptación de datos seriales desde MyCodo, lo cual, aunque solucione nuestro problema, es <em>muy</em> poco práctico.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="nuestra-idea-es-la-siguiente">Nuestra idea es la siguiente:<a href="https://github.com/Hidroponia-Project/blog/release/nine#nuestra-idea-es-la-siguiente" class="hash-link" aria-label="Enlace directo al Nuestra idea es la siguiente:" title="Enlace directo al Nuestra idea es la siguiente:">​</a></h4>
+<ul>
+<li>Queremos que un <em>único</em> script de Python se encargue de manejar todos los datos enviados desde el microcontrolador y se encargue de clasificarlos para luego escribirlos en un archivo de cualquier tipo. Luego habrá scripts independientes en los widgets de MyCodo que crearán un sencillo bucle de lectura de datos de un archivo del cuál extraeran el dato a mostrar en pantalla.</li>
+</ul>
+<p>Todo esto llevará a que la comunicación entre las partes quede tal que así:</p>
+<p><img decoding="async" loading="lazy" alt="Diagrama de Comunicación entre códigos" src="https://github.com/Hidroponia-Project/assets/images/Diagrama%20En%20Bloques-fd1846a271de57113915d26f1a7d99c0.png" width="2236" height="872" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pcb">PCB<a href="https://github.com/Hidroponia-Project/blog/release/nine#pcb" class="hash-link" aria-label="Enlace directo al PCB" title="Enlace directo al PCB">​</a></h3>
+<p>También, para concluir con el tema, les adjuntamos el PCB tanto montado como en KiCad al habernos quedado pendiente la última vez:</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pcb--kicad"><img decoding="async" loading="lazy" alt="PCB | KiCad" src="https://github.com/Hidroponia-Project/assets/images/PCB-88d0b533f683a855002db8e9c4479ae4.jpeg" width="364" height="371" class="img_ev3q"><a href="https://github.com/Hidroponia-Project/blog/release/nine#pcb--kicad" class="hash-link" aria-label="Enlace directo al pcb--kicad" title="Enlace directo al pcb--kicad">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="PCB | Montado" src="https://github.com/Hidroponia-Project/assets/images/PCB_FOTO-6533072cc51fb649d44972c74e0260cb.jpeg" width="960" height="1280" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Wolfsrudel</name>
+            <uri>https://github.com/Sartalan/Hidroponia-Project</uri>
+        </author>
+        <category label="MyCodo" term="MyCodo"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Actualización [ 8 ] | Comunicación a MyCodo | Filtro]]></title>
         <id>https://github.com/Hidroponia-Project/blog/release/eight</id>
