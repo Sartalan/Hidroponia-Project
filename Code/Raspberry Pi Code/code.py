@@ -1,7 +1,7 @@
 import serial
 import time
 
-ser = serial.Serial('/dev/ttyACM1', 9600, timeout=1.0)
+ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1.0)
 time.sleep(3)
 ser.reset_input_buffer()
 print("Serial OK")
@@ -45,10 +45,10 @@ try:
             else: 
                 ## Acá se sobreescribirá el archivo con los datos
                 #* Files
-                Temperature_FILE = open("temperature.txt", "w")
-                Humidity_FILE = open("humidity.txt", "w")
-                Caudal_FILE = open("caudal.txt", "w")
-                Light_FILE = open("light.txt", "w")
+                Temperature_FILE = open("./Files/temperature.txt", "w")
+                Humidity_FILE = open("./Files/humidity.txt", "w")
+                Caudal_FILE = open("./Files/caudal.txt", "w")
+                Light_FILE = open("./Files/light.txt", "w")
 
                 MyFinalValues = []
                 ## Luego de haber filtrado los datos y haberle eliminado al array todos los strings
