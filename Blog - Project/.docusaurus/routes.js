@@ -9,7 +9,7 @@ export default [
   },
   {
     path: '/Hidroponia-Project/blog',
-    component: ComponentCreator('/Hidroponia-Project/blog', '23c'),
+    component: ComponentCreator('/Hidroponia-Project/blog', '64e'),
     exact: true
   },
   {
@@ -20,6 +20,11 @@ export default [
   {
     path: '/Hidroponia-Project/blog/note/one',
     component: ComponentCreator('/Hidroponia-Project/blog/note/one', 'ce2'),
+    exact: true
+  },
+  {
+    path: '/Hidroponia-Project/blog/page/2',
+    component: ComponentCreator('/Hidroponia-Project/blog/page/2', '029'),
     exact: true
   },
   {
@@ -58,6 +63,11 @@ export default [
     exact: true
   },
   {
+    path: '/Hidroponia-Project/blog/release/ten',
+    component: ComponentCreator('/Hidroponia-Project/blog/release/ten', 'a31'),
+    exact: true
+  },
+  {
     path: '/Hidroponia-Project/blog/release/three',
     component: ComponentCreator('/Hidroponia-Project/blog/release/three', '156'),
     exact: true
@@ -83,6 +93,11 @@ export default [
     exact: true
   },
   {
+    path: '/Hidroponia-Project/blog/tags/communication',
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/communication', 'b4c'),
+    exact: true
+  },
+  {
     path: '/Hidroponia-Project/blog/tags/epico',
     component: ComponentCreator('/Hidroponia-Project/blog/tags/epico', '630'),
     exact: true
@@ -104,7 +119,7 @@ export default [
   },
   {
     path: '/Hidroponia-Project/blog/tags/my-codo',
-    component: ComponentCreator('/Hidroponia-Project/blog/tags/my-codo', 'dcd'),
+    component: ComponentCreator('/Hidroponia-Project/blog/tags/my-codo', 'b8a'),
     exact: true
   },
   {

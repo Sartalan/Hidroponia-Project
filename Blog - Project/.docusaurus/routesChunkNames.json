@@ -6,13 +6,16 @@
     },
     "config": "5e9f5e1a"
   },
-  "/Hidroponia-Project/blog-23c": {
+  "/Hidroponia-Project/blog-64e": {
     "__comp": "a6aa9e1f",
     "__context": {
       "plugin": "0a81ccb5"
     },
     "sidebar": "814f3328",
     "items": [
+      {
+        "content": "33ed4812"
+      },
       {
         "content": "6d9eabae"
       },
@@ -39,9 +42,6 @@
       },
       {
         "content": "a5372cba"
-      },
-      {
-        "content": "6099ac2a"
       }
     ],
     "metadata": "9dc4da4d"
@@ -63,6 +63,19 @@
     },
     "sidebar": "814f3328",
     "content": "6feb941f"
+  },
+  "/Hidroponia-Project/blog/page/2-029": {
+    "__comp": "a6aa9e1f",
+    "__context": {
+      "plugin": "0a81ccb5"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "6099ac2a"
+      }
+    ],
+    "metadata": "a8bfbbeb"
   },
   "/Hidroponia-Project/blog/release/eight-618": {
     "__comp": "ccc49370",
@@ -141,6 +154,17 @@
     "sidebar": "814f3328",
     "content": "13f4a5a6"
   },
+  "/Hidroponia-Project/blog/release/ten-a31": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "0a81ccb5"
+    },
+    "sidebar": "814f3328",
+    "content": "d9cb3bbc"
+  },
   "/Hidroponia-Project/blog/release/three-156": {
     "__comp": "ccc49370",
     "__context": {
@@ -198,6 +222,20 @@
     ],
     "tag": "30460d1c",
     "listMetadata": "f99ac290"
+  },
+  "/Hidroponia-Project/blog/tags/communication-b4c": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "0a81ccb5"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "33ed4812"
+      }
+    ],
+    "tag": "de3e0138",
+    "listMetadata": "60b8fca9"
   },
   "/Hidroponia-Project/blog/tags/epico-630": {
     "__comp": "6875c492",
@@ -267,13 +305,16 @@
     "tag": "7fefa7bb",
     "listMetadata": "585766c2"
   },
-  "/Hidroponia-Project/blog/tags/my-codo-dcd": {
+  "/Hidroponia-Project/blog/tags/my-codo-b8a": {
     "__comp": "6875c492",
     "__context": {
       "plugin": "0a81ccb5"
     },
     "sidebar": "814f3328",
     "items": [
+      {
+        "content": "33ed4812"
+      },
       {
         "content": "6d9eabae"
       },

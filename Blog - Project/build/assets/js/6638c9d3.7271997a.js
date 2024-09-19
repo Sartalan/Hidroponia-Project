@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkherzarmband_blog=self.webpackChunkherzarmband_blog||[]).push([[3609],{7061:o=>{o.exports=JSON.parse('{"permalink":"/Hidroponia-Project/blog/tags/my-codo","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

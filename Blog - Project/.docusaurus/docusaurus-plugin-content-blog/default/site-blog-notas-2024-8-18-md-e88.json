@@ -1,0 +1,45 @@
+{
+  "permalink": "/Hidroponia-Project/blog/release/ten",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024.8.18.md",
+  "source": "@site/blog/Notas/2024.8.18.md",
+  "title": "Actualización [ 10 ] | Comunicación con MyCodo éxitosa.",
+  "description": "Logramos comunicar correctamente el envío de datos seriales a los Input de entrada de datos de MyCodo.",
+  "date": "2024-09-19T04:19:30.883Z",
+  "tags": [
+    {
+      "label": "Communication",
+      "permalink": "/Hidroponia-Project/blog/tags/communication"
+    },
+    {
+      "label": "MyCodo",
+      "permalink": "/Hidroponia-Project/blog/tags/my-codo"
+    }
+  ],
+  "readingTime": 1.5,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Wolfsrudel",
+      "title": "All the Team",
+      "url": "https://github.com/Sartalan/Hidroponia-Project",
+      "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+      "key": "Team"
+    }
+  ],
+  "frontMatter": {
+    "slug": "release/ten",
+    "title": "Actualización [ 10 ] | Comunicación con MyCodo éxitosa.",
+    "authors": [
+      "Team"
+    ],
+    "tags": [
+      "Communication",
+      "MyCodo"
+    ]
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "Actualización [ 9 ] | PCB && Block Diagram",
+    "permalink": "/Hidroponia-Project/blog/release/nine"
+  }
+}
