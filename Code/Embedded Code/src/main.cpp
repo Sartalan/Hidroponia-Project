@@ -99,8 +99,8 @@ void loop()
     Serial.println(Caudal_Value);
     Caudal_Pulsos = 0; // Reiniciar contador
     Previous_Time = millis();
-  }3
-
+  }
+  
   Serial.print("Humedad: ");
   Serial.println(h);
 
