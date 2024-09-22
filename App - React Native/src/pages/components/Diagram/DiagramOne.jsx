@@ -1,6 +1,7 @@
-import { Dimensions, Text } from "react-native";
+import { Dimensions, Text, View } from "react-native";
 import { ProgressChart } from "react-native-chart-kit";
 import { DiagramStyle } from "../../../styles/screens/DiagramStyle";
+import { useEffect, useState } from "react";
 const screenWidth = Dimensions.get("window").width;
 const backgroundChart = '#121212'
 const watered = "#A3C7D6"
@@ -10,20 +11,51 @@ const temperature = "#9F73AB"
 //? Graph Example Data | Dont Modify this Code
 //?-------------------------------------------
 
-let data = {
-  labels: ["watered", "humidity", "temperature"], // optional
-  data: [0.2, 0.6, 0.8],
-  colors: [(watered), (humidity), (temperature)]
-};
 
 export function DiagramOne() {
+  
 
+  
+  const [isLoading, setIsLoading] = useState(true)
+  const [data, setData] = useState(1)
+  const [counter, setCounter] = useState(0)
 
-  return (
-    <>
+  useEffect(() => {
+    fetch("http://192.168.50.109:5000/Sensor")
+      .then((response) => response.json())
+      .then((jsondata) => {
+         console.log(jsondata.temperatura)
+         const num = (jsondata.temperatura / 10)
+         console.log(num)  
+         setData(Number(num))
+         setIsLoading(false)
+      });
+
+      setTimeout(() => setCounter(counter + 1), 1000);
+  }, [counter]);
+
+  
+
+  const diagramData = {
+    labels: ["watered", "humidity", "temperature"], // optional
+    data: [(data), 0.3, 0.8],
+    colors: [(watered), (humidity), (temperature)]
+  };
+
+    if (isLoading) {
+      return ( 
+        <Text style={{color: '#fff', fontSize: 50, textAlign: 'center'}}>Estoy esperando datos</Text>
+      )
+    }
+
+    else {
+      return (
+        <>
+        <Text style={{color: '#fff', fontSize: 50, textAlign: 'center'}}>"Modo Datos"</Text>
+
       <ProgressChart
         style={DiagramStyle.chartGraph}
-        data={data}
+        data={diagramData}
         width={screenWidth - 20}
         height={250}
         strokeWidth={10}
@@ -47,5 +79,4 @@ export function DiagramOne() {
       <Text style={DiagramStyle.text}>Sensores</Text>
     </>
   )
-}
-
+}}

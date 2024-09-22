@@ -32,10 +32,8 @@ export function DiagramScreen() {
         <View style={DiagramStyle.chart} >
           <DiagramOne />
         </View>
+        
 
-        <View style={DiagramStyle.chart}>
-          <DiagramTwo />
-        </View>
       </View>
       {/*//?
 //? ------------------
