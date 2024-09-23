@@ -13,21 +13,35 @@ const temperature = "#9F73AB"
 
 
 export function DiagramOne() {
-  
-
-  
+//* Connection Status  
   const [isLoading, setIsLoading] = useState(true)
-  const [data, setData] = useState(1)
+//? Received Data
+  const [temperatureData, setTemperatureData] = useState(0)
+  const [humidityData, setHumidityData] = useState(0)
+  const [caudalData, setCaudalData] = useState(0)
+  const [lightData, setLightData] = useState(0)
+//? Transformed Data to Monitoring
   const [counter, setCounter] = useState(0)
 
   useEffect(() => {
     fetch("http://192.168.50.109:5000/Sensor")
       .then((response) => response.json())
       .then((jsondata) => {
-         console.log(jsondata.temperatura)
-         const num = (jsondata.temperatura / 10)
-         console.log(num)  
-         setData(Number(num))
+
+        const localTemp = jsondata.temperatura
+        const localHumidity = jsondata.humedad
+        const localCaudal = jsondata.caudal
+        const localLight = jsondata.LDR
+
+        setTemperatureData(localTemp)
+        setHumidityData(localHumidity)
+        setCaudalData(localCaudal)
+        setLightData(localLight)
+        
+        console.log(jsondata)
+
+        console.log(counter)
+
          setIsLoading(false)
       });
 
@@ -38,20 +52,26 @@ export function DiagramOne() {
 
   const diagramData = {
     labels: ["watered", "humidity", "temperature"], // optional
-    data: [(data), 0.3, 0.8],
+    data: 
+    [
+      (humidityData / 50),
+      (temperatureData / 50), 
+      (caudalData / 50)
+    ],
     colors: [(watered), (humidity), (temperature)]
   };
 
-    if (isLoading) {
-      return ( 
-        <Text style={{color: '#fff', fontSize: 50, textAlign: 'center'}}>Estoy esperando datos</Text>
-      )
-    }
+  switch (isLoading) {
 
-    else {
+    case true: 
+        return ( 
+          <Text style={{color: '#fff', fontSize: 50, textAlign: 'center'}}>Estoy esperando datos</Text>
+        )
+
+    case false: 
       return (
         <>
-        <Text style={{color: '#fff', fontSize: 50, textAlign: 'center'}}>"Modo Datos"</Text>
+      <Text style={DiagramStyle.text}>Hidroponia</Text>
 
       <ProgressChart
         style={DiagramStyle.chartGraph}
@@ -70,13 +90,21 @@ export function DiagramOne() {
           propsForLabels: {
             fill: 'white',
             fontSize: 20,
-
           }
         }}
         hideLegend={true}
         withCustomBarColorFromData
       />
-      <Text style={DiagramStyle.text}>Sensores</Text>
+      <View style={DiagramStyle.otherView}>
+        <View style={DiagramStyle.inView}><Text style={DiagramStyle.otherText}>{temperatureData} °C</Text></View>
+        <View style={DiagramStyle.inView}><Text style={DiagramStyle.otherText}>{caudalData} l/m</Text></View>
+        <View style={DiagramStyle.inView}><Text style={DiagramStyle.otherText}>{humidityData} v/r</Text></View>
+      </View>
+
+      <Text style={DiagramStyle.text}>Wheater Station</Text>
+      <Text style={DiagramStyle.text}>"(Más gráficos)"</Text>
+  
     </>
   )
 }}
+
