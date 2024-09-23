@@ -4,8 +4,8 @@ import { DiagramStyle } from "../../../styles/screens/DiagramStyle";
 import { useEffect, useState } from "react";
 const screenWidth = Dimensions.get("window").width;
 const backgroundChart = '#121212'
-const watered = "#A3C7D6"
-const humidity = "#3F3B6C"
+const watered = "#A3C7D6"  
+const humidity = "#5FA8D3"
 const temperature = "#9F73AB"
 
 //? Graph Example Data | Dont Modify this Code
@@ -38,9 +38,7 @@ export function DiagramOne() {
         setCaudalData(localCaudal)
         setLightData(localLight)
         
-        console.log(jsondata)
-
-        console.log(counter)
+ 
 
          setIsLoading(false)
       });
@@ -55,8 +53,8 @@ export function DiagramOne() {
     data: 
     [
       (humidityData / 50),
-      (temperatureData / 50), 
-      (caudalData / 50)
+      (caudalData / 50), 
+      (temperatureData / 50)
     ],
     colors: [(watered), (humidity), (temperature)]
   };
@@ -96,9 +94,9 @@ export function DiagramOne() {
         withCustomBarColorFromData
       />
       <View style={DiagramStyle.otherView}>
-        <View style={DiagramStyle.inView}><Text style={DiagramStyle.otherText}>{temperatureData} °C</Text></View>
-        <View style={DiagramStyle.inView}><Text style={DiagramStyle.otherText}>{caudalData} l/m</Text></View>
-        <View style={DiagramStyle.inView}><Text style={DiagramStyle.otherText}>{humidityData} v/r</Text></View>
+        <View style={DiagramStyle.inView}><Text style={[DiagramStyle.otherText, {backgroundColor: temperature}]}>{temperatureData} °C</Text></View>
+        <View style={DiagramStyle.inView}><Text style={[DiagramStyle.otherText, {backgroundColor: humidity}]}>{caudalData} l/m</Text></View>
+        <View style={DiagramStyle.inView}><Text style={[DiagramStyle.otherText, {backgroundColor: watered}]}>{humidityData} v/r</Text></View>
       </View>
 
       <Text style={DiagramStyle.text}>Wheater Station</Text>
