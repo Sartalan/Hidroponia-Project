@@ -23,8 +23,10 @@ export function DiagramOne() {
 //? Transformed Data to Monitoring
   const [counter, setCounter] = useState(0)
 
+  
+
   useEffect(() => {
-    fetch("http://192.168.50.109:5000/Sensor")
+    fetch("http://10.0.11.184:5000/Sensor")
       .then((response) => response.json())
       .then((jsondata) => {
 
