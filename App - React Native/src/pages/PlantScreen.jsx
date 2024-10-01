@@ -20,14 +20,18 @@ export function PlantScreen() {
   const [counter, setCounter] = useState(0)
  
   useEffect(() => {
-    fetch('http://10.0.11.184:5000/')
+    fetch('http://192.168.50.109:5000/Hidroponia')
     .then((response) => response.json())
-    .then((res) => {
-      console.log(res)
-      setPlant(res[0])
-      setImage(res[1])
-      console.log(image)
+    .then((jsondata) => {
+
+      const plantName = jsondata.plant
+      const plantImg = jsondata.plantimg
+      console.log(jsondatar)
+      setPlant(plantName)
+      setImage(plantImg)
+
       setConnection(false)
+
       setTimeout(() => setCounter(counter + 1), 1000);
     })
   },[counter])

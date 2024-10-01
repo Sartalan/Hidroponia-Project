@@ -26,21 +26,24 @@ export function DiagramOne() {
   
 
   useEffect(() => {
-    fetch("http://10.0.11.184:5000/Sensor")
+    fetch("http://192.168.50.109:5000/Hidroponia")
       .then((response) => response.json())
       .then((jsondata) => {
+        //console.log(jsondata)
+        const localTemp = jsondata.sensors.temperatura
+        const localHumidity = jsondata.sensors.humedad
+        const localCaudal = jsondata.sensors.caudal
+        const localLight = jsondata.sensors.light
 
-        const localTemp = jsondata.temperatura
-        const localHumidity = jsondata.humedad
-        const localCaudal = jsondata.caudal
-        const localLight = jsondata.LDR
+        const dataLength = Object.keys(jsondata).length
+        console.log(dataLength)
 
-        setTemperatureData(localTemp)
-        setHumidityData(localHumidity)
-        setCaudalData(localCaudal)
-        setLightData(localLight)
         
- 
+          setTemperatureData(localTemp)
+          setHumidityData(localHumidity)
+          setCaudalData(localCaudal)
+          setLightData(localLight)
+        
 
          setIsLoading(false)
       });
