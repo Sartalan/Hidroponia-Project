@@ -1,0 +1,21 @@
+from flask import Flask # type: ignore
+
+## Servidor y API tanto para la aplicación como
+## Para el programa realizado con Tauri
+
+app = Flask(__name__)
+
+data = ["Lechuga",""]
+
+@app.route("/")
+def hello_world():
+    return data
+
+@app.route("/Sensor")
+def SensorData():
+    SensorData = open("data.json", "r")
+    jsonData = SensorData
+    return jsonData 
+
+## Habilitar .env
+## Instalar Flask con pip (Reinstalar pyserial en el proyecto)
