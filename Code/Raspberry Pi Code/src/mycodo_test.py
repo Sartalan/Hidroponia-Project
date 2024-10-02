@@ -1,4 +1,8 @@
 
+#? Este es un script que se encarga de tomar los datos del archivo json
+#? de los sensores y lo muestra en Mycodo; es muy sencillo. No se ejecuta al iniciar el servidor
+#? solo es para copiar y pegar.
+
 ##? PRIMERA SECCIÓN DEL CÓDIGO | Sección superior | Bucle
 ## Los Widgets de MyCodo necesitan dos scripts de Python,
 ## el primero es el bucle que se repetirá aún sí ningún usuario 

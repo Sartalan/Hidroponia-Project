@@ -2,9 +2,9 @@ import serial
 import time
 import json
 
-## El código detectará automáticamente la inserción de un nuevo sensor
-## Lo único que debes de hacer es añadir un nuevo item al Array MY_SENSOR_LECTURES
-## (Importante no olvidarse)
+##? El código detectará automáticamente la inserción de un nuevo sensor
+##? Lo único que debes de hacer es añadir un nuevo item al Array MY_SENSOR_LECTURES 
+##? y aumentar el valor de la variable NUMBER (Importante no olvidarse).
 
 MY_SENSOR_LECTURES = ["Temperatura:", "Humedad:", "Caudal:", "LDR:", "Fuego:"] 
 BAUD_RATE = 9600
