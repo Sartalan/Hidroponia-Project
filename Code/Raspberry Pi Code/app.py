@@ -1,10 +1,13 @@
 import subprocess 
 import time
 import json
+import socket
 
 from flask import Flask # type: ignore
 
 ##* Este es el archivo main a ejecutar
+
+
 
 subprocess.Popen(["python3", "./src/filter.py"],
                  stderr=subprocess.DEVNULL,
@@ -24,6 +27,7 @@ MY_SENSOR_LECTURES = ["Temperatura:", "Humedad:", "Caudal:", "LDR:"]
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def hello_world():
     return "/"
@@ -35,6 +39,20 @@ def SensorData():
    Data = json.load(JSON_DATA)
    print(Data)
    return Data
+
+
+
+  # Obtiene la IP local del servidor
+
+##? Lee la IP local 
+
+def Server_IP():
+    host = socket.gethostname()
+    IP = socket.gethostbyname(host)
+
+    Data = (IP) + ":5000"
+    print(Data)
+Server_IP()
 
 ## Habilitar .env
 ## Instalar Flask con pip (Reinstalar pyserial en el proyecto)

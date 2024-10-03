@@ -1,6 +1,17 @@
 from sense_hat import SenseHat
+
 import json
 import time
+import socket
+
+def Server_IP():
+    host = socket.gethostname()
+    IP = socket.gethostbyname(host)
+
+    Data = (IP) + ":5000"
+    print(Data)
+
+Server_IP()
 
 DICT_DATA = {
     "station": {
