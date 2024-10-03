@@ -1,12 +1,12 @@
 #include <Arduino.h>
+#include <TimerOne.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
-#include <TimerOne.h>
 #include "DHT.h"
 
-#define ONE_WIRE_BUS 7
-#define DHTPIN 4
-#define DHTTYPE DHT11
+#define ONE_WIRE_BUS 7  //? DS18B20
+#define DHTPIN 4        //? DHT11
+#define DHTTYPE DHT11   
 #define Disparo_Calentador 3
 #define Disparo_Lampara 5
 #define Caudal_Pin 6
@@ -19,11 +19,10 @@ unsigned long Caudal_Pulsos = 0;
 unsigned long Previous_Time = 0;
 // Setup a oneWire instance to communicate with any OneWire devices
 OneWire oneWire(ONE_WIRE_BUS);
-DHT dht(DHTPIN, DHTTYPE);
-
-// Pass our oneWire reference to Dallas Temperature sensor
+DHT S_Humidity(DHTPIN, DHTTYPE);
 DallasTemperature S_Temperature(&oneWire);
 
+// Pass our oneWire reference to Dallas Temperature sensor
 void GradoZero()
 {
   GradoElectrico = 0;
@@ -31,60 +30,39 @@ void GradoZero()
 
 void Disparo()
 {
-  // GradoElectrico++;
-  /*
+   GradoElectrico++;
+
    if (LDR_Value == GradoElectrico)
    {
      Serial.print(GradoElectrico);
-     digitalWrite(Disparo_pin, HIGH);
-     digitalWrite(Disparo_pin, LOW);
+     digitalWrite(Disparo_Calentador, HIGH);
+     digitalWrite(Disparo_Calentador, LOW);
    }
-   */
+  
 }
 
 void setup()
 {
   Serial.begin(9600);
-  // Inicialización de Sensores
+  //? Inicialización de Sensores | Pines
   S_Temperature.begin();
-  dht.begin();
+  S_Humidity.begin();
   pinMode(Caudal_Pin, INPUT);
+  pinMode(Disparo_Calentador, OUTPUT);
+  pinMode(Disparo_Lampara, OUTPUT);
   // Timer
-  attachInterrupt(0, GradoZero, CHANGE); //"0" es el pin 2
+  attachInterrupt(0, GradoZero, CHANGE);   //"0" es el pin 2
   Timer1.initialize(55);                 // Seteado a 55us
   Timer1.attachInterrupt(Disparo);
 
-  // Inicialización de Pines
-  pinMode(Disparo_Calentador, OUTPUT);
+  //? Setea en LOW (por sí acaso)
   digitalWrite(Disparo_Calentador, LOW);
-  pinMode(Disparo_Lampara, OUTPUT);
   digitalWrite(Disparo_Lampara, LOW);
 }
 
 void loop()
 {
-  S_Temperature.requestTemperatures();
-  Serial.print("Celsius temperature: ");
-  Serial.print(S_Temperature.getTempCByIndex(0));
-  float h = dht.readHumidity();
-
-  // Lectura pines analógicos.
-  LDR_Value = analogRead(A0);
-  LDR_Value = map(LDR_Value, 0, 1023, 0, 178);
-  Serial.print("LDR: ");
-  Serial.println(LDR_Value);
-
-  Lluvia_Value = analogRead(A1);
-  Lluvia_Value = map(Lluvia_Value, 0, 1023, 0, 10);
-  Serial.print("Lluvia: ");
-  Serial.println(Lluvia_Value);
-
-  if (isnan(h))
-  {
-    Serial.println("Failed to read from DHT sensor!");
-    return;
-  }
-
+ 
   if (digitalRead(Caudal_Pin) == HIGH)
   {
     Caudal_Pulsos++;
@@ -100,9 +78,25 @@ void loop()
     Caudal_Pulsos = 0; // Reiniciar contador
     Previous_Time = millis();
   }
-  
-  Serial.print("Humedad: ");
-  Serial.println(h);
 
-  delay(5000);
+  //* Toma la lectura de todos los sensores del circuito
+  LDR_Value = analogRead(A0);
+  LDR_Value = map(LDR_Value, 0, 1023, 0, 178);
+  Lluvia_Value = analogRead(A1);
+  Lluvia_Value = map(Lluvia_Value, 0, 1023, 0, 10);
+  S_Temperature.requestTemperatures();
+  float Temperature = (S_Temperature.getTempCByIndex(0));
+  float Humidity = S_Humidity.readHumidity();
+
+  //* Envía los datos a la Raspberry Pi 
+  Serial.print("Lluvia: ");
+  Serial.println(Lluvia_Value);
+  Serial.print("LDR: ");
+  Serial.println(LDR_Value);
+  Serial.print("Temperatura: ");
+  Serial.println(Temperature);
+  Serial.print("Humedad: ");
+  Serial.println(Humidity);
+
+  //* Testea el sí los sensores funcionan o no.
 }
