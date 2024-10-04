@@ -33,24 +33,25 @@ nothing = (0,0,0)
 pink = (255,105, 180)
 
 def Plant():
-    G = green
-    Y = yellow
-    B = blue
+    W = white
     O = nothing
-    Logo = [
-    O, O, O, O, O, O, O, O,
-    O, Y, Y, Y, B, G, O, O,
-    Y, Y, Y, Y, Y, B, G, O,
-    Y, Y, Y, Y, Y, B, G, O,
-    Y, Y, Y, Y, Y, B, G, O,
-    Y, Y, Y, Y, Y, B, G, O,
-    O, Y, Y, Y, B, G, O, O,
-    O, O, O, O, O, O, O, O,
+    logo = [
+    O, O, O, W, W, O, O, O,
+    O, O, W, W, W, W, O, O,
+    O, W, W, O, O, W, W, O,
+    W, O, O, O, O, O, O, W,
+    W, O, W, W, W, W, O, W,
+    O, W, O, O, O, O, W, O,
+    W, O, O, W, W, O, O, W,
+    O, O, W, W, W, W, O, O,
     ]
-    return Logo
+    return logo
     
 FILE_TO_UPLOAD = "./data/weather.json"
 Data = {}
+
+for i in range(3):
+    Sense.show_message("192.168.50:5000") ##todo: Mostrar la IP
 
 Sense.set_pixels(Plant())
 

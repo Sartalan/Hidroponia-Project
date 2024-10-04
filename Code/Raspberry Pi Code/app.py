@@ -10,7 +10,7 @@ Host = socket.gethostname()
 Local_IP = socket.gethostbyname(Host)
 
 List_IP = []
-
+##todo: Copiar y pegar este código al script del Sense Hat
 ##? Obtiene todas las interfaces de red y sus direcciones IP
 IP = psutil.net_if_addrs()
 
