@@ -7,8 +7,8 @@
 #define ONE_WIRE_BUS 7  //? DS18B20
 #define DHTPIN 4        //? DHT11
 #define DHTTYPE DHT11   
-#define Disparo_Bomba 2
-#define Disparo_Lampara 5
+#define Disparo_Bomba 5 // 2
+#define Disparo_Lampara 2 // 5
 #define Caudal_Pin 6
 
 int GradoElectrico = 0;
@@ -42,12 +42,12 @@ void GradoZero()
 
    
   if (Turn_Pump == 1) {
-    digitalWrite(Disparo_Bomba, HIGH);
+    digitalWrite(Disparo_Bomba, LOW);
     Serial.println("Me prendí");
   }
 
   else {
-    digitalWrite(Disparo_Bomba, LOW);
+    digitalWrite(Disparo_Bomba, HIGH);
     Serial.println("Me Apagué");
   }
 
