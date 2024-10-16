@@ -2,7 +2,7 @@
 
 Fork de la aplicación que se desarrolló para el Indoor antes de que se cancelará. 
 
-La App ya se encuentra semi-avanzada, sí se quiere ver su seguimiento hasta este punto hasta el primer commit del proyecto, este se encuentra ![aquí](https://github.com/Sartalan/Indoor-Project/tree/App)
+La App ya se encuentra semi-avanzada, sí se quiere ver su seguimiento hasta este punto desde el primer commit del proyecto, este se encuentra ![aquí](https://github.com/Sartalan/Indoor-Project/tree/App)
 
 
 ## App 
@@ -20,4 +20,9 @@ Para quien no entienda porque lo hago; es importante gráficarlo, React -y React
 
 ![Diagrama de App | Jerarquía de Componentes](./Info/App.png)
 
-Como se ve, la comunicación entre las partes es algo *caótica*. Esto es debido a que no manejé el estado de la aplicación de manera global, terminando por haber una serie de multiples endpoints en toda la aplicación, esto justamente *no es una buena práctica.* Una forma de solucionarlo -y que me gustaría traer en un futuro- es la integración de Redux como biblioteca de manejo de estado global. Y... ¿Por qué todavía no lo hice? Sencillo: no tengo el tiempo. El proyecto avanzó mucho, y una de las partes más abandonadas del proyecto en consecuencia fue justamente la aplicación, no creo que seamos capaces de refactorizar la aplicación por completo a tiempo, pero fue un buen aprendizaje y para lo que es cumple su función. La implementación de Redux solo tendría sentido si tuviesemos planeadas muchas más integraciones para la aplicación, pero ese no es *tanto* el caso. Pero pensamos que es importante mencionarlo por sí alguien del colegio quiere continuar la app por algún motivo. 
+Como se ve, la comunicación entre las partes es algo *caótica*. Esto es debido a que no manejé el estado de la aplicación de manera global, terminando por haber una serie de multiples endpoints en toda la aplicación, esto justamente *no es una buena práctica.* Una forma de solucionarlo -y que me gustaría traer en un futuro- es la integración de Redux como biblioteca de manejo de estado global. 
+
+Y... ¿Por qué todavía no lo hice? Sencillo: no tengo el tiempo. El proyecto avanzó mucho, y una de las partes más abandonadas del proyecto en consecuencia fue justamente la aplicación, no creo que seamos capaces de refactorizar la aplicación por completo a tiempo, pero fue un buen aprendizaje y para lo que es cumple su función. La implementación de Redux solo tendría sentido si tuviesemos planeadas muchas más integraciones para la aplicación, pero ese no es *tanto* el caso.
+
+
+De igual forma pensamos que es importante mencionarlo por sí alguien en un futuro planea continuar la Hidroponia.
