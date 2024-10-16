@@ -82,4 +82,19 @@ while True:
     print(DICT_DATA["station"])
 
 
-    
+
+##? no me acrdo si iba
+
+import psutil ## se instala con pip
+
+Host = socket.gethostname()
+Local_IP = socket.gethostbyname(Host)
+Data = (Local_IP) + ":5000"
+# Obtener todas las interfaces de red y sus direcciones IP
+addrs = psutil.net_if_IP()
+
+for interface, addr_info in IP.items():
+    for addr in addr_info:
+        # Filtrar solo las direcciones IPv4 que no sean 127.0.0.1
+        if addr.family == socket.AF_INET and addr.address != "127.0.0.1":
+            print(f"Interfaz: {interface} - IP: {addr.address}")
