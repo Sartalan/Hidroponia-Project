@@ -1,0 +1,49 @@
+{
+  "permalink": "/Hidroponia-Project/blog/release/twelve",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-10-7.md",
+  "source": "@site/blog/Notas/2024-10-7.md",
+  "title": "Actualización [ 12 ] | Armado | Detalles",
+  "description": "Armado",
+  "date": "2024-10-07T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "Avances",
+      "permalink": "/Hidroponia-Project/blog/tags/avances"
+    },
+    {
+      "label": "Armado",
+      "permalink": "/Hidroponia-Project/blog/tags/armado"
+    }
+  ],
+  "readingTime": 1.24,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Wolfsrudel",
+      "title": "All the Team",
+      "url": "https://github.com/Sartalan/Hidroponia-Project",
+      "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+      "key": "Team"
+    }
+  ],
+  "frontMatter": {
+    "slug": "release/twelve",
+    "title": "Actualización [ 12 ] | Armado | Detalles",
+    "authors": [
+      "Team"
+    ],
+    "tags": [
+      "Avances",
+      "Armado"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Actualización [ 13 ] | Armado | Lampara UV",
+    "permalink": "/Hidroponia-Project/blog/release/thirteen"
+  },
+  "nextItem": {
+    "title": "Actualización [ 11 ] | Explosión y...",
+    "permalink": "/Hidroponia-Project/blog/release/eleven"
+  }
+}

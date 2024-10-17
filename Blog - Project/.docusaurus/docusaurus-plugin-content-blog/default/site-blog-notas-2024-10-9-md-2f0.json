@@ -1,0 +1,45 @@
+{
+  "permalink": "/Hidroponia-Project/blog/release/thirteen",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-10-9.md",
+  "source": "@site/blog/Notas/2024-10-9.md",
+  "title": "Actualización [ 13 ] | Armado | Lampara UV",
+  "description": "Añadimos una lampara UV al proyecto",
+  "date": "2024-10-09T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "Avances",
+      "permalink": "/Hidroponia-Project/blog/tags/avances"
+    },
+    {
+      "label": "Lampara UV",
+      "permalink": "/Hidroponia-Project/blog/tags/lampara-uv"
+    }
+  ],
+  "readingTime": 0.77,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Wolfsrudel",
+      "title": "All the Team",
+      "url": "https://github.com/Sartalan/Hidroponia-Project",
+      "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+      "key": "Team"
+    }
+  ],
+  "frontMatter": {
+    "slug": "release/thirteen",
+    "title": "Actualización [ 13 ] | Armado | Lampara UV",
+    "authors": [
+      "Team"
+    ],
+    "tags": [
+      "Avances",
+      "Lampara UV"
+    ]
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "Actualización [ 12 ] | Armado | Detalles",
+    "permalink": "/Hidroponia-Project/blog/release/twelve"
+  }
+}

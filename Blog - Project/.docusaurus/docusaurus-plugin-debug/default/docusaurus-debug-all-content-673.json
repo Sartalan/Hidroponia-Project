@@ -57,6 +57,161 @@
       "blogSidebarTitle": "Recent posts",
       "blogPosts": [
         {
+          "id": "release/thirteen",
+          "metadata": {
+            "permalink": "/Hidroponia-Project/blog/release/thirteen",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-10-9.md",
+            "source": "@site/blog/Notas/2024-10-9.md",
+            "title": "Actualización [ 13 ] | Armado | Lampara UV",
+            "description": "Añadimos una lampara UV al proyecto",
+            "date": "2024-10-09T00:00:00.000Z",
+            "tags": [
+              {
+                "label": "Avances",
+                "permalink": "/Hidroponia-Project/blog/tags/avances"
+              },
+              {
+                "label": "Lampara UV",
+                "permalink": "/Hidroponia-Project/blog/tags/lampara-uv"
+              }
+            ],
+            "readingTime": 0.77,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Wolfsrudel",
+                "title": "All the Team",
+                "url": "https://github.com/Sartalan/Hidroponia-Project",
+                "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+                "key": "Team"
+              }
+            ],
+            "frontMatter": {
+              "slug": "release/thirteen",
+              "title": "Actualización [ 13 ] | Armado | Lampara UV",
+              "authors": [
+                "Team"
+              ],
+              "tags": [
+                "Avances",
+                "Lampara UV"
+              ]
+            },
+            "unlisted": false,
+            "nextItem": {
+              "title": "Actualización [ 12 ] | Armado | Detalles",
+              "permalink": "/Hidroponia-Project/blog/release/twelve"
+            }
+          },
+          "content": "## Añadimos una lampara UV al proyecto\n\nInmediatamente añadimos los plantines nos dispusimos a añadir una lampara UV al percatarnos de la poca luz solar que entraba a la instancia, para ello decidimos utilizar el último de nuestros disparos de la placa y el mismo timer; aunque hay un problema, el timer es muy impreciso para ello. Por suerte ya planteamos una solución: utilizaremos la Raspberry para que por medio de un script tome el horario local del día y se encargué de mandar un dato vía serial al circuito que le diga si prender o no las lamparas UV.\n\nAnteriormente habiamos utilizado el timer interno del microcontrolador, pero esto es impreciso; no tenemos garantía de sí nuestros cálculos dan en el clavo o no, porque no podemos tener en cuenta la cantidad de tiempo que tardan en ejecutarse las otras lineas de código del circuito. \n\n![Foto de la hidroponia](../Ref/Hidroponia_two.jpeg)\n\n#### (es muy fachera)"
+        },
+        {
+          "id": "release/twelve",
+          "metadata": {
+            "permalink": "/Hidroponia-Project/blog/release/twelve",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-10-7.md",
+            "source": "@site/blog/Notas/2024-10-7.md",
+            "title": "Actualización [ 12 ] | Armado | Detalles",
+            "description": "Armado",
+            "date": "2024-10-07T00:00:00.000Z",
+            "tags": [
+              {
+                "label": "Avances",
+                "permalink": "/Hidroponia-Project/blog/tags/avances"
+              },
+              {
+                "label": "Armado",
+                "permalink": "/Hidroponia-Project/blog/tags/armado"
+              }
+            ],
+            "readingTime": 1.24,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Wolfsrudel",
+                "title": "All the Team",
+                "url": "https://github.com/Sartalan/Hidroponia-Project",
+                "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+                "key": "Team"
+              }
+            ],
+            "frontMatter": {
+              "slug": "release/twelve",
+              "title": "Actualización [ 12 ] | Armado | Detalles",
+              "authors": [
+                "Team"
+              ],
+              "tags": [
+                "Avances",
+                "Armado"
+              ]
+            },
+            "unlisted": false,
+            "prevItem": {
+              "title": "Actualización [ 13 ] | Armado | Lampara UV",
+              "permalink": "/Hidroponia-Project/blog/release/thirteen"
+            },
+            "nextItem": {
+              "title": "Actualización [ 11 ] | Explosión y...",
+              "permalink": "/Hidroponia-Project/blog/release/eleven"
+            }
+          },
+          "content": "## Armado\n\nLos últimos dias anduvimos trabajando en diseñar e imprimir los modelos 3D que contendrán tanto la placa como la Raspberry Pi y a su vez solucionando problemas con la bomba; esta se prendía y apagaba por el sobrecalientamiento. Esto es un problema gigantezco en una hidroponia; si la bomba se apaga, los plantines *mueren*. \n\nLa bomba no debe dejar de bombear por mucho tiempo, así que como solución para que no se sobrecalentara decidimos utilizar un disparo de nuestra placa para ir prendiendola y apagandola de forma intermitente. Fue justo en esta prueba donde nuestra placa hace unos dias explotó (en el momento menos conveniente posible), pero rápidamente lo solucionamos.\n\nUtilizamos el timer para calcular un aproximado de 5 minutos de prendido y apagado utilizando la función de GradoZero() de nuestro código. Esa función se ejecuta cada 180° de la onda senoidal, justamente al cambiar de polaridad, teniendo en cuenta dicho dato y teniendo en cuenta que cada 1ms hay un cambio de polaridad, utilizamos un contador que fuese incrementandose hasta un valor apróximado al número de veces que debe repetirse la función GradoZero() para llegar a 5 minutos. La solución funcionó perfectamente.\n\n## Finalmente añadimos los plantines. \n\nCon el PH ya regulado, las soluciones Macro y Micro añadidas y el correcto funcionamiento de la bomba de agua, finalmente lo hicimos: añadimos los plantines. Estos se tratan solo de plantines de lechuga, nada muy extravagante, su supervivencia es la prueba de fuego de nuestro proyecto.\n\n![Plantas](../Ref/Plantines.jpeg)"
+        },
+        {
+          "id": "release/eleven",
+          "metadata": {
+            "permalink": "/Hidroponia-Project/blog/release/eleven",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-10-3.md",
+            "source": "@site/blog/Notas/2024-10-3.md",
+            "title": "Actualización [ 11 ] | Explosión y...",
+            "description": "Explosión XD (De vuelta)",
+            "date": "2024-10-03T00:00:00.000Z",
+            "tags": [
+              {
+                "label": "Explosión",
+                "permalink": "/Hidroponia-Project/blog/tags/explosion"
+              },
+              {
+                "label": "Avances",
+                "permalink": "/Hidroponia-Project/blog/tags/avances"
+              }
+            ],
+            "readingTime": 2.165,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Wolfsrudel",
+                "title": "All the Team",
+                "url": "https://github.com/Sartalan/Hidroponia-Project",
+                "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+                "key": "Team"
+              }
+            ],
+            "frontMatter": {
+              "slug": "release/eleven",
+              "title": "Actualización [ 11 ] | Explosión y...",
+              "authors": [
+                "Team"
+              ],
+              "tags": [
+                "Explosión",
+                "Avances"
+              ]
+            },
+            "unlisted": false,
+            "prevItem": {
+              "title": "Actualización [ 12 ] | Armado | Detalles",
+              "permalink": "/Hidroponia-Project/blog/release/twelve"
+            },
+            "nextItem": {
+              "title": "Actualización [ 10 ] | Comunicación con MyCodo éxitosa.",
+              "permalink": "/Hidroponia-Project/blog/release/ten"
+            }
+          },
+          "content": "## Explosión XD (De vuelta)\n\nEl circuito explotó nuevamente. ¿Por qué? Faltaban una serie de cambios en el PCB (solo un diodo xD) nadie entendió como no sucedió antes. En conclusión: que epico.\n\n![Placa explotada ( OTRA VEZ XD )](../Ref/PLACA_EXPLOSIVA_DOS.jpeg)\n## Representación gráfica del suceso\n![Representación de explosión XD](../Ref/PLACA_EXPLOSIVA_EDIT.jpeg)\n\n## Momentos antes del desastre XD\n\n![Los pibes foto xD](../Ref//Foto_piola_dos.jpeg)\n![Los pibes foto xD](../Ref//Foto_piola_tres.jpeg)\n\n\n## Avances\n\nDejamos bombeando el agua unos dias con la intención de que el cloro se evaporará y poder finalmente regular el PH del agua. \n\nPero... ¿Por qué todo esto? Si el lector no está familiarizado con el funcionamiento de una Hidroponia en general, le será importante leer lo que escriba a continuación:\n\n## Hidroponia\n\nUna hidroponia es, en esencia, el arte de cultivar plantas sobre una superficie sólida a la que solo tendrá acceso una corriente de agua. Pero esto da una *gran* serie de problemas al no ser del todo natural; uno de ellos es el nivel de PH del agua, pero primero para ello debemos de conocer que es el PH.\n\nEl \"PH\" es una unidad logarítmica del 1-14 que regula el nivel de acidez y alcalinidad de \"algo\", siendo en este caso: agua. A menor nivel este se encuentre, mayor será el nivel de ácidez que contendrá ese \"algo\" y a mayor nivel se encuentre, mayor será el nivel de alcalinidad.\n\nEl nivel de PH adecuado para cada contexto depende del tipo de planta a plantar, y son muchas las soluciones que pueden afectar el nivel de PH del agua. En nuestro caso concreto quisimos plantar lechuga, siendo su valor recomendado un rango de entre un **5.8 - 6.3** de PH. \n\n![Valores Lechuga](../Ref/Lechuga.jpeg)\n\nA su vez, las soluciones nutritivas que utilizamos son las [Micro y Macro](https://www.verdeagua.com.ar/productos/kit-nutrientes-hidroponia-verdeagua-macro-y-micro/) de la empresa [Verdeagua.](https://www.verdeagua.com.ar/)\n\nEs importante tener en cuenta también que las soluciones nutritivas que necesita cada planta, independientemente de cual sea, también **alteran el PH**. Así que *teganlo en cuenta*. En nuestro caso para regularlo fue mayormente a prueba y error.\n\n---\n\nNuestro problema fue sencillo de resolver: el PH del agua del colegio *era muy alto* y teniamos que reducirlo, para ello compramos un reductor de PH, lo que en esencia es un ácido, nosotros utilizamos concretamente el [Namaste PH.](https://www.estoyverde.com.ar/fertilizantes/namaste-ph-100-ml.)\n\n![Namaste PH](../Ref/Namaste.png)\n\nEl mismo lo compramos en Lomas, concretamente en la tienda [Estoy Verde](https://www.estoyverde.com.ar/) tienda la cual recomendamos encarecidamente. Su atención es *muy* buena y su dueño nos resolvió una gran cantidad de dudas respecto al buen armado de una hidroponia. \n\nEstamos muy satisfechos y nos enorgulleceria mucho el que nuestra recomendación pudiese, al menos, producirles una venta."
+        },
+        {
           "id": "release/ten",
           "metadata": {
             "permalink": "/Hidroponia-Project/blog/release/ten",
@@ -98,6 +253,10 @@
               ]
             },
             "unlisted": false,
+            "prevItem": {
+              "title": "Actualización [ 11 ] | Explosión y...",
+              "permalink": "/Hidroponia-Project/blog/release/eleven"
+            },
             "nextItem": {
               "title": "Actualización [ 9 ] | PCB && Block Diagram",
               "permalink": "/Hidroponia-Project/blog/release/nine"
@@ -600,23 +759,23 @@
       "blogListPaginated": [
         {
           "items": [
+            "release/thirteen",
+            "release/twelve",
+            "release/eleven",
             "release/ten",
             "release/nine",
             "release/eight",
             "release/seven",
             "release/six",
             "release/five",
-            "release/four",
-            "release/three",
-            "note/one",
-            "release/two"
+            "release/four"
           ],
           "metadata": {
             "permalink": "/Hidroponia-Project/blog",
             "page": 1,
             "postsPerPage": 10,
             "totalPages": 2,
-            "totalCount": 11,
+            "totalCount": 14,
             "nextPage": "/Hidroponia-Project/blog/page/2",
             "blogDescription": "Blog",
             "blogTitle": "Blog"
@@ -624,6 +783,9 @@
         },
         {
           "items": [
+            "release/three",
+            "note/one",
+            "release/two",
             "release/one"
           ],
           "metadata": {
@@ -631,7 +793,7 @@
             "page": 2,
             "postsPerPage": 10,
             "totalPages": 2,
-            "totalCount": 11,
+            "totalCount": 14,
             "previousPage": "/Hidroponia-Project/blog",
             "blogDescription": "Blog",
             "blogTitle": "Blog"
@@ -639,6 +801,106 @@
         }
       ],
       "blogTags": {
+        "/Hidroponia-Project/blog/tags/avances": {
+          "label": "Avances",
+          "items": [
+            "release/thirteen",
+            "release/twelve",
+            "release/eleven"
+          ],
+          "permalink": "/Hidroponia-Project/blog/tags/avances",
+          "pages": [
+            {
+              "items": [
+                "release/thirteen",
+                "release/twelve",
+                "release/eleven"
+              ],
+              "metadata": {
+                "permalink": "/Hidroponia-Project/blog/tags/avances",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 3,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ],
+          "unlisted": false
+        },
+        "/Hidroponia-Project/blog/tags/lampara-uv": {
+          "label": "Lampara UV",
+          "items": [
+            "release/thirteen"
+          ],
+          "permalink": "/Hidroponia-Project/blog/tags/lampara-uv",
+          "pages": [
+            {
+              "items": [
+                "release/thirteen"
+              ],
+              "metadata": {
+                "permalink": "/Hidroponia-Project/blog/tags/lampara-uv",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ],
+          "unlisted": false
+        },
+        "/Hidroponia-Project/blog/tags/armado": {
+          "label": "Armado",
+          "items": [
+            "release/twelve"
+          ],
+          "permalink": "/Hidroponia-Project/blog/tags/armado",
+          "pages": [
+            {
+              "items": [
+                "release/twelve"
+              ],
+              "metadata": {
+                "permalink": "/Hidroponia-Project/blog/tags/armado",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ],
+          "unlisted": false
+        },
+        "/Hidroponia-Project/blog/tags/explosion": {
+          "label": "Explosión",
+          "items": [
+            "release/eleven"
+          ],
+          "permalink": "/Hidroponia-Project/blog/tags/explosion",
+          "pages": [
+            {
+              "items": [
+                "release/eleven"
+              ],
+              "metadata": {
+                "permalink": "/Hidroponia-Project/blog/tags/explosion",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ],
+          "unlisted": false
+        },
         "/Hidroponia-Project/blog/tags/communication": {
           "label": "Communication",
           "items": [

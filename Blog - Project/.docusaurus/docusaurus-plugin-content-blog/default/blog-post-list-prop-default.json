@@ -2,6 +2,21 @@
   "title": "Recent posts",
   "items": [
     {
+      "title": "Actualización [ 13 ] | Armado | Lampara UV",
+      "permalink": "/Hidroponia-Project/blog/release/thirteen",
+      "unlisted": false
+    },
+    {
+      "title": "Actualización [ 12 ] | Armado | Detalles",
+      "permalink": "/Hidroponia-Project/blog/release/twelve",
+      "unlisted": false
+    },
+    {
+      "title": "Actualización [ 11 ] | Explosión y...",
+      "permalink": "/Hidroponia-Project/blog/release/eleven",
+      "unlisted": false
+    },
+    {
       "title": "Actualización [ 10 ] | Comunicación con MyCodo éxitosa.",
       "permalink": "/Hidroponia-Project/blog/release/ten",
       "unlisted": false
@@ -9,21 +24,6 @@
     {
       "title": "Actualización [ 9 ] | PCB && Block Diagram",
       "permalink": "/Hidroponia-Project/blog/release/nine",
-      "unlisted": false
-    },
-    {
-      "title": "Actualización [ 8 ] | Comunicación a MyCodo | Filtro",
-      "permalink": "/Hidroponia-Project/blog/release/eight",
-      "unlisted": false
-    },
-    {
-      "title": "Actualización [ 7 ] | Avances",
-      "permalink": "/Hidroponia-Project/blog/release/seven",
-      "unlisted": false
-    },
-    {
-      "title": "Actualización [ 6 ] | Comunicación de Dispositivos",
-      "permalink": "/Hidroponia-Project/blog/release/six",
       "unlisted": false
     }
   ]

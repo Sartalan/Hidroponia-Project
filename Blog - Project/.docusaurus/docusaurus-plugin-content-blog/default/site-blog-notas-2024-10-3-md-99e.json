@@ -1,0 +1,49 @@
+{
+  "permalink": "/Hidroponia-Project/blog/release/eleven",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/Notas/2024-10-3.md",
+  "source": "@site/blog/Notas/2024-10-3.md",
+  "title": "Actualización [ 11 ] | Explosión y...",
+  "description": "Explosión XD (De vuelta)",
+  "date": "2024-10-03T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "Explosión",
+      "permalink": "/Hidroponia-Project/blog/tags/explosion"
+    },
+    {
+      "label": "Avances",
+      "permalink": "/Hidroponia-Project/blog/tags/avances"
+    }
+  ],
+  "readingTime": 2.165,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Wolfsrudel",
+      "title": "All the Team",
+      "url": "https://github.com/Sartalan/Hidroponia-Project",
+      "imageURL": "https://img.desmotivaciones.es/202303/tonto-perro-imagenes.jpg",
+      "key": "Team"
+    }
+  ],
+  "frontMatter": {
+    "slug": "release/eleven",
+    "title": "Actualización [ 11 ] | Explosión y...",
+    "authors": [
+      "Team"
+    ],
+    "tags": [
+      "Explosión",
+      "Avances"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Actualización [ 12 ] | Armado | Detalles",
+    "permalink": "/Hidroponia-Project/blog/release/twelve"
+  },
+  "nextItem": {
+    "title": "Actualización [ 10 ] | Comunicación con MyCodo éxitosa.",
+    "permalink": "/Hidroponia-Project/blog/release/ten"
+  }
+}
