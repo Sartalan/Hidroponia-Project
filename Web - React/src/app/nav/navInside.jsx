@@ -30,28 +30,28 @@ export function Inside(){
   <>
     <ul className='inside-nav'>
   
-      <Link className='inside-component' to='/Spectrum-IOT_WebPage/home-page'>
+      <Link className='inside-component' to='/Hidroponia/home'>
           <img className='icon-component' src={Route1} alt="#"/>
       </Link>
 
-      <Link className='inside-component' to='/Spectrum-IOT_WebPage/robot-page'>
+      <Link className='inside-component' to='/Hidroponia/robot'>
           <img className='icon-component' src={Route2} alt="#"/>
       </Link>
 
       
-      <Link className='inside-component' to='/Spectrum-IOT_WebPage/control-page'>
+      <Link className='inside-component' to='/Hidroponia/control'>
           <img className='icon-component' src={Route3} alt="#"/>
       </Link>
       
-      <Link className='inside-component' to='/Spectrum-IOT_WebPage/status-page'>
+      <Link className='inside-component' to='/Hidroponia/status'>
           <img className='icon-component' src={Route4} alt="#"/>
       </Link>
       
-      <Link className='inside-component' to='/Spectrum-IOT_WebPage/about-page'>
+      <Link className='inside-component' to='/Hidroponia/about'>
           <img className='icon-component' src={Route5} alt="#"/>
       </Link>
      
-      <Link className='inside-component' to='/Spectrum-IOT_WebPage/config-page'>
+      <Link className='inside-component' to='/Hidroponia/config-page'>
           <img className='icon-component' src={Route6} alt="#"/>
       </Link>   
       
@@ -83,13 +83,13 @@ export function Haupt(){
     return (
       <main className='main'>
         <Routes>
-          <Route path='/Spectrum-IOT_WebPage/' element={<StartHome/>}/>
-          <Route path='/Spectrum-IOT_WebPage/home-page' element={<Home/>}/>
-          <Route path='/Spectrum-IOT_WebPage/status-page' element={<Status/>}/>
-          <Route path='/Spectrum-IOT_WebPage/about-page' element={<About/>}/>
-          <Route path='/Spectrum-IOT_WebPage/robot-page' element={<Robot/>}/>
-          <Route path='/Spectrum-IOT_WebPage/config-page' element={<Config/>}/>
-          <Route path='/Spectrum-IOT_WebPage/control-page' element={<Control/>}/>
+          <Route path='/Hidroponia/' element={<StartHome/>}/>
+          <Route path='/Hidroponia/home' element={<Home/>}/>
+          <Route path='/Hidroponia/status' element={<Status/>}/>
+          <Route path='/Hidroponia/about' element={<About/>}/>
+          <Route path='/Hidroponia/robot' element={<Robot/>}/>
+          <Route path='/Hidroponia/config' element={<Config/>}/>
+          <Route path='/Hidroponia/control' element={<Control/>}/>
         </Routes>
       </main>
     )

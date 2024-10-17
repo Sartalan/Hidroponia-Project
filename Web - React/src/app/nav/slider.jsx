@@ -36,7 +36,7 @@ export function Slider() {
   
           
           <SocialList
-            socialLinkLi="https://github.com"  /*a href */
+            socialLinkLi="https://github.com/Sartalan/Hidroponia-Project"  /*a href */
             iconLinkLi={GithubIcon}     /*img src */
             altLi="Enlace a mi Github"    /*alt => img */
           />

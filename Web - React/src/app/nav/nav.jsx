@@ -34,7 +34,7 @@ export function Nav () {
 
        <Top 
         Icon={IOTIcon}
-        spanText="Internet of Things"
+        spanText="Hidroponia - Project"
         />
 
         <Inside/>

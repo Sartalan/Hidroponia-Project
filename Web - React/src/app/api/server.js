@@ -2,12 +2,12 @@
 import { server as WebSocketServer } from 'websocket';
 import { createServer } from 'http';
 
-var server = createServer(function(request, response) {
+var server = createServer(function (request, response) {
     console.log((new Date()) + ' Received request for ' + request.url);
     response.writeHead(404);
     response.end();
 });
-server.listen(5000, function() {
+server.listen(5000, function () {
     console.log((new Date()) + ' Server is listening on port 5000');
 });
 
@@ -22,60 +22,60 @@ server = new WebSocketServer({
 });
 
 function originIsAllowed(origin) {
-  // put logic here to detect whether the specified origin is allowed.
-  return true;
+    // put logic here to detect whether the specified origin is allowed.
+    return true;
 }
 
-server.on('request', function(request) {
+server.on('request', function (request) {
     console.log(request)
     if (!originIsAllowed(request.origin)) {
-      // Make sure we only accept requests from an allowed origin
-      request.reject();
-      console.log((new Date()) + ' Connection from origin ' + request.origin + ' rejected.');
-      return;
+        // Make sure we only accept requests from an allowed origin
+        request.reject();
+        console.log((new Date()) + ' Connection from origin ' + request.origin + ' rejected.');
+        return;
     }
-    
+
     var connection = request.accept(null, request.origin)
     console.log((new Date()) + ' Connection accepted.');
 
-    connection.on('message', function(message) {
+    connection.on('message', function (message) {
 
 
-           if (message.type === 'utf8') {
+        if (message.type === 'utf8') {
 
             let Mensaje = message.utf8Data
 
-           switch (Mensaje) {
-            case 'Kitchen': 
-            console.log("Recibí " + Mensaje)
-            connection.sendUTF("Kitchen");
-                /* connection.sendUTF("Soy la cocina"); */
+            switch (Mensaje) {
+                case 'Kitchen':
+                    console.log("Recibí " + Mensaje)
+                    connection.sendUTF("Kitchen");
+                    /* connection.sendUTF("Soy la cocina"); */
 
-                break;
+                    break;
 
-            case 'Living Room': 
-                console.log("Recibí " + Mensaje)
-                connection.sendUTF("Living Room");
+                case 'Living Room':
+                    console.log("Recibí " + Mensaje)
+                    connection.sendUTF("Living Room");
 
-                /* connection.sendUTF("Soy el comedor"); */
+                    /* connection.sendUTF("Soy el comedor"); */
 
-                break;
-            
-            case 'Bedroom': 
-                console.log("Recibí " + Mensaje)
-                connection.sendUTF("Bedroom");
+                    break;
 
-               /*  connection.sendUTF("Soy la habitación"); */
+                case 'Bedroom':
+                    console.log("Recibí " + Mensaje)
+                    connection.sendUTF("Bedroom");
 
-                break;
-           }
-        } 
+                    /*  connection.sendUTF("Soy la habitación"); */
 
-       /*  if (message.type === 'utf8') {
-            console.log('Received Message: ' + message.utf8Data);
-            //connection.sendUTF(message.utf8Data); this resend the reseived message, instead of it i will send a custom message. hello from nodejs
-            connection.sendUTF("Soy NODEJS PUTOOOO");
-        }  */
+                    break;
+            }
+        }
+
+        /*  if (message.type === 'utf8') {
+             console.log('Received Message: ' + message.utf8Data);
+             //connection.sendUTF(message.utf8Data); this resend the reseived message, instead of it i will send a custom message. hello from nodejs
+             connection.sendUTF("Soy NODEJS PUTOOOO");
+         }  */
 
         else if (message.type === 'binary') {
             console.log('Received Binary Message of ' + message.binaryData.length + ' bytes');
@@ -83,7 +83,7 @@ server.on('request', function(request) {
         }
     });
 
-    connection.on('close', function(reasonCode, description) {
+    connection.on('close', function (reasonCode, description) {
         console.log((new Date()) + ' Peer ' + connection.remoteAddress + ' disconnected.');
     });
 });
