@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkherzarmband_blog=self.webpackChunkherzarmband_blog||[]).push([[165],{4701:e=>{e.exports=JSON.parse('{"permalink":"/Hidroponia-Project/blog/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":14,"previousPage":"/Hidroponia-Project/blog","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

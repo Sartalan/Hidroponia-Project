@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkherzarmband_blog=self.webpackChunkherzarmband_blog||[]).push([[1950],{8681:a=>{a.exports=JSON.parse('{"label":"Armado","permalink":"/Hidroponia-Project/blog/tags/armado","allTagsPath":"/Hidroponia-Project/blog/tags","count":1,"unlisted":false}')}}]);
