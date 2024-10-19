@@ -13,7 +13,9 @@ El repositorio consta de 3 ramales principales:
 1. **main**
    + Es donde se añadirá todo lo correspondiente al Hardware; Circuitos, Simulaciones, Modelos 3D e inclusive el propio código de los microcontroladores.
 2. **App**
-   + Es donde se desarrollará la aplicación de celular paso por paso.  
+   + Es donde se desarrollará la aplicación de celular paso por paso.
+3. **Web**
+   + Es donde se desarrollará la aplicación web paso por paso.   
 3. **Blog-Deploy**
    + Es donde se alojará toda la documentación en producción de nuestro proyecto en *órden crónologico*. Puede ser importante sí se quiere imitar nuestro proyecto; Hay diversas anotaciones que no estarán en el informe final al no necesitar un seguimiento en éste.
   
