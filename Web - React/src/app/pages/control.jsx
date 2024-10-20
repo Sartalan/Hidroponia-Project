@@ -1,5 +1,5 @@
-import '../../assets/styles/routes_styles/control.css'
-import '../../assets/styles/routes_styles/general.routes.styles.css'
+import '../../styles/routes_styles/control.css'
+import '../../styles/routes_styles/general.routes.styles.css'
 
 import Up from '/icons/control_icons/up.svg'
 import Down from '/icons/control_icons/down.svg'

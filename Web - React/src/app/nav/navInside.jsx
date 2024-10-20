@@ -5,7 +5,7 @@
   */
 }
 
-import '../../assets/styles/navInside.css';
+import '../../styles/navInside.css';
 
 
 import {Routes, Route, Link } from 'react-router-dom'
@@ -24,6 +24,7 @@ import {StartHome} from '../pages/starthome'
 import {Home} from '../pages/home'
 import {Control} from '../pages/control'
 import {Robot} from '../pages/robot'
+import {Test} from '../pages/test'
 
 export function Inside(){
  return (
@@ -51,8 +52,12 @@ export function Inside(){
           <img className='icon-component' src={Route5} alt="#"/>
       </Link>
      
-      <Link className='inside-component' to='/Hidroponia/config-page'>
+      <Link className='inside-component' to='/Hidroponia/config'>
           <img className='icon-component' src={Route6} alt="#"/>
+      </Link>   
+
+      <Link className='inside-component' to='/Hidroponia/test'>
+          <img className='icon-component' src="#" alt="#"/>
       </Link>   
       
     </ul>
@@ -90,6 +95,7 @@ export function Haupt(){
           <Route path='/Hidroponia/robot' element={<Robot/>}/>
           <Route path='/Hidroponia/config' element={<Config/>}/>
           <Route path='/Hidroponia/control' element={<Control/>}/>
+          <Route path='/Hidroponia/test' element={<Test/>}/>
         </Routes>
       </main>
     )

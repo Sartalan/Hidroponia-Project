@@ -1,5 +1,5 @@
-import '../../assets/styles/routes_styles/general.routes.styles.css'
-import '../../assets/styles/routes_styles/robot.css'
+import '../../styles/routes_styles/general.routes.styles.css'
+import '../../styles/routes_styles/robot.css'
 
 import AldoRobot from '/icons/nav_icons/robot.svg'
 

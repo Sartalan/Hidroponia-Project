@@ -1,5 +1,5 @@
-import '../../assets/styles/routes_styles/start.home.css'
-import '../../assets/styles/routes_styles/general.routes.styles.css'
+import '../../styles/routes_styles/start.home.css'
+import '../../styles/routes_styles/general.routes.styles.css'
 
 export function StartHome () {
     return (

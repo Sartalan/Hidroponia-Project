@@ -5,7 +5,7 @@ import { useState } from "react"
 import MenuIcon from '/icons/social_icons/menu.svg'
 import IOTIcon from '/top.png'
 
-import '../../assets/styles/nav.css';
+import '../../styles/nav.css';
 
 
 export function Nav () {
