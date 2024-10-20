@@ -24,36 +24,128 @@ DICT_DATA = {
 Sense = SenseHat()
 Sense.low_light = True
 
-green = (0, 255, 0)
-yellow = (255, 255, 0)
-blue = (0, 0, 255)
-red = (255, 0, 0)
-white = (255,255,255)
-nothing = (0,0,0)
-pink = (255,105, 180)
 
-def Plant():
-    W = white
-    O = nothing
+fondo = (0,188,212)
+rosa1 = (247,183,205)
+rosaclaro = (252,126,172)
+rosatenue = (245,79,137)
+rosafuerte = (197,17,98)
+otrorosa = (216,27,96)
+
+negro = (0,0,0)
+ojo = (63,81,181)
+
+def Pacman():
+   A1 = (249, 183, 1)
+   B1 = (255,255,255)
+   NE = (0,0,0)
+
+   logo = [
+   B1, B1, A1, A1, A1, A1, B1, B1,
+   B1, A1, A1, A1, A1, A1, A1, B1,
+   A1, A1, A1, A1, NE, A1, A1, A1,
+   A1, A1, A1, A1, A1, B1, B1, B1,
+   A1, A1, A1, B1, B1, B1, B1, B1,
+   A1, A1, A1, A1, A1, B1, B1, B1,
+   B1, A1, A1, A1, A1, A1, A1, B1,
+   B1, B1, A1, A1, A1, A1, B1, B1,
+   ] 
+   return logo
+
+def Yoshi():   
+   V1 = (124,179,66)
+   V2 = (104, 159, 56)
+   N1 = (255,87,34)
+   B1 = (255,255,255)
+   G1 = (224, 224, 224)
+   R1 = (244, 67, 54)
+   R2 = (183,28,28)
+   C1 = (187, 222, 251)
+   VI = (136,14,79)
+   NE = (0,0,0)
+
+   logo = [
+   C1, C1, N1, V1, V2, V1, C1, C1,
+   C1, N1, V1, NE, V1, V1, V1, V1,
+   C1, C1, B1, B1, V1, V1, V1, V1,
+   C1, N1, B1, B1, V1, V1, V1, V1,
+   C1, C1, R1, G1, B1, B1, B1, C1,
+   V2, N1, V2, V2, G1, G1, V2, C1,
+   C1, V2, V1, V2, G1, G1, V2, V2, 
+   C1, C1, R2, R2, C1, VI, VI, C1,
+   ]
+   return logo
+
+def Kirby():
+    F = fondo
+    OR = otrorosa
+    N = negro
+    V = ojo
+    R1 = rosa1
+    RT = rosatenue
+    RC =  rosaclaro
+    RF = rosafuerte
+
     logo = [
-    O, O, O, W, W, O, O, O,
-    O, O, W, W, W, W, O, O,
-    O, W, W, O, O, W, W, O,
-    W, O, O, O, O, O, O, W,
-    W, O, W, W, W, W, O, W,
-    O, W, O, O, O, O, W, O,
-    W, O, O, W, W, O, O, W,
-    O, O, W, W, W, W, O, O,
+    F, F, F, F, F, F, F, F,
+    F, F, R1, R1, R1, R1, F, F,
+    F, R1, R1, R1, R1, R1, R1, F,
+    F, RC, R1, N, R1, N, R1, RC,
+    RC, R1, R1,V , R1, V, R1, RC,
+    RC, RC, RT, R1, R1, R1, RT, F,
+    F, RF, RC, RC, R1, R1, RF, F,
+    F, RF, OR, OR, F, RF, OR, F,
     ]
     return logo
-    
+
+def Enderman():
+   N = negro
+   R = (255,115,238)
+   V = (202,0,205)
+   logo = [
+   N, N, N, N, N, N, N, N, 
+   N, N, N, N, N, N, N, N,  
+   N, N, N, N, N, N, N, N,
+   N, N, N, N, N, N, N, N,
+   R, V, R, N, N, R, V, R,
+   N, N, N, N, N, N, N, N,  
+   N, N, N, N, N, N, N, N,
+   N, N, N, N, N, N, N, N,     
+   ]
+   return logo
+
+def Link():
+  V1 = (0,230,118)
+  V2 = (76,175,80)
+  A1 = (255,235,59)
+  N1 = (255,193,7)
+  P1 = (255,224,178)
+  G1 = (207, 216, 220)
+  C1 = (3,169,244)
+  M1 = (93,64,55)
+  NE = (0,0,0)
+  
+  logo = [
+  NE, NE, V1 ,V1, A1, A1, N1, NE,
+  NE, G1, V1, A1, P1, A1, A1, N1,
+  V2, G1, P1, A1, NE, P1, NE, NE,
+  NE, G1, NE, P1, P1, P1, P1, NE,
+  NE, G1, V1, V1, P1, V2, NE, G1,
+  C1, C1, C1, M1, N1, M1, V2, G1,
+  NE, P1, V2, V1, V1, V2, NE, G1,
+  NE, NE, M1, NE, NE, M1, NE, NE,
+  ]
+  
+  return logo
+
 FILE_TO_UPLOAD = "./data/weather.json"
 Data = {}
 
-for i in range(3):
-    Sense.show_message("192.168.50:5000") ##todo: Mostrar la IP
+## for i in range(1):
+##   Sense.show_message("192.168.50:5000") ##todo: Mostrar la IP
 
-Sense.set_pixels(Plant())
+Sense.set_pixels(Pacman())
+time.sleep(1)
 
 while True:
     time.sleep(.5)
@@ -82,19 +174,4 @@ while True:
     print(DICT_DATA["station"])
 
 
-
-##? no me acrdo si iba
-
-import psutil ## se instala con pip
-
-Host = socket.gethostname()
-Local_IP = socket.gethostbyname(Host)
-Data = (Local_IP) + ":5000"
-# Obtener todas las interfaces de red y sus direcciones IP
-addrs = psutil.net_if_IP()
-
-for interface, addr_info in IP.items():
-    for addr in addr_info:
-        # Filtrar solo las direcciones IPv4 que no sean 127.0.0.1
-        if addr.family == socket.AF_INET and addr.address != "127.0.0.1":
-            print(f"Interfaz: {interface} - IP: {addr.address}")
+    
