@@ -10,9 +10,9 @@ import json
 
 MY_SENSOR_LECTURES = ["Temperatura:", "Humedad:", "Caudal:", "LDR:"] 
 BAUD_RATE = 9600
-USB = "ttyACM1"
+USB = "ttyACM0"
 NUMBER = 4
-FILE_TO_UPLOAD = "./data/hidroponia_uno.json"
+FILE_TO_UPLOAD = "./src/data/hidroponia_uno.json" ##? Ruta desde app.py
 DICT_DATA = {
     "name" : "Hidroponia_uno",
     "plant": "Lechuga",
@@ -98,7 +98,6 @@ try:
     while True:
         time.sleep(.25) ## Cada un segundo lee el puerto serial
         if SER.in_waiting > 0:
-            SER.write("ON")
             line = SER.readline().decode('utf-8').rstrip().strip().replace('-','')
             Sensor_Value = line ## Asigna los valores a Sensor_Value
             if len(MySensorData) < Real_Sensor_Number:

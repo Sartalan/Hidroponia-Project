@@ -36,10 +36,14 @@ IP_DATA = List_IP[0]
 ##* Este es el archivo main a ejecutar
 
 subprocess.Popen(["python3", "./src/filter.py"],
-                 stderr=subprocess.DEVNULL,
-                 stdout=subprocess.DEVNULL             
+                ## stderr=subprocess.DEVNULL,
+                ## stdout=subprocess.DEVNULL             
                  )
-
+##TODO: Sí falla el ejecutado de los scripts de Python
+##TODO: Tener en cuenta que la ruta de los archivos a abrir dentro de los scripts 
+##TODO: es desde ESTE archivo; no desde los scripts.
+#! Para debuguear borrar los subprocess
+#! Indican sí querés sus logs o no.
 time.sleep(.5)
 
 ## Servidor y API tanto para la aplicación como
