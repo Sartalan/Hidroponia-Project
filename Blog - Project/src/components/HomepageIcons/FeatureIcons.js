@@ -32,9 +32,9 @@ export const IconsListOne = [
     },
   
     {
-      title: 'C',
-      url: 'https://es.wikipedia.org/wiki/C_(lenguaje_de_programación)',
-      Svg: require('@site/static/brand/c-logo.svg').default,
+      title: 'C++',
+      url: 'https://es.wikipedia.org/wiki/C%2B%2B',
+      Svg: require('@site/static/brand/cpp-logo.svg').default,
     },
 
     
@@ -43,7 +43,7 @@ export const IconsListOne = [
             
         {
           title: 'Python', 
-          url: 'https://github.com',
+          url: 'https://www.python.org/about/',
           Svg: require('@site/static/brand/python-logo.svg').default
         },
       
@@ -57,22 +57,26 @@ export const IconsListOne = [
   export const IconsListThree = [
 
     {
-      title: 'Express.js', 
+      title: 'Flask', 
       url: 'https://github.com',
-      Svg: require('@site/static/brand/express-logo.svg').default
+      Svg: require('@site/static/brand/flask-logo.svg').default
     },
 
     {
       title: 'Node.js', 
-      url: 'https://github.com',
+      url: 'https://nodejs.org/en/',
       Svg: require('@site/static/brand/nodejs-logo.svg').default
     },
 
     {
       title: 'Raspberry Pi', 
-      url: 'https://github.com',
+      url: 'https://www.raspberrypi.com/',
       Svg: require('@site/static/brand/raspberrypi-logo.svg').default
     },
-
+    { 
+     title: 'Arduino',
+     url: 'https://www.arduino.cc/',
+     Svg: require('@site/static/brand/arduino-logo.svg').default
+    }
 
 ]
