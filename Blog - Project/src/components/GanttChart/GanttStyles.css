@@ -11,6 +11,7 @@
     font-family: Butterscotch;
     font-size: 3rem;
     padding: 1rem;
+    user-select:none;
 }
 
 #GanttDiv > div {
