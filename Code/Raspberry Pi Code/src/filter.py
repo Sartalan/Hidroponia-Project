@@ -2,6 +2,7 @@ from datetime import datetime
 import serial
 import time
 import json
+import threading
 
 
 ##? El código detectará automáticamente la inserción de un nuevo sensor
@@ -12,7 +13,7 @@ MY_SENSOR_LECTURES = ["Temperatura:", "Humedad:", "Caudal:", "LDR:"]
 BAUD_RATE = 9600
 USB = "ttyACM0"
 NUMBER = 4
-FILE_TO_UPLOAD = "./src/data/hidroponia_uno.json" ##? Ruta desde app.py
+FILE_TO_UPLOAD = "./data/hidroponia_uno.json" ##? Ruta desde app.py
 DICT_DATA = {
     "name" : "Hidroponia_uno",
     "plant": "Lechuga",
@@ -84,7 +85,6 @@ def Light_Trigger():
             print("Mando que se apagué")
             SER.write(b"OFF\n")
 
-
 Real_Sensor_Number = Calculate_SensorNumberFunction(MY_SENSOR_LECTURES)
 print(Real_Sensor_Number)
 ##?
@@ -94,10 +94,18 @@ Data = []
 MyFinalValues = []
 MyNumericValues = []
 
-try:
+def SendData():
+    while True:
+        time.sleep(5)
+        data = "on"
+        print("me estoy ejecutando y mando: ", data)
+        SER.write(data.encode())
+
+def ReceiveData():
     while True:
         time.sleep(.25) ## Cada un segundo lee el puerto serial
         if SER.in_waiting > 0:
+            print("me ejecuto")
             line = SER.readline().decode('utf-8').rstrip().strip().replace('-','')
             Sensor_Value = line ## Asigna los valores a Sensor_Value
             if len(MySensorData) < Real_Sensor_Number:
@@ -139,11 +147,18 @@ try:
                 MySensorData.clear()
 
                 ##Light_Trigger()
-        
-     
 
+hilo_send_data = threading.Thread(target = SendData)
+hilo_receive_data = threading.Thread(target = ReceiveData)
+
+time.sleep(5)
+try:
+          
+  hilo_receive_data.start() 
+  hilo_send_data.start()     
             
 except KeyboardInterrupt:
     print("Close Serial Communication")
     SER.close()
  # type: ignore
+threading
