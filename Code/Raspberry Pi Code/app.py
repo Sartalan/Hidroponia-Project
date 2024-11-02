@@ -1,3 +1,10 @@
+#! Explicación
+
+#? Soy el script que ejecuta los demás script's de la carpeta 'src/'
+#? Además, soy un servidor HTTP creado con flask que se ejecuta con:
+#? "flask run --host=0.0.0.0".
+
+
 from flask import Flask # type: ignore
 import subprocess 
 import time
@@ -35,7 +42,7 @@ IP_DATA = List_IP[0]
 ##* ----------------------------------
 ##* Este es el archivo main a ejecutar
 
-subprocess.Popen(["python3", "./src/filter.py"],
+subprocess.Popen(["python3", "./src/serial_communication.py"],
                 ## stderr=subprocess.DEVNULL,
                 ## stdout=subprocess.DEVNULL             
                  )

@@ -1,3 +1,10 @@
+#! Explicación
+
+#? Este script se encarga de manejar el envío y recibo de datos en un USB determinado.
+#? Recibe los datos de los sensores y los filtra, subiendolos a un archivo JSON
+#? Simúltaneamente toma el horario local y se encarga de prender o apagar la lampara UV
+#? Envíandole un dato serial al microcontrolador.
+
 from datetime import datetime
 import serial
 import time
@@ -53,38 +60,6 @@ CURRENT_TIME = {
    }
 }
 
-def Light_Trigger():
-    now = datetime.now()
-
-    current_hour = now.hour
-    current_min = now.minute
-
-    ##now = now.strftime("%H:%M:%S")
-    CURRENT_TIME.update({"time" : {
-        "hour" : current_hour,
-        "min" : current_min
-    }})
-
-    ##print(CURRENT_TIME["time"]["hour"])
-
-    HOUR = int((CURRENT_TIME["time"]["hour"]))
-    MINUTES = int(CURRENT_TIME["time"]["min"])
-
-    if(HOUR <= 12): 
-        LIGHT_ON_OFF = True
-    else:
-        LIGHT_ON_OFF = False
-
-
-    match LIGHT_ON_OFF:
-        case True:
-            ##serial blabla
-            print("Mandó que se encienda")
-            SER.write(b"ON\n")
-        case False:
-            print("Mando que se apagué")
-            SER.write(b"OFF\n")
-
 Real_Sensor_Number = Calculate_SensorNumberFunction(MY_SENSOR_LECTURES)
 print(Real_Sensor_Number)
 ##?
@@ -96,14 +71,42 @@ MyNumericValues = []
 
 def SendData():
     while True:
-        time.sleep(5)
-        data = "on"
-        print("me estoy ejecutando y mando: ", data)
-        SER.write(data.encode())
+        time.sleep(10)
+        now = datetime.now()
+
+        current_hour = now.hour
+        current_min = now.minute
+
+    ##now = now.strftime("%H:%M:%S")
+        CURRENT_TIME.update({"time" : {
+            "hour" : current_hour,
+            "min" : current_min
+        }})
+
+    ##print(CURRENT_TIME["time"]["hour"])
+
+        HOUR = int((CURRENT_TIME["time"]["hour"]))
+        MINUTES = int(CURRENT_TIME["time"]["min"])
+
+        if(HOUR <= 12): 
+            LIGHT_ON_OFF = True
+        else:
+            LIGHT_ON_OFF = False
+
+        match LIGHT_ON_OFF:
+            case True:
+                ##serial blabla
+                print("Mandó que se encienda")
+                SER.write(b"ON\n")
+            case False:
+                print("Mando que se apagué")
+                SER.write(b"OFF\n")
+
+
 
 def ReceiveData():
     while True:
-        time.sleep(.25) ## Cada un segundo lee el puerto serial
+        time.sleep(1) ## Cada un segundo lee el puerto serial
         if SER.in_waiting > 0:
             print("me ejecuto")
             line = SER.readline().decode('utf-8').rstrip().strip().replace('-','')

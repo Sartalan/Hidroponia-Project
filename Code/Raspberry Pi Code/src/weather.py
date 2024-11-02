@@ -1,3 +1,8 @@
+#! Explicación
+#? Este script se encarga de manipular al modulo de la Raspberry "Sense Hat"
+#? En el proceso se crea una estación metereológica y se muestran pixel art 
+#? En pantalla.
+
 from sense_hat import SenseHat
 
 import json

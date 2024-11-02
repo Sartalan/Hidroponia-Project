@@ -1,3 +1,4 @@
+#! Explicación
 
 #? Este es un script que se encarga de tomar los datos del archivo json
 #? de los sensores y lo muestra en Mycodo; es muy sencillo. No se ejecuta al iniciar el servidor
