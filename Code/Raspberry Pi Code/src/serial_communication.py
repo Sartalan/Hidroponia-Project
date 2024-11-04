@@ -10,15 +10,13 @@ import serial
 import time
 import json
 import threading
-
-
 ##? El código detectará automáticamente la inserción de un nuevo sensor
 ##? Lo único que debes de hacer es añadir un nuevo item al Array MY_SENSOR_LECTURES 
 ##? y aumentar el valor de la variable NUMBER (Importante no olvidarse).
 
 MY_SENSOR_LECTURES = ["Temperatura:", "Humedad:", "Caudal:", "LDR:"] 
 BAUD_RATE = 9600
-USB = "ttyACM0"
+USB = "ttyUSB0"
 NUMBER = 4
 FILE_TO_UPLOAD = "./data/hidroponia_uno.json" ##? Ruta desde app.py
 DICT_DATA = {
@@ -70,8 +68,9 @@ MyFinalValues = []
 MyNumericValues = []
 
 def SendData():
+    start = time.time()
     while True:
-        time.sleep(10)
+        time.sleep(2)
         now = datetime.now()
 
         current_hour = now.hour
@@ -88,19 +87,30 @@ def SendData():
         HOUR = int((CURRENT_TIME["time"]["hour"]))
         MINUTES = int(CURRENT_TIME["time"]["min"])
 
-        if(HOUR <= 12): 
+        if(HOUR >= 12): 
             LIGHT_ON_OFF = True
+            SER.write(b"ON\n")
         else:
             LIGHT_ON_OFF = False
+            SER.write(b"OFF\n")
 
-        match LIGHT_ON_OFF:
-            case True:
-                ##serial blabla
-                print("Mandó que se encienda")
-                SER.write(b"ON\n")
-            case False:
-                print("Mando que se apagué")
-                SER.write(b"OFF\n")
+        tiempo_transcurrido = time.time() - start
+        if tiempo_transcurrido >= 10:  # Si han pasado 5 minutos (300 segundos)
+            SER.write(b"Bomba\n")
+            print("mande bomba")
+            start = time.time()
+
+        
+
+        print(LIGHT_ON_OFF)
+        # match LIGHT_ON_OFF:
+        #     case True:
+        #         ##serial blabla
+        #         print("Mandó que se encienda")
+        #         SER.write(b"ON\n")
+        #     case False:
+        #         print("Mando que se apagué")
+        #         SER.write(b"OFF\n")
 
 
 
