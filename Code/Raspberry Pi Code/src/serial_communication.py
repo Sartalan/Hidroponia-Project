@@ -69,6 +69,8 @@ MyNumericValues = []
 
 def SendData():
     start = time.time()
+    switch = False
+
     while True:
         time.sleep(2)
         now = datetime.now()
@@ -89,20 +91,27 @@ def SendData():
 
         if(HOUR >= 12): 
             LIGHT_ON_OFF = True
-            SER.write(b"ON\n")
+            SER.write(b"Bomba_ON\n")
         else:
             LIGHT_ON_OFF = False
-            SER.write(b"OFF\n")
+            SER.write(b"Bomba_OFF\n")
 
         tiempo_transcurrido = time.time() - start
-        if tiempo_transcurrido >= 10:  # Si han pasado 5 minutos (300 segundos)
-            SER.write(b"Bomba\n")
-            print("mande bomba")
-            start = time.time()
+        if tiempo_transcurrido >= 5:  # Si han pasado 5 minutos (300 segundos) 
+            if switch == False:
+                SER.write(b"Bomba_OFF\n")
+                print("Bomba_OFF")
+                switch = not switch
+            else:
+                SER.write(b"Bomba_ON\n")
+                print("Bomba_ON")
+                switch = not switch
+        start = time.time()
+        print(switch)
 
         
 
-        print(LIGHT_ON_OFF)
+        # print(LIGHT_ON_OFF)
         # match LIGHT_ON_OFF:
         #     case True:
         #         ##serial blabla
@@ -118,7 +127,7 @@ def ReceiveData():
     while True:
         time.sleep(1) ## Cada un segundo lee el puerto serial
         if SER.in_waiting > 0:
-            print("me ejecuto")
+            # print("me ejecuto")
             line = SER.readline().decode('utf-8').rstrip().strip().replace('-','')
             Sensor_Value = line ## Asigna los valores a Sensor_Value
             if len(MySensorData) < Real_Sensor_Number:
