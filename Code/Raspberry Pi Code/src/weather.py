@@ -149,7 +149,7 @@ Data = {}
 ## for i in range(1):
 ##   Sense.show_message("192.168.50:5000") ##todo: Mostrar la IP
 
-Sense.set_pixels(Pacman())
+Sense.set_pixels(Kirby())
 time.sleep(1)
 
 while True:

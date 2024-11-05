@@ -40,10 +40,10 @@ void loop()
   if ( Serial.available() > 0) {
     String datoRecibido = Serial.readStringUntil('\n');  // Leer dato hasta el salto de línea
     Serial.println("Dato recibido desde Python: " + datoRecibido);  // Enviar respuesta a Python
-    if(datoRecibido == "ON"){
+    if(datoRecibido == "Lamp_ON"){
       Turn_Lamp = 1;
     }
-    else if(datoRecibido == "OFF"){
+    else if(datoRecibido == "Lamp_OFF"){
       Turn_Lamp = 0;
     }
 
