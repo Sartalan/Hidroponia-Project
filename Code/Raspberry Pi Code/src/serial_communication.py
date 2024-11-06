@@ -92,12 +92,14 @@ def SendData():
         if(HOUR >= 12): 
             LIGHT_ON_OFF = True
             SER.write(b"Lamp_ON\n")
+            print("Lamp_ON")
         else:
             LIGHT_ON_OFF = False
             SER.write(b"Lamp_OFF\n")
+            print("Lamp_OFF")
 
         tiempo_transcurrido = time.time() - start
-        if tiempo_transcurrido >= 10:
+        if tiempo_transcurrido >= 60*5:
             switch = not switch
             start = time.time()
 
@@ -108,7 +110,7 @@ def SendData():
             SER.write(b"Bomba_ON\n")
             print("Bomba_ON")
 
-        print(switch)
+        # print(switch)
 
         
 
