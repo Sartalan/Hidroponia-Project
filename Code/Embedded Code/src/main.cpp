@@ -2,22 +2,30 @@
 #include <TimerOne.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
+#include "DHT.h"
+
+#define DHTTYPE DHT11
+#define DHTPIN 10        //? DHT11
 #define Disparo_Bomba 5   // 2
 #define Disparo_Lampara 2     
 #define Pin_Caudal 6
-#define Pin_DS18B20 7  //? DS18B20
+#define ONE_WIRE_BUS 7  //? DS18B20
  
 
 int GradoElectrico = 0;
 int Turn_Lamp = 0;
 int Turn_Bomb = 0;
 
-OneWire oneWire(Pin_DS18B20);
-DallasTemperature S_Temperature(&oneWire);
+// OneWire oneWire(Pin_DS18B20);
+// DallasTemperature S_Temperature(&oneWire);
 // Sensores
 unsigned long previousTime = 0;
 unsigned int pulsesCounter = 0;
- 
+
+OneWire oneWire(ONE_WIRE_BUS);
+DallasTemperature S_Temperature(&oneWire);
+DHT dht(DHTPIN, DHTTYPE);
+
 // Pass our oneWire reference to Dallas Temperature sensor
 void GradoZero()
 {
@@ -31,10 +39,12 @@ void Disparo()
 
 void setup()
 {
-  S_Temperature.begin();
+  // S_Temperature.begin();
   Serial.begin(9600);
   //? Inicialización de Sensores | Pines
- 
+  S_Temperature.begin();
+  dht.begin();
+
   pinMode(Disparo_Bomba, OUTPUT);
   pinMode(Disparo_Lampara, OUTPUT);
   pinMode(Pin_Caudal, INPUT);
@@ -53,7 +63,7 @@ void loop()
 {
   // Serial.println("me ejecuto");
 // Toma de Datos Seriales
-
+  
   if ( Serial.available() > 0) {
     String datoRecibido = Serial.readStringUntil('\n');  // Leer dato hasta el salto de línea
     Serial.println("Dato recibido desde Python: " + datoRecibido);  // Enviar respuesta a Python
@@ -83,8 +93,8 @@ void loop()
   if (actualTime - previousTime >= 1000) {
     float flow = pulsesCounter / 5.5; // Ajuste para obtener el flujo en L/min
     // Serial.print("Flujo de agua: ");
-    // Serial.print(flow);
-    // Serial.println(" L/min");
+    Serial.print(flow);
+    Serial.println(" L/min");
 
     pulsesCounter = 0; // Reiniciamos el contador de pulsos
     previousTime = actualTime; // Actualizamos el tiempo
@@ -94,13 +104,13 @@ void loop()
   switch (Turn_Lamp)
   {
     case 1:
-      // digitalWrite(Disparo_Lampara, HIGH); 
-      // Serial.println("Disparé | Lampara");
+      digitalWrite(Disparo_Lampara, HIGH); 
+      Serial.println("Disparé | Lampara");
     break;
 
     case 0: 
-      // digitalWrite(Disparo_Lampara, LOW);
-      // Serial.println("No Disparé | Lampara");
+      digitalWrite(Disparo_Lampara, LOW);
+      Serial.println("No Disparé | Lampara");
     break;
 
     default:
@@ -110,12 +120,12 @@ void loop()
 
   switch (Turn_Bomb) {
     case 1:
-      // Serial.println("Disparé | BOMBA");
-      // digitalWrite(Disparo_Bomba, HIGH);
+      Serial.println("Disparé | BOMBA");
+      digitalWrite(Disparo_Bomba, HIGH);
       break;
     case 0:
-      // Serial.println("No Disparé | BOMBA");
-      // digitalWrite(Disparo_Bomba, LOW);
+      Serial.println("No Disparé | BOMBA");
+      digitalWrite(Disparo_Bomba, LOW);
       break;
     default:
       // digitalWrite(Disparo_Bomba, LOW);
@@ -123,5 +133,12 @@ void loop()
   }
 
     S_Temperature.requestTemperatures();
-    Serial.println(S_Temperature);
+    float Temperature = (S_Temperature.getTempCByIndex(0));
+//! Sensores
+    Serial.print(F("Temperature: "));
+    Serial.println(Temperature);
+    float h = dht.readHumidity();
+    float hic = dht.computeHeatIndex( h, false);
+    Serial.print(F("Humidity: "));
+    Serial.println(hic);
 }

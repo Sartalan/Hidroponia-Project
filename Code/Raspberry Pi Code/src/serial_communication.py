@@ -69,7 +69,7 @@ MyNumericValues = []
 
 def SendData():
     start = time.time()
-    switch = False
+    switch = True
 
     while True:
         time.sleep(2)
