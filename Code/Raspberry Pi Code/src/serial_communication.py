@@ -14,11 +14,11 @@ import threading
 ##? Lo único que debes de hacer es añadir un nuevo item al Array MY_SENSOR_LECTURES 
 ##? y aumentar el valor de la variable NUMBER (Importante no olvidarse).
 
-MY_SENSOR_LECTURES = ["Temperatura:", "Humedad:", "Caudal:", "LDR:"] 
+MY_SENSOR_LECTURES = ["Temperature:", "Humidity:", "Caudal:"] 
 BAUD_RATE = 9600
 USB = "ttyUSB0"
-NUMBER = 4
-FILE_TO_UPLOAD = "./data/hidroponia_uno.json" ##? Ruta desde app.py
+NUMBER = 3
+FILE_TO_UPLOAD = "./src/data/hidroponia_uno.json" ##? Ruta desde app.py
 DICT_DATA = {
     "name" : "Hidroponia_uno",
     "plant": "Lechuga",
@@ -27,7 +27,6 @@ DICT_DATA = {
         "temperatura" : 0,
         "humedad" : 0,
         "caudal" : 0,
-        "light" : 0,        ##? For add later
     }
 }
 
@@ -91,12 +90,12 @@ def SendData():
 
         if(HOUR >= 12): 
             LIGHT_ON_OFF = True
-            SER.write(b"Lamp_ON\n")
-            print("Lamp_ON")
+            # SER.write(b"Lamp_ON\n")
+            # print("Lamp_ON")
         else:
             LIGHT_ON_OFF = False
-            SER.write(b"Lamp_OFF\n")
-            print("Lamp_OFF")
+            # SER.write(b"Lamp_OFF\n")
+            # print("Lamp_OFF")
 
         tiempo_transcurrido = time.time() - start
         if tiempo_transcurrido >= 60*5:
@@ -104,11 +103,13 @@ def SendData():
             start = time.time()
 
         if switch == False:
-            SER.write(b"Bomba_OFF\n")
-            print("Bomba_OFF")
+            print("")
+            # SER.write(b"Bomba_OFF\n")
+            # print("Bomba_OFF")
         else:
-            SER.write(b"Bomba_ON\n")
-            print("Bomba_ON")
+            print("")
+            # SER.write(b"Bomba_ON\n")
+            # print("Bomba_ON")
 
         # print(switch)
 
@@ -130,8 +131,8 @@ def ReceiveData():
     while True:
         time.sleep(1) ## Cada un segundo lee el puerto serial
         if SER.in_waiting > 0:
-            # print("me ejecuto")
             line = SER.readline().decode('utf-8').rstrip().strip().replace('-','')
+            # print(line)
             Sensor_Value = line ## Asigna los valores a Sensor_Value
             if len(MySensorData) < Real_Sensor_Number:
                 for i in range(Real_Sensor_Number):
@@ -155,7 +156,6 @@ def ReceiveData():
                         "temperatura" : (MyFinalValues[0]),
                         "humedad" : (MyFinalValues[1]),
                         "caudal" : (MyFinalValues[2]),
-                        "light" : (MyFinalValues[3]),
                 }})
                 
                 except IndexError:
@@ -167,7 +167,7 @@ def ReceiveData():
 
                 print(JSON)
                 JSON_FILE.close()
-
+                
                 MyFinalValues.clear()
                 MySensorData.clear()
 

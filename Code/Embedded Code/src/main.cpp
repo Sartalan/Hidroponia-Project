@@ -92,9 +92,17 @@ void loop()
   // Cada segundo calculamos el flujo de agua
   if (actualTime - previousTime >= 1000) {
     float flow = pulsesCounter / 5.5; // Ajuste para obtener el flujo en L/min
-    // Serial.print("Flujo de agua: ");
-    Serial.print(flow);
-    Serial.println(" L/min");
+    S_Temperature.requestTemperatures(); 
+    float Temperature = (S_Temperature.getTempCByIndex(0));
+    float h = dht.readHumidity();
+    float hic = dht.computeHeatIndex( h, false);
+//Sending Data vía Serial
+    Serial.print("Caudal: ");
+    Serial.println(flow);
+    Serial.print("Temperature: ");
+    Serial.println(Temperature);
+    Serial.print("Humidity: ");
+    Serial.println(hic);
 
     pulsesCounter = 0; // Reiniciamos el contador de pulsos
     previousTime = actualTime; // Actualizamos el tiempo
@@ -105,12 +113,12 @@ void loop()
   {
     case 1:
       digitalWrite(Disparo_Lampara, HIGH); 
-      Serial.println("Disparé | Lampara");
+      // Serial.println("Disparé | Lampara");
     break;
 
     case 0: 
       digitalWrite(Disparo_Lampara, LOW);
-      Serial.println("No Disparé | Lampara");
+      // Serial.println("No Disparé | Lampara");
     break;
 
     default:
@@ -120,11 +128,11 @@ void loop()
 
   switch (Turn_Bomb) {
     case 1:
-      Serial.println("Disparé | BOMBA");
+      // Serial.println("Disparé | BOMBA");
       digitalWrite(Disparo_Bomba, HIGH);
       break;
     case 0:
-      Serial.println("No Disparé | BOMBA");
+      // Serial.println("No Disparé | BOMBA");
       digitalWrite(Disparo_Bomba, LOW);
       break;
     default:
@@ -132,13 +140,4 @@ void loop()
       break;
   }
 
-    S_Temperature.requestTemperatures();
-    float Temperature = (S_Temperature.getTempCByIndex(0));
-//! Sensores
-    Serial.print(F("Temperature: "));
-    Serial.println(Temperature);
-    float h = dht.readHumidity();
-    float hic = dht.computeHeatIndex( h, false);
-    Serial.print(F("Humidity: "));
-    Serial.println(hic);
 }
