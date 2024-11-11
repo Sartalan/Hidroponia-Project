@@ -1,0 +1,16 @@
+{
+  "title": "Informe Final",
+  "description": "El proyecto finalmente fue finalizado para el mes de noviembre, este ya es completamente funcional. Muy seguramente le añadamos Anexos con la intención de mejorar el software extra que incluye: la aplicación de celular y la aplicación web. Pensamos que todavía podrían mejorar.",
+  "slug": "/category/informe-final",
+  "permalink": "/Hidroponia-Project/docs/category/informe-final",
+  "navigation": {
+    "previous": {
+      "title": "Inicio",
+      "permalink": "/Hidroponia-Project/docs/intro"
+    },
+    "next": {
+      "title": "Software",
+      "permalink": "/Hidroponia-Project/docs/Informe/Software"
+    }
+  }
+}

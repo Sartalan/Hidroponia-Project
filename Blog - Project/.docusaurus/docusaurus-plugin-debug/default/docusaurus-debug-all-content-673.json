@@ -20,6 +20,53 @@
           "contentPathLocalized": "/home/sarti/documents/projects/Hidroponia-Project/Blog - Project/i18n/es/docusaurus-plugin-content-docs/current",
           "docs": [
             {
+              "id": "Informe/Hardware",
+              "title": "Hardware",
+              "description": "Introducción",
+              "source": "@site/docs/Informe/Hardware.md",
+              "sourceDirName": "Informe",
+              "slug": "/Informe/Hardware",
+              "permalink": "/Hidroponia-Project/docs/Informe/Hardware",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Hardware.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Software",
+                "permalink": "/Hidroponia-Project/docs/Informe/Software"
+              }
+            },
+            {
+              "id": "Informe/Software",
+              "title": "Software",
+              "description": "",
+              "source": "@site/docs/Informe/Software.md",
+              "sourceDirName": "Informe",
+              "slug": "/Informe/Software",
+              "permalink": "/Hidroponia-Project/docs/Informe/Software",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Software.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Informe Final",
+                "permalink": "/Hidroponia-Project/docs/category/informe-final"
+              },
+              "next": {
+                "title": "Hardware",
+                "permalink": "/Hidroponia-Project/docs/Informe/Hardware"
+              }
+            },
+            {
               "id": "intro",
               "title": "Inicio",
               "description": "¿Para qué existe esta web?",
@@ -36,7 +83,11 @@
               "frontMatter": {
                 "sidebar_position": 1
               },
-              "sidebar": "tutorialSidebar"
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Informe Final",
+                "permalink": "/Hidroponia-Project/docs/category/informe-final"
+              }
             }
           ],
           "drafts": [],
@@ -45,6 +96,28 @@
               {
                 "type": "doc",
                 "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "Informe Final",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Informe/Software"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Informe/Hardware"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "description": "El proyecto finalmente fue finalizado para el mes de noviembre, este ya es completamente funcional. Muy seguramente le añadamos Anexos con la intención de mejorar el software extra que incluye: la aplicación de celular y la aplicación web. Pensamos que todavía podrían mejorar.",
+                  "slug": "/category/informe-final",
+                  "permalink": "/Hidroponia-Project/docs/category/informe-final"
+                }
               }
             ]
           }

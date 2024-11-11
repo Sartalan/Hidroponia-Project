@@ -14,9 +14,13 @@ Esta web tendrá por destino el ser usada para adjuntar todo el recorrido de nue
 Siendo seguramente más práctico que así sea al nuestro profesor tener pensado realizar otra.
 Nuestra finalidad es documentar lo máximo posible y con la mayor veracidad posible como fue el proceso de la realización del proyecto.
 
-- Dentro del apartado de "Proyecto" tenemos pensado añadir la información práctica e importante para la realización de este proyecto, la cuál será añadida muy posiblemente en la finalización de éste.
+### Proyecto
 
-- Dentro del apartado de "Blog" la situación será más ambigüa. Pensamos añadir croquis, bocetos, diagramas y demás cosas no tan relevantes sí alguien quiere realizar rápidamente el proyecto pero puede ser útil para tener un seguimiento de que fuimos haciendo y qué no. Pero no garantizamos que la información que se encuentre en el blog sea realmente útil. De cierta forma no es más que un conjunto de ideas y planteamientos, puede que algunas cosas hayan sido canceladas y otras no. La información realmente útil está en Proyecto.
+- Dentro del apartado de [Proyecto](/Hidroponia-Project/docs/intro) tenemos pensado añadir la información práctica e importante para la realización de este proyecto, la cuál será añadida muy posiblemente en la finalización de éste.
+
+### Blog
+
+- Dentro del apartado de [Blog](/Hidroponia-Project/blog) la situación será más ambigüa. Pensamos añadir croquis, bocetos, diagramas y demás cosas no tan relevantes sí alguien quiere realizar rápidamente el proyecto pero puede ser útil para tener un seguimiento de que fuimos haciendo y qué no. Pero no garantizamos que la información que se encuentre en el blog sea realmente útil. De cierta forma no es más que un conjunto de ideas y planteamientos, puede que algunas cosas hayan sido canceladas y otras no. La información realmente útil está en Proyecto.
 
 ---
 *Wolfsrudel*

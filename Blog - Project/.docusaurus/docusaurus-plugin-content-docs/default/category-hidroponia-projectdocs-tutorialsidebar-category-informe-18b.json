@@ -1,0 +1,16 @@
+{
+  "title": "Informe",
+  "description": "lol",
+  "slug": "/category/informe",
+  "permalink": "/Hidroponia-Project/docs/category/informe",
+  "navigation": {
+    "previous": {
+      "title": "Inicio",
+      "permalink": "/Hidroponia-Project/docs/intro"
+    },
+    "next": {
+      "title": "list",
+      "permalink": "/Hidroponia-Project/docs/Informe/list"
+    }
+  }
+}

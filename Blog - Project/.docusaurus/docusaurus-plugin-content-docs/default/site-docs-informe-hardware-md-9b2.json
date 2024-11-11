@@ -1,0 +1,20 @@
+{
+  "id": "Informe/Hardware",
+  "title": "Hardware",
+  "description": "Introducción",
+  "source": "@site/docs/Informe/Hardware.md",
+  "sourceDirName": "Informe",
+  "slug": "/Informe/Hardware",
+  "permalink": "/Hidroponia-Project/docs/Informe/Hardware",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Hardware.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Software",
+    "permalink": "/Hidroponia-Project/docs/Informe/Software"
+  }
+}

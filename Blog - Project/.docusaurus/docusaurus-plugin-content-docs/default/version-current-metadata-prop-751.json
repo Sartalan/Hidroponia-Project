@@ -15,10 +15,45 @@
         "href": "/Hidroponia-Project/docs/intro",
         "docId": "intro",
         "unlisted": false
+      },
+      {
+        "type": "category",
+        "label": "Informe Final",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Software",
+            "href": "/Hidroponia-Project/docs/Informe/Software",
+            "docId": "Informe/Software",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Hardware",
+            "href": "/Hidroponia-Project/docs/Informe/Hardware",
+            "docId": "Informe/Hardware",
+            "unlisted": false
+          }
+        ],
+        "href": "/Hidroponia-Project/docs/category/informe-final"
       }
     ]
   },
   "docs": {
+    "Informe/Hardware": {
+      "id": "Informe/Hardware",
+      "title": "Hardware",
+      "description": "Introducción",
+      "sidebar": "tutorialSidebar"
+    },
+    "Informe/Software": {
+      "id": "Informe/Software",
+      "title": "Software",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
     "intro": {
       "id": "intro",
       "title": "Inicio",

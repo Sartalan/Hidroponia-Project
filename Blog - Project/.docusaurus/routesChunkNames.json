@@ -493,18 +493,30 @@
     },
     "content": "content---hidroponia-project-markdown-page-393-5a1"
   },
-  "/Hidroponia-Project/docs-e78": {
+  "/Hidroponia-Project/docs-1b3": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---hidroponia-project-docs-171-dc8"
     }
   },
-  "/Hidroponia-Project/docs-c3e": {
+  "/Hidroponia-Project/docs-1d9": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---hidroponia-project-docs-935-16e"
   },
-  "/Hidroponia-Project/docs-ca9": {
+  "/Hidroponia-Project/docs-b4d": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/Hidroponia-Project/docs/category/informe-final-63a": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---hidroponia-project-docs-category-informe-final-66-a-77e"
+  },
+  "/Hidroponia-Project/docs/Informe/Hardware-1cf": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---hidroponia-project-docs-informe-hardware-9-b-2-be0"
+  },
+  "/Hidroponia-Project/docs/Informe/Software-8f3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---hidroponia-project-docs-informe-software-7-bf-246"
   },
   "/Hidroponia-Project/docs/intro-85f": {
     "__comp": "__comp---theme-doc-item-178-a40",

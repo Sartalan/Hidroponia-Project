@@ -1,0 +1,23 @@
+{
+  "id": "Informe/list",
+  "title": "list",
+  "description": "",
+  "source": "@site/docs/Informe/list.md",
+  "sourceDirName": "Informe",
+  "slug": "/Informe/list",
+  "permalink": "/Hidroponia-Project/docs/Informe/list",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/list.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Informe Final",
+    "permalink": "/Hidroponia-Project/docs/category/informe-final"
+  }
+}

@@ -11,8 +11,23 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "Informe/Hardware",
+              "path": "/Hidroponia-Project/docs/Informe/Hardware",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Informe/Software",
+              "path": "/Hidroponia-Project/docs/Informe/Software",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/Hidroponia-Project/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/informe-final",
+              "path": "/Hidroponia-Project/docs/category/informe-final",
               "sidebar": "tutorialSidebar"
             }
           ],

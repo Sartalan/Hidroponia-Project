@@ -15,5 +15,9 @@
   "frontMatter": {
     "sidebar_position": 1
   },
-  "sidebar": "tutorialSidebar"
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Informe Final",
+    "permalink": "/Hidroponia-Project/docs/category/informe-final"
+  }
 }
