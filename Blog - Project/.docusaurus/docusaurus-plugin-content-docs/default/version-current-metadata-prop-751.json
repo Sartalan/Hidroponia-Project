@@ -24,6 +24,13 @@
         "items": [
           {
             "type": "link",
+            "label": "Hardware",
+            "href": "/Hidroponia-Project/docs/Informe/Hardware",
+            "docId": "Informe/Hardware",
+            "unlisted": false
+          },
+          {
+            "type": "link",
             "label": "Software",
             "href": "/Hidroponia-Project/docs/Informe/Software",
             "docId": "Informe/Software",
@@ -31,9 +38,16 @@
           },
           {
             "type": "link",
-            "label": "Hardware",
-            "href": "/Hidroponia-Project/docs/Informe/Hardware",
-            "docId": "Informe/Hardware",
+            "label": "Nosotros",
+            "href": "/Hidroponia-Project/docs/Informe/Nosotros",
+            "docId": "Informe/Nosotros",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Precios_USD",
+            "href": "/Hidroponia-Project/docs/Informe/Precios_USD",
+            "docId": "Informe/Precios_USD",
             "unlisted": false
           }
         ],
@@ -45,7 +59,19 @@
     "Informe/Hardware": {
       "id": "Informe/Hardware",
       "title": "Hardware",
-      "description": "Introducción",
+      "description": "Hardware",
+      "sidebar": "tutorialSidebar"
+    },
+    "Informe/Nosotros": {
+      "id": "Informe/Nosotros",
+      "title": "Nosotros",
+      "description": "Nosotros",
+      "sidebar": "tutorialSidebar"
+    },
+    "Informe/Precios_USD": {
+      "id": "Informe/Precios_USD",
+      "title": "Precios_USD",
+      "description": "Precios",
       "sidebar": "tutorialSidebar"
     },
     "Informe/Software": {

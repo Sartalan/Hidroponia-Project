@@ -22,7 +22,7 @@
             {
               "id": "Informe/Hardware",
               "title": "Hardware",
-              "description": "Introducción",
+              "description": "Hardware",
               "source": "@site/docs/Informe/Hardware.md",
               "sourceDirName": "Informe",
               "slug": "/Informe/Hardware",
@@ -32,11 +32,68 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Hardware.md",
               "tags": [],
               "version": "current",
-              "frontMatter": {},
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Informe Final",
+                "permalink": "/Hidroponia-Project/docs/category/informe-final"
+              },
+              "next": {
+                "title": "Software",
+                "permalink": "/Hidroponia-Project/docs/Informe/Software"
+              }
+            },
+            {
+              "id": "Informe/Nosotros",
+              "title": "Nosotros",
+              "description": "Nosotros",
+              "source": "@site/docs/Informe/Nosotros.md",
+              "sourceDirName": "Informe",
+              "slug": "/Informe/Nosotros",
+              "permalink": "/Hidroponia-Project/docs/Informe/Nosotros",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Nosotros.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Software",
                 "permalink": "/Hidroponia-Project/docs/Informe/Software"
+              },
+              "next": {
+                "title": "Precios_USD",
+                "permalink": "/Hidroponia-Project/docs/Informe/Precios_USD"
+              }
+            },
+            {
+              "id": "Informe/Precios_USD",
+              "title": "Precios_USD",
+              "description": "Precios",
+              "source": "@site/docs/Informe/Precios_USD.md",
+              "sourceDirName": "Informe",
+              "slug": "/Informe/Precios_USD",
+              "permalink": "/Hidroponia-Project/docs/Informe/Precios_USD",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Precios_USD.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Nosotros",
+                "permalink": "/Hidroponia-Project/docs/Informe/Nosotros"
               }
             },
             {
@@ -58,12 +115,12 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Informe Final",
-                "permalink": "/Hidroponia-Project/docs/category/informe-final"
-              },
-              "next": {
                 "title": "Hardware",
                 "permalink": "/Hidroponia-Project/docs/Informe/Hardware"
+              },
+              "next": {
+                "title": "Nosotros",
+                "permalink": "/Hidroponia-Project/docs/Informe/Nosotros"
               }
             },
             {
@@ -105,11 +162,19 @@
                 "items": [
                   {
                     "type": "doc",
+                    "id": "Informe/Hardware"
+                  },
+                  {
+                    "type": "doc",
                     "id": "Informe/Software"
                   },
                   {
                     "type": "doc",
-                    "id": "Informe/Hardware"
+                    "id": "Informe/Nosotros"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Informe/Precios_USD"
                   }
                 ],
                 "link": {

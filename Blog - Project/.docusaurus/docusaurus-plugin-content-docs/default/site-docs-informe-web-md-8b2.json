@@ -1,0 +1,23 @@
+{
+  "id": "Informe/Web",
+  "title": "Web",
+  "description": "Hardware",
+  "source": "@site/docs/Informe/Web.md",
+  "sourceDirName": "Informe",
+  "slug": "/Informe/Web",
+  "permalink": "/Hidroponia-Project/docs/Informe/Web",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Web.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "App",
+    "permalink": "/Hidroponia-Project/docs/Informe/App"
+  }
+}

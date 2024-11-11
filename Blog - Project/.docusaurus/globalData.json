@@ -16,6 +16,16 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Informe/Nosotros",
+              "path": "/Hidroponia-Project/docs/Informe/Nosotros",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Informe/Precios_USD",
+              "path": "/Hidroponia-Project/docs/Informe/Precios_USD",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Informe/Software",
               "path": "/Hidroponia-Project/docs/Informe/Software",
               "sidebar": "tutorialSidebar"

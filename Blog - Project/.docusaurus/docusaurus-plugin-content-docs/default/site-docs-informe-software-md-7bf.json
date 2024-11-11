@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Informe Final",
-    "permalink": "/Hidroponia-Project/docs/category/informe-final"
-  },
-  "next": {
     "title": "Hardware",
     "permalink": "/Hidroponia-Project/docs/Informe/Hardware"
+  },
+  "next": {
+    "title": "Nosotros",
+    "permalink": "/Hidroponia-Project/docs/Informe/Nosotros"
   }
 }

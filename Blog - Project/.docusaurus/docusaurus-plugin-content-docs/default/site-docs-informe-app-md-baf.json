@@ -1,0 +1,23 @@
+{
+  "id": "Informe/App",
+  "title": "App",
+  "description": "Hardware",
+  "source": "@site/docs/Informe/App.md",
+  "sourceDirName": "Informe",
+  "slug": "/Informe/App",
+  "permalink": "/Hidroponia-Project/docs/Informe/App",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/App.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Precios_USD",
+    "permalink": "/Hidroponia-Project/docs/Informe/Precios_USD"
+  }
+}
