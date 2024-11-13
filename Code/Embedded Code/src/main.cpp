@@ -30,15 +30,15 @@ void GradoZero()
 {
   Bomb_Time_On++;
 
-  if ( Bomb_Time_On <= 3000 && Bomb_Time_On >= 0){ //30000 = 5min
+  if ( Bomb_Time_On <= 30000 && Bomb_Time_On >= 0){ //30000 = 5min
       //Prendido
       Turn_Bomb = 1;
   }
-  else if(Bomb_Time_On > 3000 && Bomb_Time_On <= 6000){
+  else if(Bomb_Time_On > 30000 && Bomb_Time_On <= 60000){
       Turn_Bomb = 0;
   }
 
-  else if(Bomb_Time_On > 6000){
+  else if(Bomb_Time_On > 60000){
     Bomb_Time_On = 0;
   }
 
