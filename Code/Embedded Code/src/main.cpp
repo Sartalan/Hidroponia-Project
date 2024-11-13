@@ -30,11 +30,11 @@ void GradoZero()
 {
   Bomb_Time_On++;
 
-  if ( Bomb_Time_On > 3000 && Bomb_Time_On < 6000){
+  if ( Bomb_Time_On <= 3000 && Bomb_Time_On >= 0){ //30000 = 5min
       //Prendido
       Turn_Bomb = 1;
   }
-  else if(Bomb_Time_On < 3000){
+  else if(Bomb_Time_On > 3000 && Bomb_Time_On <= 6000){
       Turn_Bomb = 0;
   }
 
@@ -78,13 +78,6 @@ void loop()
     }
     else if(datoRecibido == "Lamp_OFF"){
       Turn_Lamp = 0;
-    }
-
-    if(datoRecibido == "Bomba_ON"){
-      Turn_Bomb = 1;
-    }
-    else if(datoRecibido == "Bomba_OFF"){
-      Turn_Bomb = 0;
     }
   }
 
