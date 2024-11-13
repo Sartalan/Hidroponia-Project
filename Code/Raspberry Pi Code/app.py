@@ -65,6 +65,8 @@ MY_SENSOR_LECTURES = ["Temperatura:", "Humedad:", "Caudal:", "LDR:"]
 app = Flask(__name__)
 
 
+if __name__ == '__main__':
+    app.run(debug=True, port=5001)
 @app.route("/")
 def hello_world():
     return "/"
@@ -83,13 +85,14 @@ def SensorData():
 
 ##? Lee la IP local 
 
-def Server_IP():
-    host = socket.gethostname()
-    IP = socket.gethostbyname(host)
-
-    Data = (IP) + ":5000"
-    print(Data)
-Server_IP()
+# def Server_IP():
+#     host = socket.gethostname()
+#     IP = socket.gethostbyname(host)
+#
+#     Data = (IP) + ":5000"
+#     print(Data)
+# Server_IP()
+#
 
 ## Habilitar .env
 ## Instalar Flask con pip (Reinstalar pyserial en el proyecto)

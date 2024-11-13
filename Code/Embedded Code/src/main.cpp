@@ -10,10 +10,10 @@
 #define Disparo_Lampara 2     
 #define Pin_Caudal 6
 #define ONE_WIRE_BUS 7  //? DS18B20
- 
 
 int GradoElectrico = 0;
 int Turn_Lamp = 0;
+int Bomb_Time_On, Bomb_Time_Off = 0;
 int Turn_Bomb = 0;
 
 // OneWire oneWire(Pin_DS18B20);
@@ -21,6 +21,7 @@ int Turn_Bomb = 0;
 // Sensores
 unsigned long previousTime = 0;
 unsigned int pulsesCounter = 0;
+
 
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature S_Temperature(&oneWire);
@@ -30,11 +31,27 @@ DHT dht(DHTPIN, DHTTYPE);
 void GradoZero()
 {
   GradoElectrico = 0;
+
+  if ( Bomb_Time_On > 3000 && Bomb_Time_On < 6000){
+      //Prendido
+      Turn_Bomb = 1;
+  }
+  else if(Bomb_Time_On < 3000){
+      Turn_Bomb = 0;
+  }
+
+  else if(Bomb_Time_On > 6000){
+    Bomb_Time_On = 0;
+  }
+
+  // Serial.println(Turn_Bomb);
 }
 
 void Disparo()
 {
   GradoElectrico++; 
+  Bomb_Time_On++;
+  Bomb_Time_Off++;
 }
 
 void setup()
@@ -56,13 +73,12 @@ void setup()
   digitalWrite(Disparo_Lampara, LOW);
   Timer1.initialize(55);                 // Seteado a 55us
   Timer1.attachInterrupt(Disparo);
-
 }
 
 void loop()
 {
   // Serial.println("me ejecuto");
-// Toma de Datos Seriales
+  // Toma de Datos Seriales
   
   if ( Serial.available() > 0) {
     String datoRecibido = Serial.readStringUntil('\n');  // Leer dato hasta el salto de línea
@@ -112,28 +128,28 @@ void loop()
   switch (Turn_Lamp)
   {
     case 1:
-      digitalWrite(Disparo_Lampara, HIGH); 
+      // digitalWrite(Disparo_Lampara, HIGH); 
       // Serial.println("Disparé | Lampara");
     break;
 
     case 0: 
-      digitalWrite(Disparo_Lampara, LOW);
+      // digitalWrite(Disparo_Lampara, LOW);
       // Serial.println("No Disparé | Lampara");
     break;
 
     default:
-      // digitalWrite(Disparo_Lampara, LOW);
+      digitalWrite(Disparo_Lampara, LOW);
     break;
   }
 
   switch (Turn_Bomb) {
     case 1:
-      // Serial.println("Disparé | BOMBA");
-      digitalWrite(Disparo_Bomba, HIGH);
+      Serial.println("Disparé | BOMBA");
+      // digitalWrite(Disparo_Bomba, HIGH);
       break;
     case 0:
-      // Serial.println("No Disparé | BOMBA");
-      digitalWrite(Disparo_Bomba, LOW);
+      Serial.println("No Disparé | BOMBA");
+      // digitalWrite(Disparo_Bomba, LOW);
       break;
     default:
       // digitalWrite(Disparo_Bomba, LOW);
