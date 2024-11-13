@@ -111,12 +111,12 @@ void loop()
   switch (Turn_Lamp)
   {
     case 1:
-      // digitalWrite(Disparo_Lampara, HIGH); 
+      digitalWrite(Disparo_Lampara, HIGH); 
       // Serial.println("Disparé | Lampara");
     break;
 
     case 0: 
-      // digitalWrite(Disparo_Lampara, LOW);
+      digitalWrite(Disparo_Lampara, LOW);
       // Serial.println("No Disparé | Lampara");
     break;
 
@@ -127,15 +127,15 @@ void loop()
 
   switch (Turn_Bomb) {
     case 1:
-      Serial.println("Disparé | BOMBA");
-      // digitalWrite(Disparo_Bomba, HIGH);
+      // Serial.println("Disparé | BOMBA");
+      digitalWrite(Disparo_Bomba, HIGH);
       break;
     case 0:
-      Serial.println("No Disparé | BOMBA");
-      // digitalWrite(Disparo_Bomba, LOW);
+      // Serial.println("No Disparé | BOMBA");
+      digitalWrite(Disparo_Bomba, LOW);
       break;
     default:
-      // digitalWrite(Disparo_Bomba, LOW);
+      digitalWrite(Disparo_Bomba, LOW);
       break;
   }
 

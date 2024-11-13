@@ -1,6 +1,8 @@
 #!/bin/bash
 
-SSID_OBJETIVO="Taller_Electronica" # Cambia esto por el SSID específico
+sleep 30
+
+SSID_OBJETIVO="Estudiantes" # Cambia esto por el SSID específico
 IP=""
 
 # Obtener la conexión activa para el SSID específico
@@ -14,6 +16,6 @@ else
   echo "No se encontró conexión activa para el SSID '$SSID_OBJETIVO'."
 fi
 
-/home/colegio/Documentos/Hidroponia-Project/Code/Raspberry Pi Code || exit
+( cd "/home/colegio/Documentos/Hidroponia-Project/Code/Raspberry Pi Code" && flask run --host=$IP --port=5001 ) &
+( cd "/home/colegio/Documentos/Hidroponia-Project/Code/Raspberry Pi Code/src/" && python3 weather.py ) &
 
-flask run --$IP --port=5001
