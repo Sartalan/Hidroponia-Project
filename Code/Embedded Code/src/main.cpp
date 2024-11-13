@@ -1,5 +1,4 @@
 #include <Arduino.h>
-#include <TimerOne.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
 #include "DHT.h"
@@ -11,9 +10,8 @@
 #define Pin_Caudal 6
 #define ONE_WIRE_BUS 7  //? DS18B20
 
-int GradoElectrico = 0;
 int Turn_Lamp = 0;
-int Bomb_Time_On, Bomb_Time_Off = 0;
+int Bomb_Time_On = 0;
 int Turn_Bomb = 0;
 
 // OneWire oneWire(Pin_DS18B20);
@@ -30,7 +28,7 @@ DHT dht(DHTPIN, DHTTYPE);
 // Pass our oneWire reference to Dallas Temperature sensor
 void GradoZero()
 {
-  GradoElectrico = 0;
+  Bomb_Time_On++;
 
   if ( Bomb_Time_On > 3000 && Bomb_Time_On < 6000){
       //Prendido
@@ -47,12 +45,6 @@ void GradoZero()
   // Serial.println(Turn_Bomb);
 }
 
-void Disparo()
-{
-  GradoElectrico++; 
-  Bomb_Time_On++;
-  Bomb_Time_Off++;
-}
 
 void setup()
 {
@@ -71,8 +63,6 @@ void setup()
   //? Setea en LOW (por sí acaso)
   digitalWrite(Disparo_Bomba, LOW);
   digitalWrite(Disparo_Lampara, LOW);
-  Timer1.initialize(55);                 // Seteado a 55us
-  Timer1.attachInterrupt(Disparo);
 }
 
 void loop()
