@@ -46,15 +46,14 @@ def Pacman():
    NE = (0,0,0)
 
    logo = [
-   B1, B1, A1, A1, A1, A1, B1, B1,
-   B1, A1, A1, A1, A1, A1, A1, B1,
-   A1, A1, A1, A1, NE, A1, A1, A1,
-   A1, A1, A1, A1, A1, B1, B1, B1,
-   A1, A1, A1, B1, B1, B1, B1, B1,
-   A1, A1, A1, A1, A1, B1, B1, B1,
-   B1, A1, A1, A1, A1, A1, A1, B1,
-   B1, B1, A1, A1, A1, A1, B1, B1,
-   ] 
+ B1, B1, A1, A1, A1, A1, B1, B1,
+B1, A1, A1, A1, A1, A1, A1, B1,
+A1, A1, A1, A1, A1, B1, B1, B1,
+A1, A1, A1, B1, B1, B1, B1, B1,
+A1, A1, A1, A1, A1, B1, B1, B1,
+A1, A1, A1, A1, NE, A1, A1, A1,
+B1, A1, A1, A1, A1, A1, A1, B1,
+ B1, B1, A1, A1, A1, A1, B1, B1,  ] 
    return logo
 
 def Yoshi():   
@@ -70,15 +69,15 @@ def Yoshi():
    NE = (0,0,0)
 
    logo = [
-   C1, C1, N1, V1, V2, V1, C1, C1,
-   C1, N1, V1, NE, V1, V1, V1, V1,
-   C1, C1, B1, B1, V1, V1, V1, V1,
-   C1, N1, B1, B1, V1, V1, V1, V1,
-   C1, C1, R1, G1, B1, B1, B1, C1,
-   V2, N1, V2, V2, G1, G1, V2, C1,
-   C1, V2, V1, V2, G1, G1, V2, V2, 
    C1, C1, R2, R2, C1, VI, VI, C1,
-   ]
+C1, V2, V1, V2, G1, G1, V2, V2, 
+V2, N1, V2, V2, G1, G1, V2, C1,
+C1, C1, R1, G1, B1, B1, B1, C1,
+C1, N1, B1, B1, V1, V1, V1, V1,
+C1, C1, B1, B1, V1, V1, V1, V1,
+C1, N1, V1, NE, V1, V1, V1, V1,
+ C1, C1, N1, V1, V2, V1, C1, C1,
+    ]
    return logo
 
 def Kirby():
@@ -92,32 +91,19 @@ def Kirby():
     RF = rosafuerte
 
     logo = [
-    F, F, F, F, F, F, F, F,
-    F, F, R1, R1, R1, R1, F, F,
-    F, R1, R1, R1, R1, R1, R1, F,
-    F, RC, R1, N, R1, N, R1, RC,
-    RC, R1, R1,V , R1, V, R1, RC,
-    RC, RC, RT, R1, R1, R1, RT, F,
-    F, RF, RC, RC, R1, R1, RF, F,
     F, RF, OR, OR, F, RF, OR, F,
+   F, RF, RC, RC, R1, R1, RF, F,
+      RC, RC, RT, R1, R1, R1, RT, F,
+     RC, R1, R1, V, R1, V, R1, RC,
+    F, RC, R1, N, R1, N, R1, RC,
+    F, R1, R1, R1, R1, R1, R1, F,
+     F, F, R1, R1, R1, R1, F, F,
+     F, F, F, F, F, F, F, F,
+
     ]
     return logo
 
-def Enderman():
-   N = negro
-   R = (255,115,238)
-   V = (202,0,205)
-   logo = [
-   N, N, N, N, N, N, N, N, 
-   N, N, N, N, N, N, N, N,  
-   N, N, N, N, N, N, N, N,
-   N, N, N, N, N, N, N, N,
-   R, V, R, N, N, R, V, R,
-   N, N, N, N, N, N, N, N,  
-   N, N, N, N, N, N, N, N,
-   N, N, N, N, N, N, N, N,     
-   ]
-   return logo
+
 
 def Link():
   V1 = (0,230,118)
@@ -131,14 +117,14 @@ def Link():
   NE = (0,0,0)
   
   logo = [
-  NE, NE, V1 ,V1, A1, A1, N1, NE,
-  NE, G1, V1, A1, P1, A1, A1, N1,
-  V2, G1, P1, A1, NE, P1, NE, NE,
-  NE, G1, NE, P1, P1, P1, P1, NE,
-  NE, G1, V1, V1, P1, V2, NE, G1,
-  C1, C1, C1, M1, N1, M1, V2, G1,
-  NE, P1, V2, V1, V1, V2, NE, G1,
-  NE, NE, M1, NE, NE, M1, NE, NE,
+ NE, NE, M1, NE, NE, M1, NE, NE,
+NE, P1, V2, V1, V1, V2, NE, G1,
+C1, C1, C1, M1, N1, M1, V2, G1,
+NE, G1, V1, V1, P1, V2, NE, G1,
+NE, G1, NE, P1, P1, P1, P1, NE,
+V2, G1, P1, A1, NE, P1, NE, NE,
+NE, G1, V1, A1, P1, A1, A1, N1,
+NE, NE, V1 ,V1, A1, A1, N1, NE, 
   ]
   
   return logo
@@ -149,7 +135,12 @@ Data = {}
 ## for i in range(1):
 ##   Sense.show_message("192.168.50:5000") ##todo: Mostrar la IP
 
-Sense.set_pixels(Kirby())
+Sense.set_pixels(Pacman())
+
+# for i in range 5:
+# time.sleep(5)
+# Sense.set_pixels(Kirby())
+
 time.sleep(1)
 
 while True:
