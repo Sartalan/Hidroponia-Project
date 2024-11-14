@@ -31,7 +31,7 @@
           },
           {
             "type": "link",
-            "label": "Software",
+            "label": "Importante",
             "href": "/Hidroponia-Project/docs/Informe/Software",
             "docId": "Informe/Software",
             "unlisted": false
@@ -76,8 +76,8 @@
     },
     "Informe/Software": {
       "id": "Informe/Software",
-      "title": "Software",
-      "description": "Importante",
+      "title": "Importante",
+      "description": "Este informe estará orientado completamente al funcionamiento teorico del proyecto.",
       "sidebar": "tutorialSidebar"
     },
     "intro": {

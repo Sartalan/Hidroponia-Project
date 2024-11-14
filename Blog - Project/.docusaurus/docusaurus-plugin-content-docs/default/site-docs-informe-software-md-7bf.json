@@ -1,7 +1,7 @@
 {
   "id": "Informe/Software",
-  "title": "Software",
-  "description": "Importante",
+  "title": "Importante",
+  "description": "Este informe estará orientado completamente al funcionamiento teorico del proyecto.",
   "source": "@site/docs/Informe/Software.md",
   "sourceDirName": "Informe",
   "slug": "/Informe/Software",
