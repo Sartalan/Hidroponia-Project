@@ -59,7 +59,7 @@
     "Informe/Hardware": {
       "id": "Informe/Hardware",
       "title": "Hardware",
-      "description": "Hardware",
+      "description": "Introducción",
       "sidebar": "tutorialSidebar"
     },
     "Informe/Nosotros": {
@@ -77,7 +77,7 @@
     "Informe/Software": {
       "id": "Informe/Software",
       "title": "Software",
-      "description": "",
+      "description": "Importante",
       "sidebar": "tutorialSidebar"
     },
     "intro": {

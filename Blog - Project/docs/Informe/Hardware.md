@@ -3,14 +3,11 @@ sidebar_position: 1
 ---
 
 
-## Hardware
-
 ### Introducción
 
 En este apartado hablaremos del disparo; la carácteristica más interesante de nuestro proyecto. El "Disparo" es la capacidad que le dimos al circuito para, mediante Software, poder "cortar" la onda senoidal y con ello variar el valor del voltaje de la corriente alterna. 
 
-Aún no hablaremos de su accionamiento "real" en el proyecto. Esto es una explicación teórica con respecto al como
-nosotros logramos solucionar un problema.
+Aún no hablaremos de su accionamiento "real" en el proyecto. Esto es una explicación teórica con respecto al como nosotros logramos solucionar un problema.
 
 ---
 

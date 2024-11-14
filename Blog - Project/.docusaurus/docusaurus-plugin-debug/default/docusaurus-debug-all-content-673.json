@@ -22,7 +22,7 @@
             {
               "id": "Informe/Hardware",
               "title": "Hardware",
-              "description": "Hardware",
+              "description": "Introducción",
               "source": "@site/docs/Informe/Hardware.md",
               "sourceDirName": "Informe",
               "slug": "/Informe/Hardware",
@@ -99,7 +99,7 @@
             {
               "id": "Informe/Software",
               "title": "Software",
-              "description": "",
+              "description": "Importante",
               "source": "@site/docs/Informe/Software.md",
               "sourceDirName": "Informe",
               "slug": "/Informe/Software",
