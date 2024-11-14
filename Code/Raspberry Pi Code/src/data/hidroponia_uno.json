@@ -3,8 +3,8 @@
       "plant": "Lechuga",
       "plantimg": "https://media.istockphoto.com/id/1266964720/vector/seeding-icon-sprout-ecology-concept-vector-on-isolated-white-background-eps-10.jpg?s=612x612&w=0&k=20&c=KKkyRCHrelQdswqrNE4Qpg27d028cnWeEalo4BpoXg4=",
       "sensors": {
-            "temperatura": 0,
-            "humedad": 0,
-            "caudal": 0
+            "temperatura": 29.75,
+            "humedad": 26.99,
+            "caudal": 0.0
       }
 }

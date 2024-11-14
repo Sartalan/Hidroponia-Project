@@ -20,6 +20,15 @@ int Turn_Bomb = 0;
 unsigned long previousTime = 0;
 unsigned int pulsesCounter = 0;
 
+// Definir el pin donde conectaremos el sensor
+int pulseCount = 0; // Contador de pulsos
+
+// Variables para calcular el flujo
+float flowRate;
+float liters;
+unsigned long previousMillis = 0;
+bool lastState = LOW;
+
 
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature S_Temperature(&oneWire);
@@ -80,32 +89,48 @@ void loop()
       Turn_Lamp = 0;
     }
   }
+  unsigned long currentMillis = millis();
+  bool currentState = digitalRead(Pin_Caudal);
 
-  unsigned long actualTime = millis();
-
-//Lectura de Sensores
- if (digitalRead(Pin_Caudal) == HIGH) {
-    pulsesCounter++;  // Incrementamos el contador de pulsos
+ // Detectar un flanco de subida (de LOW a HIGH)
+  if (currentState == HIGH && lastState == LOW) {
+    pulseCount++; // Contar el pulso
   }
 
-  // Cada segundo calculamos el flujo de agua
-  if (actualTime - previousTime >= 1000) {
-    float flow = pulsesCounter / 5.5; // Ajuste para obtener el flujo en L/min
-    S_Temperature.requestTemperatures(); 
-    float Temperature = (S_Temperature.getTempCByIndex(0));
-    float h = dht.readHumidity();
-    float hic = dht.computeHeatIndex( h, false);
-//Sending Data vía Serial
-    Serial.print("Caudal: ");
-    Serial.println(flow);
-    Serial.print("Temperature: ");
-    Serial.println(Temperature);
-    Serial.print("Humidity: ");
-    Serial.println(hic);
+  // Guardar el estado actual como el último estado para la próxima comparación
+  lastState = currentState;
 
-    pulsesCounter = 0; // Reiniciamos el contador de pulsos
-    previousTime = actualTime; // Actualizamos el tiempo
+  // Calcular el caudal cada segundo
+  if (currentMillis - previousMillis >= 1000) {
+    previousMillis = currentMillis;
+
+    // Calcular el caudal en litros por minuto
+    flowRate = (pulseCount / 7.5); // 7.5 es el factor de calibración típico para YF-S201
+    pulseCount = 0; // Reiniciar el contador de pulsos
+
+    // Calcular la cantidad total de litros
+    liters += (flowRate / 60);
+
+    // Mostrar los resultados
+    // Serial.print("Caudal (L/min): ");
+    // Serial.print(flowRate);
+    // Serial.print("\t Total (L): ");
+    // Serial.println(liters);
   }
+
+
+  S_Temperature.requestTemperatures(); 
+  float Temperature = (S_Temperature.getTempCByIndex(0));
+  float h = dht.readHumidity();
+  float hic = dht.computeHeatIndex( h, false);
+  Serial.print("Caudal: ");
+  Serial.println(flowRate);
+  Serial.print("Temperature: ");
+  Serial.println(Temperature);
+  Serial.print("Humidity: ");
+  Serial.println(hic);
+
+
 
 // Disparo Bomba && Lampara
   switch (Turn_Lamp)
