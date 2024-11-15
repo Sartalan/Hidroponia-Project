@@ -42,7 +42,7 @@
                 "permalink": "/Hidroponia-Project/docs/category/informe-final"
               },
               "next": {
-                "title": "Importante",
+                "title": "Software",
                 "permalink": "/Hidroponia-Project/docs/Informe/Software"
               }
             },
@@ -65,7 +65,7 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Importante",
+                "title": "Software",
                 "permalink": "/Hidroponia-Project/docs/Informe/Software"
               },
               "next": {
@@ -98,7 +98,7 @@
             },
             {
               "id": "Informe/Software",
-              "title": "Importante",
+              "title": "Software",
               "description": "Este informe estará orientado completamente al funcionamiento teorico del proyecto.",
               "source": "@site/docs/Informe/Software.md",
               "sourceDirName": "Informe",

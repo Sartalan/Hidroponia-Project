@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Importante
+# Software
 
 Este informe estará orientado completamente al funcionamiento *teorico* del proyecto. 
 
@@ -68,10 +68,41 @@ Resolvamos la duda. El Sense Hat no es más que un modúlo comprado que uno pued
 
 #### Para un mayor entendimiento de la comunicación entre las partes, le adjuntamos el siguiente gráfico:
 
+
+---
+
 ## Clientes
 
 ### Introducción
+
+Los clientes son dos; una aplicación web y una aplicación de celular. Aún el código para estas fechas sigue incompleto; son muy verdaderamente ambiciosos. En un fúturo pensamos añadir una sección de "Anexo" justo por debajo de la sección de "Informe Final" donde documentaremos más en detalle el funcionamiento de cada Software.
+
+Ahora, retomemos la teoría de comunicación de los Software.
+
+Ambos Software funcionan como "clientes" dentro de la comunicación HTTP. Sus códigos deben -y funcionan- de alguna forma para incluir el número de IP y el "/Hidroponia" donde solicitarán (Request) los datos que estos necesitan para operar correctamente. 
+
+Ambos también recibirán una respuesta (Response) que le traerá los datos que ellos solicitarón.
+
+Para la fecha ambos Software funcionan como *monitoreo de datos*. Nunca se esperó una interacción real con el circuito -al no existir éste aún-, pero puede que en un fúturo se le haga un Ánexo para ello.  
+
 ### App
+
+La Aplicación de celular está creada con **React Native**. 
+
+React Native es un Framework creado por Meta -Facebook en su tiempo- creado como alternativa multiplataforma para crear aplicaciones de celular con una sintáxis muy similar a la creación de sitios web. Todo ello con el proposito de que los trabajadores de Meta tuvieran una mayor fácilidad para adaptarse a este nuevo desafio. 
+
+En resumen: el proyecto *fracasó estrepitosamente* y Meta decidió convertirlo en un proyecto Open Source, a la comunidad le encantó, y decidieron continuarlo. Actualmente es de las técnologias con mayor salida laboral. 
+
+Sí se quiere una explicación del código más en detalle, éste se encuentra [aquí](https://github.com/Sartalan/Hidroponia-Project/tree/App).
+
+No hablaremos mucho más sobre el tema al no ser el fín del informe.
+
+
 ### Web 
 
+La aplicación Web está creada con *React*.
+
+React es una biblioteca utilizada en la creación de páginas web con el proposito de reutilizar código como "Componentes". React Native está basado en React, obviamente. Tienen una sintáxis muy similar y, el flujo de código al igual que su renderizado son altamente similares. No hay mucho más que decir, el código de la aplicación web está [aquí](https://github.com/Sartalan/Hidroponia-Project/tree/Web).
+
+## Proyecto | Workflow
 
