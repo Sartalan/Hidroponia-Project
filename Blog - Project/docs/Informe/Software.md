@@ -105,4 +105,52 @@ La aplicación Web está creada con *React*.
 React es una biblioteca utilizada en la creación de páginas web con el proposito de reutilizar código como "Componentes". React Native está basado en React, obviamente. Tienen una sintáxis muy similar y, el flujo de código al igual que su renderizado son altamente similares. No hay mucho más que decir, el código de la aplicación web está [aquí](https://github.com/Sartalan/Hidroponia-Project/tree/Web).
 
 ## Proyecto | Workflow
+---
+### Platformio | Código
 
+```text
+Code/
+└── Embedded Code
+    ├── include
+    │   └── README
+    ├── lib
+    │   └── README
+    ├── platformio.ini
+    ├── src
+    │   └── main.cpp
+    └── test
+       └── README
+```
+
+### Raspberry Pi | Código
+
+``` text
+Code/
+└── Raspberry Pi Code
+    ├── app.py
+    ├── app.py.save
+    ├── __pycache__
+    │   ├── app.cpython-311.pyc
+    │   ├── app.cpython-312.pyc
+    │   └── app.cpython-39.pyc
+    └── src
+        ├── data
+        │   ├── hidroponia_uno.json
+        │   └── weather.json
+        ├── mycodo_test.py
+        ├── __pycache__
+        │   └── serial.cpython-312.pyc
+        ├── serial_communication.py
+        └── weather.py
+```
+
+### Init File
+
+``` text
+Code/
+├── Embedded Code/
+│
+├── init.sh
+│
+└── Raspberry Pi Code/
+```
