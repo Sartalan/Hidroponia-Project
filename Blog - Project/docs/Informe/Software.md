@@ -68,6 +68,7 @@ Resolvamos la duda. El Sense Hat no es más que un modúlo comprado que uno pued
 
 #### Para un mayor entendimiento de la comunicación entre las partes, le adjuntamos el siguiente gráfico:
 
+![Diagrama](../../static/img/DiagramaFinal.png)
 
 ---
 
@@ -96,7 +97,6 @@ En resumen: el proyecto *fracasó estrepitosamente* y Meta decidió convertirlo 
 Sí se quiere una explicación del código más en detalle, éste se encuentra [aquí](https://github.com/Sartalan/Hidroponia-Project/tree/App).
 
 No hablaremos mucho más sobre el tema al no ser el fín del informe.
-
 
 ### Web 
 
