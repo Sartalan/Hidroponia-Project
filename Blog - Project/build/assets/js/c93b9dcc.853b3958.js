@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkherzarmband_blog=self.webpackChunkherzarmband_blog||[]).push([[5805],{7211:a=>{a.exports=JSON.parse('{"label":"Lampara UV","permalink":"/Hidroponia-Project/blog/tags/lampara-uv","allTagsPath":"/Hidroponia-Project/blog/tags","count":1,"unlisted":false}')}}]);
