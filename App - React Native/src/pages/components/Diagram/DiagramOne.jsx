@@ -26,7 +26,7 @@ export function DiagramOne() {
   
 
   useEffect(() => {
-    fetch("http://192.168.50.109:5000/Hidroponia")
+    fetch("http://192.168.50.11:5000/Hidroponia")
       .then((response) => response.json())
       .then((jsondata) => {
         //console.log(jsondata)
@@ -68,7 +68,11 @@ export function DiagramOne() {
 
     case true: 
         return ( 
-          <Text style={{color: '#fff', fontSize: 50, textAlign: 'center'}}>Estoy esperando datos</Text>
+         <>
+          <View style={{alignItems: 'center', justifyContent: 'center'}}>
+            <Text style={{color: '#fff', fontSize: 50, textAlign: 'center'}}>No hay conexión</Text>
+          </View>
+         </>
         )
 
     case false: 

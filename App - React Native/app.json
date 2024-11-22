@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Indoor",
-    "slug": "Indoor-React-Native",
+    "name": "Hidroponia",
+    "slug": "Hidroponia-React-Native",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -44,6 +44,9 @@
       "eas": {
         "projectId": "f86455e8-93dc-4d23-97ec-ee20c081f259"
       }
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
