@@ -204,16 +204,22 @@ export default [
   },
   {
     path: '/Hidroponia-Project/docs',
-    component: ComponentCreator('/Hidroponia-Project/docs', '036'),
+    component: ComponentCreator('/Hidroponia-Project/docs', '590'),
     routes: [
       {
         path: '/Hidroponia-Project/docs',
-        component: ComponentCreator('/Hidroponia-Project/docs', '735'),
+        component: ComponentCreator('/Hidroponia-Project/docs', 'f30'),
         routes: [
           {
             path: '/Hidroponia-Project/docs',
-            component: ComponentCreator('/Hidroponia-Project/docs', '1e4'),
+            component: ComponentCreator('/Hidroponia-Project/docs', '850'),
             routes: [
+              {
+                path: '/Hidroponia-Project/docs/Anexo I PID',
+                component: ComponentCreator('/Hidroponia-Project/docs/Anexo I PID', '80e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/Hidroponia-Project/docs/category/informe-final',
                 component: ComponentCreator('/Hidroponia-Project/docs/category/informe-final', '63a'),

@@ -20,6 +20,29 @@
           "contentPathLocalized": "/home/sarti/documents/projects/Hidroponia-Project/Blog - Project/i18n/es/docusaurus-plugin-content-docs/current",
           "docs": [
             {
+              "id": "Anexo I PID",
+              "title": "Anexo I PID",
+              "description": "Informe Sistemas de Control",
+              "source": "@site/docs/Anexo I PID.md",
+              "sourceDirName": ".",
+              "slug": "/Anexo I PID",
+              "permalink": "/Hidroponia-Project/docs/Anexo I PID",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Anexo I PID.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Precios_USD",
+                "permalink": "/Hidroponia-Project/docs/Informe/Precios_USD"
+              }
+            },
+            {
               "id": "Informe/Hardware",
               "title": "Hardware",
               "description": "Introducción",
@@ -94,6 +117,10 @@
               "previous": {
                 "title": "Nosotros",
                 "permalink": "/Hidroponia-Project/docs/Informe/Nosotros"
+              },
+              "next": {
+                "title": "Anexo I PID",
+                "permalink": "/Hidroponia-Project/docs/Anexo I PID"
               }
             },
             {
@@ -183,6 +210,10 @@
                   "slug": "/category/informe-final",
                   "permalink": "/Hidroponia-Project/docs/category/informe-final"
                 }
+              },
+              {
+                "type": "doc",
+                "id": "Anexo I PID"
               }
             ]
           }

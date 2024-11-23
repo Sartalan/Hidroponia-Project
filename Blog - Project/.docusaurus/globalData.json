@@ -11,6 +11,11 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "Anexo I PID",
+              "path": "/Hidroponia-Project/docs/Anexo I PID",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Informe/Hardware",
               "path": "/Hidroponia-Project/docs/Informe/Hardware",
               "sidebar": "tutorialSidebar"

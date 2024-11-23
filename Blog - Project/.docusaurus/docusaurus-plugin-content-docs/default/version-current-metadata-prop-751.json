@@ -52,10 +52,23 @@
           }
         ],
         "href": "/Hidroponia-Project/docs/category/informe-final"
+      },
+      {
+        "type": "link",
+        "label": "Anexo I PID",
+        "href": "/Hidroponia-Project/docs/Anexo I PID",
+        "docId": "Anexo I PID",
+        "unlisted": false
       }
     ]
   },
   "docs": {
+    "Anexo I PID": {
+      "id": "Anexo I PID",
+      "title": "Anexo I PID",
+      "description": "Informe Sistemas de Control",
+      "sidebar": "tutorialSidebar"
+    },
     "Informe/Hardware": {
       "id": "Informe/Hardware",
       "title": "Hardware",
