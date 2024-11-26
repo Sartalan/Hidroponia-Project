@@ -1,537 +1,494 @@
 {
   "/Hidroponia-Project/-495": {
-    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__comp": "c4f5d8e4",
     "__context": {
-      "plugin": "plugin---hidroponia-project-31-f-87b"
+      "plugin": "31fd450b"
     },
-    "config": "config---hidroponia-project-5-e-9-398"
-  },
-  "/Hidroponia-Project/__docusaurus/debug-bde": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---hidroponia-project-docusaurus-debugae-3-673"
-    }
-  },
-  "/Hidroponia-Project/__docusaurus/debug/config-8b9": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---hidroponia-project-docusaurus-debugae-3-673"
-    }
-  },
-  "/Hidroponia-Project/__docusaurus/debug/content-f8f": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---hidroponia-project-docusaurus-debugae-3-673"
-    },
-    "allContent": "allContent---hidroponia-project-docusaurus-debug-content-246-745"
-  },
-  "/Hidroponia-Project/__docusaurus/debug/globalData-9c7": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---hidroponia-project-docusaurus-debugae-3-673"
-    }
-  },
-  "/Hidroponia-Project/__docusaurus/debug/metadata-865": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---hidroponia-project-docusaurus-debugae-3-673"
-    }
-  },
-  "/Hidroponia-Project/__docusaurus/debug/registry-6b1": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---hidroponia-project-docusaurus-debugae-3-673"
-    }
-  },
-  "/Hidroponia-Project/__docusaurus/debug/routes-63c": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---hidroponia-project-docusaurus-debugae-3-673"
-    }
+    "config": "5e9f5e1a"
   },
   "/Hidroponia-Project/blog-ffa": {
-    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__comp": "a6aa9e1f",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-865-436"
+        "content": "86503505"
       },
       {
-        "content": "content---hidroponia-project-blogcd-8-9cf"
+        "content": "cd8af649"
       },
       {
-        "content": "content---hidroponia-project-blog-0-f-5-19e"
+        "content": "0f585086"
       },
       {
-        "content": "content---hidroponia-project-blog-33-e-db1"
+        "content": "33ed4812"
       },
       {
-        "content": "content---hidroponia-project-blog-6-d-9-747"
+        "content": "6d9eabae"
       },
       {
-        "content": "content---hidroponia-project-blogc-43-fec"
+        "content": "c4353b76"
       },
       {
-        "content": "content---hidroponia-project-blog-1-c-6-f0b"
+        "content": "1c6c472e"
       },
       {
-        "content": "content---hidroponia-project-blog-953-592"
+        "content": "95344bed"
       },
       {
-        "content": "content---hidroponia-project-bloge-32-efc"
+        "content": "e32b174f"
       },
       {
-        "content": "content---hidroponia-project-blog-8-dc-b09"
+        "content": "8dc5eadd"
       }
     ],
-    "metadata": "metadata---hidroponia-project-blog-9-dc-2f4"
+    "metadata": "9dc4da4d"
   },
   "/Hidroponia-Project/blog/archive-eb2": {
-    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__comp": "9e4087bc",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "archive": "archive---hidroponia-project-blog-archive-7-cd-b22"
+    "archive": "7cd37846"
   },
   "/Hidroponia-Project/blog/note/one-ce2": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-note-one-6-fe-235"
+    "sidebar": "814f3328",
+    "content": "6feb941f"
   },
   "/Hidroponia-Project/blog/page/2-4b0": {
-    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__comp": "a6aa9e1f",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-page-2-a-77-5a9"
+        "content": "a77da264"
       },
       {
-        "content": "content---hidroponia-project-blog-page-2-c-10-31f"
+        "content": "c1020a80"
       },
       {
-        "content": "content---hidroponia-project-blog-page-2-a-53-71a"
+        "content": "a5372cba"
       },
       {
-        "content": "content---hidroponia-project-blog-page-2609-b2f"
+        "content": "6099ac2a"
       }
     ],
-    "metadata": "metadata---hidroponia-project-blog-page-2-a-8-b-2cc"
+    "metadata": "a8bfbbeb"
   },
   "/Hidroponia-Project/blog/release/eight-618": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-eight-84-e-650"
+    "sidebar": "814f3328",
+    "content": "84e16bf3"
   },
   "/Hidroponia-Project/blog/release/eleven-4b8": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-eleven-99-e-c5f"
+    "sidebar": "814f3328",
+    "content": "99eedb9b"
   },
   "/Hidroponia-Project/blog/release/five-08f": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-five-735-43a"
+    "sidebar": "814f3328",
+    "content": "73544a9c"
   },
   "/Hidroponia-Project/blog/release/four-faa": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-foura-79-bba"
+    "sidebar": "814f3328",
+    "content": "a796e023"
   },
   "/Hidroponia-Project/blog/release/nine-1cd": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-nined-38-d48"
+    "sidebar": "814f3328",
+    "content": "d38dcf24"
   },
   "/Hidroponia-Project/blog/release/one-4b9": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-oneb-88-c76"
+    "sidebar": "814f3328",
+    "content": "b8896f6b"
   },
   "/Hidroponia-Project/blog/release/seven-748": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-sevenca-7-915"
+    "sidebar": "814f3328",
+    "content": "ca7a949b"
   },
   "/Hidroponia-Project/blog/release/six-6ec": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-six-13-f-d28"
+    "sidebar": "814f3328",
+    "content": "13f4a5a6"
   },
   "/Hidroponia-Project/blog/release/ten-a31": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-tend-9-c-d81"
+    "sidebar": "814f3328",
+    "content": "d9cb3bbc"
   },
   "/Hidroponia-Project/blog/release/thirteen-e5b": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-thirteen-2-f-0-017"
+    "sidebar": "814f3328",
+    "content": "2f0cce74"
   },
   "/Hidroponia-Project/blog/release/three-156": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-threef-85-261"
+    "sidebar": "814f3328",
+    "content": "f85c19e5"
   },
   "/Hidroponia-Project/blog/release/twelve-1f0": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-twelve-26-b-d02"
+    "sidebar": "814f3328",
+    "content": "26b1cf68"
   },
   "/Hidroponia-Project/blog/release/two-2c8": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---hidroponia-project-blog-note-oneace-195"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "content": "content---hidroponia-project-blog-release-twob-11-600"
+    "sidebar": "814f3328",
+    "content": "b110f73f"
   },
   "/Hidroponia-Project/blog/tags-0d2": {
-    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__comp": "01a85c17",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
-    "tags": "tags---hidroponia-project-blog-tags-268-061"
+    "sidebar": "814f3328",
+    "tags": "268c8ca0"
   },
   "/Hidroponia-Project/blog/tags/app-69b": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-page-2-c-10-31f"
+        "content": "c1020a80"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-appce-1-62b",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-appb-23-c63"
+    "tag": "ce1606d6",
+    "listMetadata": "b230d5ae"
   },
   "/Hidroponia-Project/blog/tags/armado-a63": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blogcd-8-9cf"
+        "content": "cd8af649"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-armadob-2-f-363",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-armado-5-dd-ed5"
+    "tag": "b2f80951",
+    "listMetadata": "5ddbd6bb"
   },
   "/Hidroponia-Project/blog/tags/avances-4b9": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-865-436"
+        "content": "86503505"
       },
       {
-        "content": "content---hidroponia-project-blogcd-8-9cf"
+        "content": "cd8af649"
       },
       {
-        "content": "content---hidroponia-project-blog-0-f-5-19e"
+        "content": "0f585086"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-avances-7-be-bf5",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-avances-6-c-7-6c7"
+    "tag": "7bece9ad",
+    "listMetadata": "6c7ae26f"
   },
   "/Hidroponia-Project/blog/tags/code-0f5": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-page-2-a-53-71a"
+        "content": "a5372cba"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-code-304-747",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-codef-99-b45"
+    "tag": "30460d1c",
+    "listMetadata": "f99ac290"
   },
   "/Hidroponia-Project/blog/tags/communication-b4c": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-33-e-db1"
+        "content": "33ed4812"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-communicationde-3-577",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-communication-60-b-b0f"
+    "tag": "de3e0138",
+    "listMetadata": "60b8fca9"
   },
   "/Hidroponia-Project/blog/tags/epico-630": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-1-c-6-f0b"
+        "content": "1c6c472e"
       },
       {
-        "content": "content---hidroponia-project-blog-953-592"
+        "content": "95344bed"
       },
       {
-        "content": "content---hidroponia-project-bloge-32-efc"
+        "content": "e32b174f"
       },
       {
-        "content": "content---hidroponia-project-blog-8-dc-b09"
+        "content": "8dc5eadd"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-epico-5-f-5-7c7",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-epicocb-8-1d6"
+    "tag": "5f5c3d43",
+    "listMetadata": "cb845617"
   },
   "/Hidroponia-Project/blog/tags/explosion-bf8": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-0-f-5-19e"
+        "content": "0f585086"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-explosione-3-d-bbf",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-explosionb-83-501"
+    "tag": "e3d14e39",
+    "listMetadata": "b834e317"
   },
   "/Hidroponia-Project/blog/tags/hola-a77": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-page-2-a-77-5a9"
+        "content": "a77da264"
       },
       {
-        "content": "content---hidroponia-project-blog-page-2609-b2f"
+        "content": "6099ac2a"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-hola-69-e-622",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-hola-17-a-9e3"
+    "tag": "69e8e3f5",
+    "listMetadata": "17a9d887"
   },
   "/Hidroponia-Project/blog/tags/indoor-ff6": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-page-2-c-10-31f"
+        "content": "c1020a80"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-indoorb-64-d87",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-indoorf-06-104"
+    "tag": "b645fdfd",
+    "listMetadata": "f06c6420"
   },
   "/Hidroponia-Project/blog/tags/kicad-86f": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-page-2-a-53-71a"
+        "content": "a5372cba"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-kicad-7-fe-b60",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-kicad-585-240"
+    "tag": "7fefa7bb",
+    "listMetadata": "585766c2"
   },
   "/Hidroponia-Project/blog/tags/lampara-uv-2c5": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-865-436"
+        "content": "86503505"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-lampara-uvc-93-2e6",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-lampara-uv-6-ea-6c4"
+    "tag": "c93b9dcc",
+    "listMetadata": "6ea57cc3"
   },
   "/Hidroponia-Project/blog/tags/my-codo-b8a": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-33-e-db1"
+        "content": "33ed4812"
       },
       {
-        "content": "content---hidroponia-project-blog-6-d-9-747"
+        "content": "6d9eabae"
       },
       {
-        "content": "content---hidroponia-project-blogc-43-fec"
+        "content": "c4353b76"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-my-codo-9-c-0-26e",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-my-codo-663-424"
+    "tag": "9c00cb40",
+    "listMetadata": "6638c9d3"
   },
   "/Hidroponia-Project/blog/tags/proteus-ae7": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---hidroponia-project-blog-0-a-8-661"
+      "plugin": "0a81ccb5"
     },
-    "sidebar": "sidebar---hidroponia-project-blog-814-3e5",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---hidroponia-project-blog-page-2-a-53-71a"
+        "content": "a5372cba"
       }
     ],
-    "tag": "tag---hidroponia-project-blog-tags-proteusada-193",
-    "listMetadata": "listMetadata---hidroponia-project-blog-tags-proteus-0-e-8-f0f"
+    "tag": "adadf41c",
+    "listMetadata": "0e83a5eb"
   },
   "/Hidroponia-Project/markdown-page-90e": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---hidroponia-project-31-f-87b"
+      "plugin": "31fd450b"
     },
-    "content": "content---hidroponia-project-markdown-page-393-5a1"
+    "content": "393be207"
   },
   "/Hidroponia-Project/docs-590": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__comp": "5e95c892",
     "__context": {
-      "plugin": "plugin---hidroponia-project-docs-171-dc8"
+      "plugin": "17174436"
     }
   },
   "/Hidroponia-Project/docs-f30": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "version": "version---hidroponia-project-docs-935-16e"
+    "__comp": "a7bd4aaa",
+    "version": "935f2afb"
   },
   "/Hidroponia-Project/docs-850": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
+    "__comp": "a94703ab"
   },
   "/Hidroponia-Project/docs/Anexo I PID-80e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---hidroponia-project-docs-anexo-i-pi-db-9-e-704"
+    "__comp": "17896441",
+    "content": "b9eb8789"
   },
   "/Hidroponia-Project/docs/category/informe-final-63a": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---hidroponia-project-docs-category-informe-final-66-a-77e"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "66ae8136"
   },
   "/Hidroponia-Project/docs/Informe/Hardware-1cf": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---hidroponia-project-docs-informe-hardware-9-b-2-be0"
+    "__comp": "17896441",
+    "content": "9b21b204"
   },
   "/Hidroponia-Project/docs/Informe/Nosotros-85e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---hidroponia-project-docs-informe-nosotros-90-e-04a"
+    "__comp": "17896441",
+    "content": "90e428f3"
   },
   "/Hidroponia-Project/docs/Informe/Precios_USD-296": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---hidroponia-project-docs-informe-precios-usd-484-73d"
+    "__comp": "17896441",
+    "content": "48494272"
   },
   "/Hidroponia-Project/docs/Informe/Software-8f3": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---hidroponia-project-docs-informe-software-7-bf-246"
+    "__comp": "17896441",
+    "content": "7bf14595"
   },
   "/Hidroponia-Project/docs/intro-85f": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---hidroponia-project-docs-intro-0-e-3-aa9"
+    "__comp": "17896441",
+    "content": "0e384e19"
   }
 }

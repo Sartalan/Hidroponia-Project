@@ -16,7 +16,7 @@ Nuestra finalidad es documentar lo máximo posible y con la mayor veracidad posi
 
 ### Proyecto
 
-- Dentro del apartado de [Proyecto](/Hidroponia-Project/docs/intro) tenemos pensado añadir la información práctica e importante para la realización de este proyecto, la cuál será añadida muy posiblemente en la finalización de éste.
+- Dentro del apartado de Proyecto (acá) tenemos pensado añadir la información práctica e importante para la realización de este proyecto, la cuál será añadida muy posiblemente en la finalización de éste.
 
 ### Blog
 

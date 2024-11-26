@@ -35,26 +35,32 @@ Nuestro circuito es un Dimmer AC e interrupciones.
 ### Código
 A nuestro código se le fijan las constantes PID de manera manual (es decir, ajustando las variables), justo antes de cada compilación y luego se encargan de realizarlas ecuaciones correspondientes al sistema de control PID.
 
-#### Ecuaciones PID
+## Ecuaciones | PID
 
 La sigla 'PID' provienen de las palabras: (Proporcional,integral, derivada). Cada una de estas constantes actúa de manera diferente frente a un error:
 
-    + **Proporcional:** Esta actua aplicando una corrección directamente proporcional al error presente en el sistema, es decir,  que mientras mayor sea el error le corresponderá una mayor corrección de igual mágnitud.
-
-    ### Formula 
+    ### Formula | Proporcional
         ![](../static/img/proporcional.png) 
 
+    + **Proporcional:** Esta actua aplicando una corrección directamente proporcional al error presente en el sistema, es decir,  que mientras mayor sea el error le corresponderá una mayor corrección de igual mágnitud.
+    
+    ---
+
+    ### Formula | Integral
+        ![](../static/img/integral.png )
     + **Integral:** Esta actúa en función del tiempo, intentando corregir el error acumulado a lo largo del tiempo, si este persiste a lo largo de un periodo el controlador integral aplica una mayor magnitud de correccion. 
     
-    ### Formula     
-        ![](../static/img/integral.png )
+    
+    ---
+
+
+    ### Formula | Derivada
+                ![](../static/img/derivada.png)
 
     + **Derivada:** Esta actua según la tasa de cambio del error presente, es decir, que trata de predecir el comportamiento futuro del mismo y aplica una corrección en función de que tan rapido éste cambie.
 
-    ### Formula
-                ![](../static/img/derivada.png)
 
-
+    ---
 
 
 

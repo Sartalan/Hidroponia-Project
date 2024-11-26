@@ -27,7 +27,7 @@ Y por último, -y a modo de mención honorifica- una breve explicación teórica
 El Software del circuito está creado con *Platformio*. Este es un entorno de desarrollo para embebidos altamente superior al IDE de Arduino y que permite ejecutar operaciones mediante terminal, una herramienta altamente eficiente cuando tu proyecto es programado remotamente.
 Luego como editor de código e IDE utilizamos Neovim con el gestor de paquetes "lazyvim" para una mayor fácilidad de uso y comodidad.
 
-La mayor parte de la experiencia de trabajo fue remota; utilizamos Linux con la distro de "Fedora Server" (por el bajo consumo en memoria), y le hicimos un [rice]('') para así crearnos un buen entorno de trabajo. 
+La mayor parte de la experiencia de trabajo fue remota; utilizamos Linux con la distro de "Fedora Server" (por el bajo consumo en memoria), y le hicimos un [rice](https://github.com/Sartalan/my-linux-dotfiles) para así crearnos un buen entorno de trabajo. 
 
 En un inicio esto *no* era del todo asi, pero a medida que el proyecto fue creciendo no hubo de otra que aprender a manejar correctamente estos entornos de trabajo.
 

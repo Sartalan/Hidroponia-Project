@@ -4,10 +4,72 @@
         <title>Hidroponia Blog</title>
         <link>https://github.com/Hidroponia-Project/blog</link>
         <description>Hidroponia Blog</description>
-        <lastBuildDate>Wed, 18 Sep 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Oct 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
+        <item>
+            <title><![CDATA[Actualización [ 13 ] | Armado | Lampara UV]]></title>
+            <link>https://github.com/Hidroponia-Project/blog/release/thirteen</link>
+            <guid>https://github.com/Hidroponia-Project/blog/release/thirteen</guid>
+            <pubDate>Wed, 09 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Añadimos una lampara UV al proyecto]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="añadimos-una-lampara-uv-al-proyecto">Añadimos una lampara UV al proyecto<a href="https://github.com/Hidroponia-Project/blog/release/thirteen#a%C3%B1adimos-una-lampara-uv-al-proyecto" class="hash-link" aria-label="Enlace directo al Añadimos una lampara UV al proyecto" title="Enlace directo al Añadimos una lampara UV al proyecto">​</a></h2>
+<p>Inmediatamente añadimos los plantines nos dispusimos a añadir una lampara UV al percatarnos de la poca luz solar que entraba a la instancia, para ello decidimos utilizar el último de nuestros disparos de la placa y el mismo timer; aunque hay un problema, el timer es muy impreciso para ello. Por suerte ya planteamos una solución: utilizaremos la Raspberry para que por medio de un script tome el horario local del día y se encargué de mandar un dato vía serial al circuito que le diga si prender o no las lamparas UV.</p>
+<p>Anteriormente habiamos utilizado el timer interno del microcontrolador, pero esto es impreciso; no tenemos garantía de sí nuestros cálculos dan en el clavo o no, porque no podemos tener en cuenta la cantidad de tiempo que tardan en ejecutarse las otras lineas de código del circuito.</p>
+<p><img decoding="async" loading="lazy" alt="Foto de la hidroponia" src="https://github.com/Hidroponia-Project/assets/images/Hidroponia_two-32c5f04956123ce8aa8cdd34c698ae81.jpeg" width="3024" height="4032" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="es-muy-fachera">(es muy fachera)<a href="https://github.com/Hidroponia-Project/blog/release/thirteen#es-muy-fachera" class="hash-link" aria-label="Enlace directo al (es muy fachera)" title="Enlace directo al (es muy fachera)">​</a></h4>]]></content:encoded>
+            <category>Avances</category>
+            <category>Lampara UV</category>
+        </item>
+        <item>
+            <title><![CDATA[Actualización [ 12 ] | Armado | Detalles]]></title>
+            <link>https://github.com/Hidroponia-Project/blog/release/twelve</link>
+            <guid>https://github.com/Hidroponia-Project/blog/release/twelve</guid>
+            <pubDate>Mon, 07 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Armado]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="armado">Armado<a href="https://github.com/Hidroponia-Project/blog/release/twelve#armado" class="hash-link" aria-label="Enlace directo al Armado" title="Enlace directo al Armado">​</a></h2>
+<p>Los últimos dias anduvimos trabajando en diseñar e imprimir los modelos 3D que contendrán tanto la placa como la Raspberry Pi y a su vez solucionando problemas con la bomba; esta se prendía y apagaba por el sobrecalientamiento. Esto es un problema gigantezco en una hidroponia; si la bomba se apaga, los plantines <em>mueren</em>.</p>
+<p>La bomba no debe dejar de bombear por mucho tiempo, así que como solución para que no se sobrecalentara decidimos utilizar un disparo de nuestra placa para ir prendiendola y apagandola de forma intermitente. Fue justo en esta prueba donde nuestra placa hace unos dias explotó (en el momento menos conveniente posible), pero rápidamente lo solucionamos.</p>
+<p>Utilizamos el timer para calcular un aproximado de 5 minutos de prendido y apagado utilizando la función de GradoZero() de nuestro código. Esa función se ejecuta cada 180° de la onda senoidal, justamente al cambiar de polaridad, teniendo en cuenta dicho dato y teniendo en cuenta que cada 1ms hay un cambio de polaridad, utilizamos un contador que fuese incrementandose hasta un valor apróximado al número de veces que debe repetirse la función GradoZero() para llegar a 5 minutos. La solución funcionó perfectamente.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="finalmente-añadimos-los-plantines">Finalmente añadimos los plantines.<a href="https://github.com/Hidroponia-Project/blog/release/twelve#finalmente-a%C3%B1adimos-los-plantines" class="hash-link" aria-label="Enlace directo al Finalmente añadimos los plantines." title="Enlace directo al Finalmente añadimos los plantines.">​</a></h2>
+<p>Con el PH ya regulado, las soluciones Macro y Micro añadidas y el correcto funcionamiento de la bomba de agua, finalmente lo hicimos: añadimos los plantines. Estos se tratan solo de plantines de lechuga, nada muy extravagante, su supervivencia es la prueba de fuego de nuestro proyecto.</p>
+<p><img decoding="async" loading="lazy" alt="Plantas" src="https://github.com/Hidroponia-Project/assets/images/Plantines-36d30bc9f76d26d78830d6ccce3d1edc.jpeg" width="1200" height="1600" class="img_ev3q"></p>]]></content:encoded>
+            <category>Avances</category>
+            <category>Armado</category>
+        </item>
+        <item>
+            <title><![CDATA[Actualización [ 11 ] | Explosión y...]]></title>
+            <link>https://github.com/Hidroponia-Project/blog/release/eleven</link>
+            <guid>https://github.com/Hidroponia-Project/blog/release/eleven</guid>
+            <pubDate>Thu, 03 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Explosión XD (De vuelta)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="explosión-xd-de-vuelta">Explosión XD (De vuelta)<a href="https://github.com/Hidroponia-Project/blog/release/eleven#explosi%C3%B3n-xd-de-vuelta" class="hash-link" aria-label="Enlace directo al Explosión XD (De vuelta)" title="Enlace directo al Explosión XD (De vuelta)">​</a></h2>
+<p>El circuito explotó nuevamente. ¿Por qué? Faltaban una serie de cambios en el PCB (solo un diodo xD) nadie entendió como no sucedió antes. En conclusión: que epico.</p>
+<p><img decoding="async" loading="lazy" alt="Placa explotada ( OTRA VEZ XD )" src="https://github.com/Hidroponia-Project/assets/images/PLACA_EXPLOSIVA_DOS-35a23d8ca0a9fca71555ee49fc24f042.jpeg" width="1600" height="1200" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="representación-gráfica-del-suceso">Representación gráfica del suceso<a href="https://github.com/Hidroponia-Project/blog/release/eleven#representaci%C3%B3n-gr%C3%A1fica-del-suceso" class="hash-link" aria-label="Enlace directo al Representación gráfica del suceso" title="Enlace directo al Representación gráfica del suceso">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Representación de explosión XD" src="https://github.com/Hidroponia-Project/assets/images/PLACA_EXPLOSIVA_EDIT-bae13ee89404d31d72102908088f115c.jpeg" width="1200" height="1600" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="momentos-antes-del-desastre-xd">Momentos antes del desastre XD<a href="https://github.com/Hidroponia-Project/blog/release/eleven#momentos-antes-del-desastre-xd" class="hash-link" aria-label="Enlace directo al Momentos antes del desastre XD" title="Enlace directo al Momentos antes del desastre XD">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Los pibes foto xD" src="https://github.com/Hidroponia-Project/assets/images/Foto_piola_dos-68cd1b1b8c1ccc3745c158c06ba2b756.jpeg" width="1600" height="1200" class="img_ev3q">
+<img decoding="async" loading="lazy" alt="Los pibes foto xD" src="https://github.com/Hidroponia-Project/assets/images/Foto_piola_tres-79413686483b73c21283326f2eca426b.jpeg" width="1200" height="1600" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="avances">Avances<a href="https://github.com/Hidroponia-Project/blog/release/eleven#avances" class="hash-link" aria-label="Enlace directo al Avances" title="Enlace directo al Avances">​</a></h2>
+<p>Dejamos bombeando el agua unos dias con la intención de que el cloro se evaporará y poder finalmente regular el PH del agua.</p>
+<p>Pero... ¿Por qué todo esto? Si el lector no está familiarizado con el funcionamiento de una Hidroponia en general, le será importante leer lo que escriba a continuación:</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hidroponia">Hidroponia<a href="https://github.com/Hidroponia-Project/blog/release/eleven#hidroponia" class="hash-link" aria-label="Enlace directo al Hidroponia" title="Enlace directo al Hidroponia">​</a></h2>
+<p>Una hidroponia es, en esencia, el arte de cultivar plantas sobre una superficie sólida a la que solo tendrá acceso una corriente de agua. Pero esto da una <em>gran</em> serie de problemas al no ser del todo natural; uno de ellos es el nivel de PH del agua, pero primero para ello debemos de conocer que es el PH.</p>
+<p>El "PH" es una unidad logarítmica del 1-14 que regula el nivel de acidez y alcalinidad de "algo", siendo en este caso: agua. A menor nivel este se encuentre, mayor será el nivel de ácidez que contendrá ese "algo" y a mayor nivel se encuentre, mayor será el nivel de alcalinidad.</p>
+<p>El nivel de PH adecuado para cada contexto depende del tipo de planta a plantar, y son muchas las soluciones que pueden afectar el nivel de PH del agua. En nuestro caso concreto quisimos plantar lechuga, siendo su valor recomendado un rango de entre un <strong>5.8 - 6.3</strong> de PH.</p>
+<p><img decoding="async" loading="lazy" alt="Valores Lechuga" src="https://github.com/Hidroponia-Project/assets/images/Lechuga-7f10320128eccda5d3b03a41da79d4b9.jpeg" width="965" height="616" class="img_ev3q"></p>
+<p>A su vez, las soluciones nutritivas que utilizamos son las <a href="https://www.verdeagua.com.ar/productos/kit-nutrientes-hidroponia-verdeagua-macro-y-micro/" target="_blank" rel="noopener noreferrer">Micro y Macro</a> de la empresa <a href="https://www.verdeagua.com.ar/" target="_blank" rel="noopener noreferrer">Verdeagua.</a></p>
+<p>Es importante tener en cuenta también que las soluciones nutritivas que necesita cada planta, independientemente de cual sea, también <strong>alteran el PH</strong>. Así que <em>teganlo en cuenta</em>. En nuestro caso para regularlo fue mayormente a prueba y error.</p>
+<hr>
+<p>Nuestro problema fue sencillo de resolver: el PH del agua del colegio <em>era muy alto</em> y teniamos que reducirlo, para ello compramos un reductor de PH, lo que en esencia es un ácido, nosotros utilizamos concretamente el <a href="https://www.estoyverde.com.ar/fertilizantes/namaste-ph-100-ml." target="_blank" rel="noopener noreferrer">Namaste PH.</a></p>
+<p><img decoding="async" loading="lazy" alt="Namaste PH" src="https://github.com/Hidroponia-Project/assets/images/Namaste-0dbbc3f37dc78e427928369c556a4921.png" width="480" height="480" class="img_ev3q"></p>
+<p>El mismo lo compramos en Lomas, concretamente en la tienda <a href="https://www.estoyverde.com.ar/" target="_blank" rel="noopener noreferrer">Estoy Verde</a> tienda la cual recomendamos encarecidamente. Su atención es <em>muy</em> buena y su dueño nos resolvió una gran cantidad de dudas respecto al buen armado de una hidroponia.</p>
+<p>Estamos muy satisfechos y nos enorgulleceria mucho el que nuestra recomendación pudiese, al menos, producirles una venta.</p>]]></content:encoded>
+            <category>Explosión</category>
+            <category>Avances</category>
+        </item>
         <item>
             <title><![CDATA[Actualización [ 10 ] | Comunicación con MyCodo éxitosa.]]></title>
             <link>https://github.com/Hidroponia-Project/blog/release/ten</link>
