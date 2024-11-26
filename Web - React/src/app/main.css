@@ -18,3 +18,7 @@ body {
 h2 {
   color: white;
 }
+
+.main {
+  width: calc(100% - 5em);
+}

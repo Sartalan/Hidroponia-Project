@@ -213,11 +213,5 @@
     background-color: black;
   }
 
-    /*!useState*/
-
-    .menu-arrow.close {
-      transition: transform .25s ease;
-      transform: rotateY(180deg)
-    }
   
 }

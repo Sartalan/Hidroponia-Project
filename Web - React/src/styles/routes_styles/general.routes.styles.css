@@ -15,3 +15,9 @@
     height: 100vh;
     transition: all 0.25s ease;
   }
+
+@media screen and (max-width:800px){
+  .main{
+    width: calc(100% - 5em);
+  }
+}
