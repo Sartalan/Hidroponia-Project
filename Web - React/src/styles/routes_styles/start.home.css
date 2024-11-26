@@ -181,6 +181,7 @@ color: white;}
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .ip-text-input {
@@ -194,7 +195,6 @@ color: white;}
 .ip-btn {
   padding: .75em 2em .75em 2em;
   border-radius: 1em;
-
   font-size: 1.5em;
   cursor: pointer;
 }

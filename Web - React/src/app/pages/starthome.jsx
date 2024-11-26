@@ -2,6 +2,12 @@ import '../../styles/routes_styles/start.home.css'
 import '../../styles/routes_styles/general.routes.styles.css'
 import { useEffect, useState } from 'react';
 
+
+//todo: Guardar el valor en el state global de Redux 
+//todo: Luego llamar dicho valor en cada componente hijo de la nav
+//todo: El valor deberá ser llamado en un fetch 
+//todo: Dentro de un loop de 5s de UseEffect
+
 export function StartHome () {
 
   const [ip, setIp] = useState('')
