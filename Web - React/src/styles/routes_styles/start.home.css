@@ -8,12 +8,14 @@
 .loader-content {
     width: 100%; 
     height: 100vh;
-    background-color: rgb(14, 13, 13); 
+    /*background-color: rgb(14, 13, 13);*/ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: background 6s 7s ease 1 forwards;
+    overflow: hidden;
+
+    /*animation: background 6s 7s ease 1 forwards;*/
 }
 
 @keyframes background {
@@ -34,7 +36,7 @@
 .start-home-text {
     color: white;
     border-right: 5px solid rgba(255, 255, 255, 0.9);
-    font-size: 4em;
+    font-size: calc(3vw + 3vh + 2vmin);
     user-select: none;
     white-space: nowrap;
     overflow: hidden;
@@ -44,7 +46,7 @@
     width: 100%;
     opacity: .9;
     animation: 
-        typing 2.5s steps(15),
+        typing 2.5s steps(13),
         cursor .6s step-end 5 alternate,
         glitch 1s linear infinite,
         cursorInherithedText 20s 3.45s forwards;
@@ -138,14 +140,14 @@
   white-space: nowrap;
   font-style: italic;
   overflow: hidden;
-  font-size: 4em;
+  font-size: calc(3vw + 3vh + 2vmin);
   color: transparent;
   text-align: end;
   margin:0;
   opacity: .9;
   border-right: 5px solid rgba(255, 255, 255, 0.9);
        animation:  glitch 1s linear infinite,
-       typingTwo 2.5s 3.5s steps(9) forwards,
+       typingTwo 2.5s 3.5s steps(14) forwards,
        cursorTwo .6s 3.5s step-end 5 alternate,
        cursorInherithed 3.5s;
 }
@@ -172,3 +174,28 @@ color: white;
  to {width: 100%;
 color: white;}
 }
+
+/*? Input*/
+
+.ip-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ip-text-input {
+  margin:1em;
+  padding: .75em 2em .75em 2em;
+  border-radius: .5em;
+  font-size: 1.85em;
+  height: 50%;
+}
+
+.ip-btn {
+  padding: .75em 2em .75em 2em;
+  border-radius: 1em;
+
+  font-size: 1.5em;
+  cursor: pointer;
+}
+

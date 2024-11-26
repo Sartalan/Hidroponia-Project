@@ -61,6 +61,8 @@
 .top-navigation > .box > .top-icon {
   width: 2em;
   transition: transform 10s ease-in-out;
+  display:none;
+
 }
   .top-navigation > .box > .top-icon:hover {
     transform: rotate(360deg);
@@ -73,6 +75,7 @@
   white-space: nowrap;
   font-family: 'Times New Roman', Times, serif;
   opacity: .6;
+  font-size:1.5rem;
   font-style: italic;
   user-select: none;
 }
@@ -82,7 +85,8 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: -1.5%;
+  opacity:2;
+  bottom: -3.5%;
   left: -3.5%;
   background-color: rgb(61, 56, 56);
   z-index: -1;
@@ -193,3 +197,27 @@
           filter: blur(.5);
         }
 
+@media screen and (max-width:800px) {
+
+  .side-bar {
+    position: absolute;
+    width: calc(100vw - 5em);
+    z-index: 1;
+  }
+
+  .slider-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: black;
+  }
+
+    /*!useState*/
+
+    .menu-arrow.close {
+      transition: transform .25s ease;
+      transform: rotateY(180deg)
+    }
+  
+}

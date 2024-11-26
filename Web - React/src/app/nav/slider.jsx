@@ -4,6 +4,7 @@ import DiscordIcon from '/icons/social_icons/discord.svg'
 import TwitterIcon from '/icons/social_icons/twitter.svg'
 import InstagramIcon from '/icons/social_icons/instagram.svg'
 import GithubIcon from '/icons/social_icons/github.svg'
+import YoutubeIcon from '/icons/social_icons/youtube.svg'
 
 
 export function Slider() {
@@ -15,6 +16,14 @@ export function Slider() {
   {/* ------------ */}
   
         <ul className='slider-ul'>
+
+
+
+        <SocialList
+            socialLinkLi="https://github.com/Sartalan/Hidroponia-Project"  /*a href */
+            iconLinkLi={YoutubeIcon}     /*img src */
+            altLi="Enlace a nuestro Youtube"    /*alt => img */
+          />
   
           <SocialList
             socialLinkLi="https://discord.com"  /*a href */
@@ -40,6 +49,7 @@ export function Slider() {
             iconLinkLi={GithubIcon}     /*img src */
             altLi="Enlace a mi Github"    /*alt => img */
           />
+
   
     
         </ul>

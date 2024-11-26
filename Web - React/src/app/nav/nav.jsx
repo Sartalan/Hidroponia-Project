@@ -34,7 +34,7 @@ export function Nav () {
 
        <Top 
         Icon={IOTIcon}
-        spanText="Hidroponia - Project"
+        spanText="Hidroponia"
         />
 
         <Inside/>

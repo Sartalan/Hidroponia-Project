@@ -11,11 +11,11 @@ import '../../styles/navInside.css';
 import {Routes, Route, Link } from 'react-router-dom'
 
 //? Routes Images
-import Route1 from '/icons/nav_icons/home.svg'
-import Route2 from '/icons/nav_icons/robot.svg'
-import Route3 from '/icons/nav_icons/control.svg'
-import Route4 from '/icons/nav_icons/status.svg'
-import Route5 from '/icons/nav_icons/about_us.svg'
+import Route1 from '/icons/nav_icons/plant.svg'
+import Route2 from '/icons/nav_icons/status.svg'
+import Route3 from '/icons/nav_icons/diagram.svg'
+import Route4 from '/icons/nav_icons/shuffle.svg'
+import Route5 from '/icons/nav_icons/turn.svg'
 import Route6 from '/icons/nav_icons/config.svg'
 
 
