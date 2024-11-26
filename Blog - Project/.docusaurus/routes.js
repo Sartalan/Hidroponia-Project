@@ -169,15 +169,15 @@ export default [
   },
   {
     path: '/Hidroponia-Project/docs',
-    component: ComponentCreator('/Hidroponia-Project/docs', '590'),
+    component: ComponentCreator('/Hidroponia-Project/docs', '015'),
     routes: [
       {
         path: '/Hidroponia-Project/docs',
-        component: ComponentCreator('/Hidroponia-Project/docs', 'f30'),
+        component: ComponentCreator('/Hidroponia-Project/docs', 'b11'),
         routes: [
           {
             path: '/Hidroponia-Project/docs',
-            component: ComponentCreator('/Hidroponia-Project/docs', '850'),
+            component: ComponentCreator('/Hidroponia-Project/docs', '245'),
             routes: [
               {
                 path: '/Hidroponia-Project/docs/Anexo I PID',
@@ -198,14 +198,20 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/Hidroponia-Project/docs/Informe/Hidroponia',
+                component: ComponentCreator('/Hidroponia-Project/docs/Informe/Hidroponia', '235'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/Hidroponia-Project/docs/Informe/Nosotros',
                 component: ComponentCreator('/Hidroponia-Project/docs/Informe/Nosotros', '85e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/Hidroponia-Project/docs/Informe/Precios_USD',
-                component: ComponentCreator('/Hidroponia-Project/docs/Informe/Precios_USD', '296'),
+                path: '/Hidroponia-Project/docs/Informe/Precio',
+                component: ComponentCreator('/Hidroponia-Project/docs/Informe/Precio', 'eac'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

@@ -17,7 +17,7 @@ En base al concepto previamente explicado realizamos como proyecto de la materia
 + Sensor de temperatura  LM35 
 + Microcontrolador  Arduino Nano
 + Cooler
-+ (Actuador a Calentar  Lampara de vacio)
++ (Dispositivo a Calentar | Lampara de vacio)
 
 ## Diagrama de Bloques
 
@@ -30,7 +30,7 @@ Nuestro circuito es un Dimmer AC e interrupciones.
 	Un Dimmer AC es un circuito preparado para variar la corriente alterna a gusto. 
 	Nosotros nos encargamos de crear un Dimmer desde cero y lo utilizamos 	mediante interrupciones. Las interrupciones son una carácteristica que tienen 	algunos microcontroladores para interrumpir el flujo normal del código de 	manera repentina debido a una señal externa la cual se le indique.
 
-	En nuestro caso nos encargamos de ejecutar la "interrupción" cada vez que 	exista un cruce por cero; mientras tanto, el resto del código -el cual ejecuta las 	operaciones PID- se mantiene en segundo plano. Es decir, el (Actuador a Calentar) (en este caso una lampara de vacio) elige si encenderse o no cada un 	vez que exista un cambio de polaridad; el resto del tiempo -cuando no se 	enciende o apaga la lampara- las operaciones que integran el sistema de control 	PID determinan sí es conveniente o no, encender o apagar la lampara la 	próxima vez que se detecte un cambio de polaridad.
+	En nuestro caso nos encargamos de ejecutar la "interrupción" cada vez que 	exista un cruce por cero; mientras tanto, el resto del código -el cual ejecuta las 	operaciones PID- se mantiene en segundo plano. Es decir, el (Dispositivo a Calentar) (en este caso una lampara de vacio) elige si encenderse o no cada un 	vez que exista un cambio de polaridad; el resto del tiempo -cuando no se 	enciende o apaga la lampara- las operaciones que integran el sistema de control 	PID determinan sí es conveniente o no, encender o apagar la lampara la 	próxima vez que se detecte un cambio de polaridad.
 
 ### Código
 A nuestro código se le fijan las constantes PID de manera manual (es decir, ajustando las variables), justo antes de cada compilación y luego se encargan de realizarlas ecuaciones correspondientes al sistema de control PID.

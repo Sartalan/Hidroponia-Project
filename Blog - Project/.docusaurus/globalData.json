@@ -21,13 +21,18 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Informe/Hidroponia",
+              "path": "/Hidroponia-Project/docs/Informe/Hidroponia",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Informe/Nosotros",
               "path": "/Hidroponia-Project/docs/Informe/Nosotros",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Informe/Precios_USD",
-              "path": "/Hidroponia-Project/docs/Informe/Precios_USD",
+              "id": "Informe/Precio",
+              "path": "/Hidroponia-Project/docs/Informe/Precio",
               "sidebar": "tutorialSidebar"
             },
             {

@@ -38,8 +38,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Precios_USD",
-                "permalink": "/Hidroponia-Project/docs/Informe/Precios_USD"
+                "title": "Precio",
+                "permalink": "/Hidroponia-Project/docs/Informe/Precio"
               }
             },
             {
@@ -55,6 +55,33 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Hardware.md",
               "tags": [],
               "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Hidroponia",
+                "permalink": "/Hidroponia-Project/docs/Informe/Hidroponia"
+              },
+              "next": {
+                "title": "Software",
+                "permalink": "/Hidroponia-Project/docs/Informe/Software"
+              }
+            },
+            {
+              "id": "Informe/Hidroponia",
+              "title": "Hidroponia",
+              "description": "",
+              "source": "@site/docs/Informe/Hidroponia.md",
+              "sourceDirName": "Informe",
+              "slug": "/Informe/Hidroponia",
+              "permalink": "/Hidroponia-Project/docs/Informe/Hidroponia",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Hidroponia.md",
+              "tags": [],
+              "version": "current",
               "sidebarPosition": 1,
               "frontMatter": {
                 "sidebar_position": 1
@@ -65,14 +92,14 @@
                 "permalink": "/Hidroponia-Project/docs/category/informe-final"
               },
               "next": {
-                "title": "Software",
-                "permalink": "/Hidroponia-Project/docs/Informe/Software"
+                "title": "Hardware",
+                "permalink": "/Hidroponia-Project/docs/Informe/Hardware"
               }
             },
             {
               "id": "Informe/Nosotros",
               "title": "Nosotros",
-              "description": "Nosotros",
+              "description": "Wolfsrudel",
               "source": "@site/docs/Informe/Nosotros.md",
               "sourceDirName": "Informe",
               "slug": "/Informe/Nosotros",
@@ -82,9 +109,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Nosotros.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 3,
+              "sidebarPosition": 4,
               "frontMatter": {
-                "sidebar_position": 3
+                "sidebar_position": 4
               },
               "sidebar": "tutorialSidebar",
               "previous": {
@@ -92,26 +119,26 @@
                 "permalink": "/Hidroponia-Project/docs/Informe/Software"
               },
               "next": {
-                "title": "Precios_USD",
-                "permalink": "/Hidroponia-Project/docs/Informe/Precios_USD"
+                "title": "Precio",
+                "permalink": "/Hidroponia-Project/docs/Informe/Precio"
               }
             },
             {
-              "id": "Informe/Precios_USD",
-              "title": "Precios_USD",
-              "description": "Precios",
-              "source": "@site/docs/Informe/Precios_USD.md",
+              "id": "Informe/Precio",
+              "title": "Precio",
+              "description": "Recopilación de todos los componentes electrónicos utilizados para crear nuestro circuito.",
+              "source": "@site/docs/Informe/Precio.md",
               "sourceDirName": "Informe",
-              "slug": "/Informe/Precios_USD",
-              "permalink": "/Hidroponia-Project/docs/Informe/Precios_USD",
+              "slug": "/Informe/Precio",
+              "permalink": "/Hidroponia-Project/docs/Informe/Precio",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Precios_USD.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Precio.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 4,
+              "sidebarPosition": 5,
               "frontMatter": {
-                "sidebar_position": 4
+                "sidebar_position": 5
               },
               "sidebar": "tutorialSidebar",
               "previous": {
@@ -136,9 +163,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Software.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 1,
+              "sidebarPosition": 3,
               "frontMatter": {
-                "sidebar_position": 1
+                "sidebar_position": 3
               },
               "sidebar": "tutorialSidebar",
               "previous": {
@@ -189,6 +216,10 @@
                 "items": [
                   {
                     "type": "doc",
+                    "id": "Informe/Hidroponia"
+                  },
+                  {
+                    "type": "doc",
                     "id": "Informe/Hardware"
                   },
                   {
@@ -201,7 +232,7 @@
                   },
                   {
                     "type": "doc",
-                    "id": "Informe/Precios_USD"
+                    "id": "Informe/Precio"
                   }
                 ],
                 "link": {

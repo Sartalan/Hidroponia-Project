@@ -24,6 +24,13 @@
         "items": [
           {
             "type": "link",
+            "label": "Hidroponia",
+            "href": "/Hidroponia-Project/docs/Informe/Hidroponia",
+            "docId": "Informe/Hidroponia",
+            "unlisted": false
+          },
+          {
+            "type": "link",
             "label": "Hardware",
             "href": "/Hidroponia-Project/docs/Informe/Hardware",
             "docId": "Informe/Hardware",
@@ -45,9 +52,9 @@
           },
           {
             "type": "link",
-            "label": "Precios_USD",
-            "href": "/Hidroponia-Project/docs/Informe/Precios_USD",
-            "docId": "Informe/Precios_USD",
+            "label": "Precio",
+            "href": "/Hidroponia-Project/docs/Informe/Precio",
+            "docId": "Informe/Precio",
             "unlisted": false
           }
         ],
@@ -75,16 +82,22 @@
       "description": "Introducción",
       "sidebar": "tutorialSidebar"
     },
+    "Informe/Hidroponia": {
+      "id": "Informe/Hidroponia",
+      "title": "Hidroponia",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
     "Informe/Nosotros": {
       "id": "Informe/Nosotros",
       "title": "Nosotros",
-      "description": "Nosotros",
+      "description": "Wolfsrudel",
       "sidebar": "tutorialSidebar"
     },
-    "Informe/Precios_USD": {
-      "id": "Informe/Precios_USD",
-      "title": "Precios_USD",
-      "description": "Precios",
+    "Informe/Precio": {
+      "id": "Informe/Precio",
+      "title": "Precio",
+      "description": "Recopilación de todos los componentes electrónicos utilizados para crear nuestro circuito.",
       "sidebar": "tutorialSidebar"
     },
     "Informe/Software": {

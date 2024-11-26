@@ -11,14 +11,14 @@
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Informe/Hardware.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 1,
+  "sidebarPosition": 2,
   "frontMatter": {
-    "sidebar_position": 1
+    "sidebar_position": 2
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Informe Final",
-    "permalink": "/Hidroponia-Project/docs/category/informe-final"
+    "title": "Hidroponia",
+    "permalink": "/Hidroponia-Project/docs/Informe/Hidroponia"
   },
   "next": {
     "title": "Software",
