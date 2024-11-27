@@ -115,9 +115,9 @@ Code/
     │   └── README
     ├── lib
     │   └── README
-    ├── platformio.ini
+    ├── platformio.ini                 // Configuración de Platformio | Librerias
     ├── src
-    │   └── main.cpp
+    │   └── main.cpp                   // Todo el código
     └── test
        └── README
 ```
@@ -127,7 +127,7 @@ Code/
 ``` text
 Code/
 └── Raspberry Pi Code
-    ├── app.py
+    ├── app.py                          // Servidor en Flask y script que ejecuta los demás script's
     ├── app.py.save
     ├── __pycache__
     │   ├── app.cpython-311.pyc
@@ -135,22 +135,22 @@ Code/
     │   └── app.cpython-39.pyc
     └── src
         ├── data
-        │   ├── hidroponia_uno.json
-        │   └── weather.json
+        │   ├── hidroponia_uno.json      // Lectura sensores de la hidroponia
+        │   └── weather.json             // Lectura del Sense Hat
         ├── mycodo_test.py
         ├── __pycache__
         │   └── serial.cpython-312.pyc
-        ├── serial_communication.py
-        └── weather.py
+        ├── serial_communication.py      // Recibo y envío de datos por comunicación serial
+        └── weather.py                   // Toma de datos del Sense Hat | Logo de Kirby
 ```
 
 ### Init File
 
 ``` text
 Code/
-├── Embedded Code/
+├── Embedded Code/                        // Código del embebido | Proyecto generado con Platformio
 │
-├── init.sh
+├── init.sh                               // Script de Bash para inicializar todo el código
 │
-└── Raspberry Pi Code/
+└── Raspberry Pi Code/                    // Código Python de la Raspberry
 ```
