@@ -1,6 +1,9 @@
 import '../../styles/routes_styles/start.home.css'
 import '../../styles/routes_styles/general.routes.styles.css'
 import { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { set } from '../../store'
+
 
 
 //todo: Guardar el valor en el state global de Redux 
@@ -10,6 +13,8 @@ import { useEffect, useState } from 'react';
 
 export function StartHome () {
 
+  const storeIp = useSelector((state) => state.ipData.value);
+  const dispatch = useDispatch();
   const [ip, setIp] = useState('')
 
   function submitData(){
@@ -21,9 +26,12 @@ export function StartHome () {
       localStorage.setItem("myIp", (ip))
 //? Almaceno el dato en el localStorage
       const data = localStorage.getItem("myIp")
-      console.log(ip)
+     // console.log(ip)
 //? Dato en useState
       setIp(data)
+//? Guardar en Store
+      dispatch(set())
+      console.log(storeIp)
     }
 
     useEffect(() => {
